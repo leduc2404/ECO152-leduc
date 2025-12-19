@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tóm Tắt Kinh Tế Vĩ Mô</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --danger: #ef4444;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --bg-card-hover: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border: #334155;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--gradient-1);
+            border-radius: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: var(--bg-card);
+            border-radius: 1rem;
+        }
+
+        .nav-tab {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-tab:hover {
+            background: var(--bg-card-hover);
+            color: var(--text-primary);
+        }
+
+        .nav-tab.active {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+        }
+
+        .section {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 2rem 0 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 3px solid var(--primary);
+            color: var(--text-primary);
+        }
+
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 1.5rem 0 1rem;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h4::before {
+            content: '▸';
+            color: var(--accent);
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+            transform: translateY(-2px);
+        }
+
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin: 0.75rem 0;
+            color: var(--text-secondary);
+        }
+
+        li strong {
+            color: var(--text-primary);
+        }
+
+        li ul {
+            margin-top: 0.5rem;
+        }
+
+        .formula-box {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(16, 185, 129, 0.1));
+            border-left: 4px solid var(--primary);
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 0 0.75rem 0.75rem 0;
+            overflow-x: auto;
+        }
+
+        .formula-box math {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+        }
+
+        .note {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 0 0.75rem 0.75rem 0;
+        }
+
+        .note em {
+            color: var(--accent);
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        .tip {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--secondary);
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 0 0.75rem 0.75rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 0.75rem;
+            overflow: hidden;
+        }
+
+        th {
+            background: var(--primary);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        tr:hover td {
+            background: var(--bg-card-hover);
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--border), transparent);
+            margin: 3rem 0;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 1rem;
+            margin-right: 0.5rem;
+        }
+
+        .badge-red { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+        .badge-green { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+        .badge-blue { background: rgba(37, 99, 235, 0.2); color: #60a5fa; }
+        .badge-yellow { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 99, 235, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 1rem; }
+            header { padding: 2rem 1rem; }
+            header h1 { font-size: 1.8rem; }
+            .nav-tab { padding: 0.5rem 1rem; font-size: 0.85rem; }
+            h3 { font-size: 1.4rem; }
+            h4 { font-size: 1.1rem; }
+            table { font-size: 0.85rem; }
+            th, td { padding: 0.75rem 0.5rem; }
+        }
+
+        /* Math styling improvements */
+        math { 
+            font-family: 'Cambria Math', 'Latin Modern Math', serif;
+            display: inline-block;
+        }
+
+        .math-display {
+            display: block;
+            text-align: center;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: rgba(37, 99, 235, 0.05);
+            border-radius: 0.5rem;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Tóm Tắt Kinh Tế Vĩ Mô</h1>
+            <p>Công thức, Mẹo & Bài tập thường gặp</p>
+        </header>
+
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-section="section1">📐 Công Thức</button>
+            <button class="nav-tab" data-section="section2">💡 Mẹo Trắc Nghiệm</button>
+            <button class="nav-tab" data-section="section3">📝 Dạng Câu Hỏi</button>
+            <button class="nav-tab" data-section="section4">⚠️ Bẫy Cần Tránh</button>
+        </nav>
+
+        <!-- PHẦN 1: CÔNG THỨC -->
+        <div id="section1" class="section active">
+            <h3>PHẦN 1: BẢNG CÔNG THỨC</h3>
+
+            <div class="card">
+                <h4>1. Nhóm Đo lường Sản lượng (GDP/GNP)</h4>
+                <ul>
+                    <li><strong>GDP (Tổng sản phẩm quốc nội):</strong> Tính theo lãnh thổ.</li>
+                    <li><strong>GNP (Tổng sản phẩm quốc dân):</strong> Tính theo quốc tịch (người dân).
+                        <div class="formula-box">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>GNP</mtext><mo>=</mo><mtext>GDP</mtext><mo>+</mo><mtext>NIA</mtext></mrow><annotation encoding="application/x-tex">\text{GNP} = \text{GDP} + \text{NIA}</annotation></semantics></math>
+                        </div>
+                        <div class="note">(NIA: Thu nhập ròng từ nước ngoài = Thu từ yếu tố xuất khẩu - Trả cho yếu tố nhập khẩu)</div>
+                    </li>
+                    <li><strong>GDP danh nghĩa (<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>D</mi><msub><mi>P</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">GDP_n</annotation></semantics></math>):</strong> Tính theo giá hiện hành.</li>
+                    <li><strong>GDP thực tế (<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>D</mi><msub><mi>P</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">GDP_r</annotation></semantics></math>):</strong> Tính theo giá cố định (giá gốc).
+                        <div class="formula-box">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Chỉ số giảm phát (D)</mtext><mo>=</mo><mfrac><msub><mtext>GDP</mtext><mi>n</mi></msub><msub><mtext>GDP</mtext><mi>r</mi></msub></mfrac><mo>×</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">\text{Chỉ số giảm phát (D)} = \frac{\text{GDP}_n}{\text{GDP}_r} \times 100</annotation></semantics></math>
+                        </div>
+                    </li>
+                    <li><strong>Tốc độ tăng trưởng (g):</strong>
+                        <div class="formula-box">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false">(</mo><mi mathvariant="normal">%</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><msub><mtext>GDP</mtext><mtext>r(năm nay)</mtext></msub><mo>−</mo><msub><mtext>GDP</mtext><mtext>r(năm trước)</mtext></msub></mrow><msub><mtext>GDP</mtext><mtext>r(năm trước)</mtext></msub></mfrac><mo>×</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">g(\%) = \frac{\text{GDP}_{r(\text{năm nay})} - \text{GDP}_{r(\text{năm trước})}}{\text{GDP}_{r(\text{năm trước})}} \times 100</annotation></semantics></math>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>2. Nhóm Lạm phát & Thất nghiệp & Lãi suất</h4>
+                <ul>
+                    <li><strong>Tỷ lệ thất nghiệp (u):</strong>
+                        <div class="formula-box">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false">(</mo><mi mathvariant="normal">%</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mtext>Số người thất nghiệp (U)</mtext></mrow><mtext>Lực lượng lao động (L)</mtext></mfrac><mo>×</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">u(\%) = \frac{\text{Số người thất nghiệp (U)}}{\text{Lực lượng lao động (L)}} \times 100</annotation></semantics></math>
+                        </div>
+                        <div class="note"><strong>Lưu ý:</strong> L = E (có việc) + U (thất nghiệp). Người không tìm việc/về hưu không tính vào L.</div>
+                    </li>
+                    <li><strong>Tỷ lệ lạm phát (gp):</strong> Dùng CPI hoặc D (Chỉ số giảm phát).
+                        <div class="formula-box">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mi>p</mi><mo>=</mo><mfrac><mrow><msub><mtext>CPI</mtext><mi>t</mi></msub><mo>−</mo><msub><mtext>CPI</mtext><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><msub><mtext>CPI</mtext><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub></mfrac><mo>×</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">gp = \frac{\text{CPI}_t - \text{CPI}_{t-1}}{\text{CPI}_{t-1}} \times 100</annotation></semantics></math>
+                        </div>
+                    </li>
+                    <li><strong>Phương trình Fisher (Quan trọng):</strong>
+                        <div class="formula-box">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Lãi suất thực tế </mtext><mo stretchy="false">(</mo><msub><mi>i</mi><mi>r</mi></msub><mo stretchy="false">)</mo><mo>≈</mo><mtext>Lãi suất danh nghĩa </mtext><mo stretchy="false">(</mo><msub><mi>i</mi><mi>n</mi></msub><mo stretchy="false">)</mo><mo>−</mo><mtext>Tỷ lệ lạm phát </mtext><mo stretchy="false">(</mo><mi>g</mi><mi>p</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{Lãi suất thực tế } (i_r) \approx \text{Lãi suất danh nghĩa } (i_n) - \text{Tỷ lệ lạm phát } (gp)</annotation></semantics></math>
+                        </div>
+                        <div class="tip"><em>Mẹo trắc nghiệm:</em> Lãi suất thực tế và lạm phát nghịch biến. Lãi suất danh nghĩa và lạm phát đồng biến.</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>3. Nhóm Tổng cầu (AD) & Số nhân (Keynes) - <span class="badge badge-red">Hay thi bài tập lớn</span></h4>
+                <ul>
+                    <li><strong>Phương trình cân bằng:</strong> Sản lượng (Y) = Tổng cầu (AD)
+                        <div class="formula-box">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mi>C</mi><mo>+</mo><mi>I</mi><mo>+</mo><mi>G</mi><mo>+</mo><mi>X</mi><mo>−</mo><mi>I</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">Y = C + I + G + X - IM</annotation></semantics></math>
+                        </div>
+                    </li>
+                    <li><strong>Các hàm thành phần (Cần nhớ để thay số):</strong>
+                        <div class="formula-box">
+                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Y</mi><mi>d</mi></msub><mtext> (Thu nhập khả dụng)</mtext><mo>=</mo><mi>Y</mi><mo>−</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">Y_d = Y - T</annotation></semantics></math></p>
+                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><mover accent="true"><mi>C</mi><mo>ˉ</mo></mover><mo>+</mo><mtext>MPC</mtext><mo>×</mo><msub><mi>Y</mi><mi>d</mi></msub></mrow><annotation encoding="application/x-tex">C = \bar{C} + \text{MPC} \times Y_d</annotation></semantics></math></p>
+                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mo>−</mo><mover accent="true"><mi>C</mi><mo>ˉ</mo></mover><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mtext>MPC</mtext><mo stretchy="false">)</mo><mo>×</mo><msub><mi>Y</mi><mi>d</mi></msub></mrow><annotation encoding="application/x-tex">S = -\bar{C} + (1 - \text{MPC}) \times Y_d</annotation></semantics></math> <em>(Nhớ: MPC + MPS = 1)</em></p>
+                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mover accent="true"><mi>T</mi><mo>ˉ</mo></mover><mo>+</mo><mi>t</mi><mo>×</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">T = \bar{T} + t \times Y</annotation></semantics></math></p>
+                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mover accent="true"><mi>I</mi><mo>ˉ</mo></mover><mo>+</mo><mtext>MPI</mtext><mo>×</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">I = \bar{I} + \text{MPI} \times Y</annotation></semantics></math></p>
+                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mi>M</mi><mo>=</mo><mover accent="true"><mrow><mi>I</mi><mi>M</mi></mrow><mo>ˉ</mo></mover><mo>+</mo><mtext>MPM</mtext><mo>×</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">IM = \bar{IM} + \text{MPM} \times Y</annotation></semantics></math></p>
+                        </div>
+                    </li>
+                    <li><strong>Công thức Số nhân tổng quát (k hoặc m):</strong>
+                        <div class="formula-box">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mtext>MPC</mtext><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>t</mi><mo stretchy="false">)</mo><mo>−</mo><mtext>MPI</mtext><mo>+</mo><mtext>MPM</mtext></mrow></mfrac></mrow><annotation encoding="application/x-tex">m = \frac{1}{1 - \text{MPC} \times (1 - t) - \text{MPI} + \text{MPM}}</annotation></semantics></math>
+                        </div>
+                        <div class="tip"><em>Mẹo:</em> Y<sub>cân bằng</sub> = m × A<sub>0</sub> (với A<sub>0</sub> là tổng các hằng số tự định: C̄, Ī, Ḡ, X̄...)</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>4. Nhóm Tiền tệ (Chương 7)</h4>
+                <ul>
+                    <li><strong>Tiền mạnh (H - Tiền cơ sở):</strong>
+                        <div class="formula-box">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mi>U</mi><mtext> (Tiền mặt)</mtext><mo>+</mo><mi>R</mi><mtext> (Dự trữ ngân hàng)</mtext></mrow><annotation encoding="application/x-tex">H = U \text{ (Tiền mặt)} + R \text{ (Dự trữ ngân hàng)}</annotation></semantics></math>
+                        </div>
+                    </li>
+                    <li><strong>Mức cung tiền (M<sub>S</sub>):</strong>
+                        <div class="formula-box">
+                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>S</mi></msub><mo>=</mo><mtext>Tiền mặt ngoài lưu thông</mtext><mo>+</mo><mtext>Tiền gửi (D)</mtext></mrow><annotation encoding="application/x-tex">M_S = \text{Tiền mặt ngoài lưu thông} + \text{Tiền gửi (D)}</annotation></semantics></math></p>
+                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>S</mi></msub><mo>=</mo><msub><mi>m</mi><mi>M</mi></msub><mo>×</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">M_S = m_M \times H</annotation></semantics></math></p>
+                        </div>
+                    </li>
+                    <li><strong>Số nhân tiền tệ (m<sub>M</sub>):</strong>
+                        <div class="formula-box">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>M</mi></msub><mo>=</mo><mfrac><mrow><mi>s</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>s</mi><mo>+</mo><msub><mi>r</mi><mi>b</mi></msub><mo>+</mo><msub><mi>r</mi><mi>t</mi></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">m_M = \frac{s + 1}{s + r_b + r_t}</annotation></semantics></math>
+                        </div>
+                        <div class="note">(s: tỷ lệ tiền mặt/tiền gửi; r<sub>b</sub>: dự trữ bắt buộc; r<sub>t</sub>: dự trữ tùy ý)</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PHẦN 2: MẸO TRẮC NGHIỆM -->
+        <div id="section2" class="section">
+            <h3>PHẦN 2: GIẢI TRẮC NGHIỆM (MẸO & BẪY)</h3>
+
+            <div class="card">
+                <h4>1. Quy tắc "Dịch chuyển" hay "Di chuyển"?</h4>
+                <ul>
+                    <li><strong>Di chuyển:</strong> Khi biến số nằm trên trục tung/trục hoành thay đổi.
+                        <div class="note">Ví dụ: Trên đồ thị AD-AS (trục tung là Giá P), nếu Giá thay đổi → Di chuyển dọc đường AD.</div>
+                    </li>
+                    <li><strong>Dịch chuyển:</strong> Khi các yếu tố "ngoại sinh" thay đổi.
+                        <div class="tip">Ví dụ: Chính phủ tăng chi tiêu G, Thuế giảm, Công nghệ tăng → Đường đồ thị dịch sang Phải/Trái.</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>2. Phân loại Thất nghiệp <span class="badge badge-yellow">Hay hỏi</span></h4>
+                <ul>
+                    <li><span class="badge badge-green">Tạm thời (Frictional)</span> Sinh viên mới ra trường, người đang chuyển việc. <em>→ Bình thường, không tránh khỏi.</em></li>
+                    <li><span class="badge badge-blue">Cơ cấu (Structural)</span> Do kỹ năng không hợp, do công nghệ thay đổi, do vùng miền.</li>
+                    <li><span class="badge badge-red">Chu kỳ (Cyclical)</span> Do suy thoái kinh tế (Tổng cầu giảm). <em>→ Đây là loại xấu nhất.</em></li>
+                    <li><span class="badge badge-yellow">Cổ điển</span> Do tiền lương thực tế quá cao (luật lương tối thiểu).</li>
+                </ul>
+                <div class="note"><strong>Lưu ý:</strong> Thất nghiệp tự nhiên = Tạm thời + Cơ cấu + Cổ điển (xảy ra khi Y = Y*)</div>
+            </div>
+
+            <div class="card">
+                <h4>3. GDP tính cái gì và bỏ cái gì?</h4>
+                <ul>
+                    <li><span class="badge badge-green">TÍNH</span> Hàng hóa cuối cùng, phí môi giới, tiền thuê nhà (kể cả nhà tự ở - ước tính).</li>
+                    <li><span class="badge badge-red">KHÔNG TÍNH</span> Hàng trung gian (bột mì làm bánh), Hàng tự cung tự cấp, Hàng lậu, Hàng bán lại (xe cũ - vì đã tính năm sx), Chuyển khoản (trợ cấp thất nghiệp, hưu trí - vì không đẻ ra hàng hóa mới).</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>4. Chính sách Vĩ mô (Bảng tra nhanh)</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tình trạng KT</th>
+                            <th>Cần làm gì?</th>
+                            <th>Chính sách Tài khóa</th>
+                            <th>Chính sách Tiền tệ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Suy thoái</strong><br>(Y < Y*, Thất nghiệp cao)</td>
+                            <td><span class="badge badge-green">MỞ RỘNG</span><br>(Kích cầu)</td>
+                            <td>- Tăng chi tiêu (G↑)<br>- Giảm thuế (T↓)</td>
+                            <td>- Mua trái phiếu<br>- Giảm dự trữ bắt buộc (r<sub>b</sub>↓)<br>- Giảm lãi suất chiết khấu (i<sub>c</sub>↓)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lạm phát/Nóng</strong><br>(Y > Y*, Giá tăng)</td>
+                            <td><span class="badge badge-red">THẮT CHẶT</span><br>(Kiềm chế)</td>
+                            <td>- Giảm chi tiêu (G↓)<br>- Tăng thuế (T↑)</td>
+                            <td>- Bán trái phiếu<br>- Tăng dự trữ bắt buộc (r<sub>b</sub>↑)<br>- Tăng lãi suất chiết khấu (i<sub>c</sub>↑)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h4>5. Mô hình IS - LM (Chương 8)</h4>
+                <ul>
+                    <li><strong>IS (Hàng hóa):</strong> Dốc xuống. Dịch chuyển phải khi C, I, G, X tăng hoặc T, IM giảm.</li>
+                    <li><strong>LM (Tiền tệ):</strong> Dốc lên. Dịch chuyển phải khi Cung tiền (M<sub>S</sub>) tăng.</li>
+                </ul>
+                <div class="tip">
+                    <strong>Mẹo nhớ:</strong>
+                    <ul>
+                        <li>Tài khóa mở rộng → IS sang phải → Y tăng, Lãi suất tăng.</li>
+                        <li>Tiền tệ mở rộng → LM sang phải → Y tăng, Lãi suất giảm.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHẦN 3: DẠNG CÂU HỎI -->
+        <div id="section3" class="section">
+            <h3>PHẦN 3: CÁC DẠNG CÂU HỎI THƯỜNG GẶP</h3>
+
+            <div class="card">
+                <h4>Dạng 1: Trắc nghiệm lý thuyết nhanh</h4>
+                <ul>
+                    <li><em>Câu hỏi:</em> Đường tổng cung ngắn hạn (SAS) có hình gì?
+                        <div class="tip"><em>Đáp án:</em> Nằm ngang (hoặc dốc lên nhẹ) - Do giá cả cứng nhắc.</div>
+                    </li>
+                    <li><em>Câu hỏi:</em> Đường tổng cung dài hạn (LAS) có hình gì?
+                        <div class="tip"><em>Đáp án:</em> Thẳng đứng tại mức sản lượng tiềm năng (Y*).</div>
+                    </li>
+                    <li><em>Câu hỏi:</em> Khoản nào sau đây là "rò rỉ" (Leakage) khỏi nền kinh tế?
+                        <div class="tip"><em>Đáp án:</em> S (Tiết kiệm), T (Thuế), IM (Nhập khẩu).</div>
+                    </li>
+                    <li><em>Câu hỏi:</em> Khoản nào là "bơm vào" (Injection)?
+                        <div class="tip"><em>Đáp án:</em> I (Đầu tư), G (Chi tiêu CP), X (Xuất khẩu).</div>
+                    </li>
+                    <li><em>Câu hỏi:</em> Định luật Okun nói gì?
+                        <div class="tip"><em>Đáp án:</em> Mối quan hệ nghịch đảo giữa Thất nghiệp và Sản lượng (Thất nghiệp tăng 1% thì GDP giảm 2-2.5%).</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Dạng 2: Bài tập tính toán Tự luận (Quy trình 4 bước)</h4>
+                <p><strong>Đề bài:</strong> Cho C = 100 + 0.75Y<sub>d</sub>; I = 50 + 0.05Y; G = 200; T = 0.2Y; X = 150; IM = 100 + 0.1Y. Tính Y cân bằng?</p>
+                
+                <div class="formula-box">
+                    <p><strong>Bước 1: Xử lý hàm C:</strong></p>
+                    <p>C = 100 + 0.75(Y - 0.2Y) = 100 + 0.75(0.8Y) = 100 + 0.6Y</p>
+                </div>
+
+                <div class="formula-box">
+                    <p><strong>Bước 2: Viết phương trình tổng cầu (AD):</strong></p>
+                    <p>AD = C + I + G + X - IM</p>
+                    <p>AD = (100 + 0.6Y) + (50 + 0.05Y) + 200 + 150 - (100 + 0.1Y)</p>
+                    <p>AD = 400 + 0.55Y</p>
+                </div>
+
+                <div class="formula-box">
+                    <p><strong>Bước 3: Cho cân bằng (Y = AD):</strong></p>
+                    <p>Y = 400 + 0.55Y ⇒ 0.45Y = 400 ⇒ <strong>Y ≈ 888.8</strong></p>
+                </div>
+
+                <div class="formula-box">
+                    <p><strong>Bước 4: Tính Cán cân Ngân sách & Thương mại (Nếu hỏi):</strong></p>
+                    <p>Ngân sách (B): B = T - G = (0.2 × 888.8) - 200. Nếu âm là Thâm hụt.</p>
+                    <p>Thương mại (NX): NX = X - IM.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHẦN 4: BẪY CẦN TRÁNH -->
+        <div id="section4" class="section">
+            <h3>PHẦN 4: CÁC BẪY CẦN TRÁNH</h3>
+
+            <div class="card">
+                <h4>⚠️ Bẫy 1: Thuế tự định</h4>
+                <p>Đề bài cho T = 20 + 0.2Y (có cả phần tự định). Khi thay vào Y<sub>d</sub> = Y - T, nhớ phải đổi dấu:</p>
+                <div class="formula-box">
+                    Y<sub>d</sub> = Y - (20 + 0.2Y) = Y - 20 - 0.2Y
+                </div>
+                <div class="note"><strong>Rất nhiều bạn quên trừ số 20 này!</strong></div>
+            </div>
+
+            <div class="card">
+                <h4>⚠️ Bẫy 2: "Trợ cấp" (Transfer payments - Tr)</h4>
+                <ul>
+                    <li>Trợ cấp <strong>KHÔNG</strong> nằm trong G (Chi tiêu chính phủ).</li>
+                    <li>Trợ cấp được cộng vào thu nhập khả dụng:</li>
+                </ul>
+                <div class="formula-box">
+                    Y<sub>d</sub> = Y - T + Tr
+                </div>
+            </div>
+
+            <div class="card">
+                <h4>⚠️ Bẫy 3: Mua/Bán trái phiếu</h4>
+                <ul>
+                    <li>NHTW <span class="badge badge-green">MUA</span> trái phiếu = Đưa tiền cho dân = Cung tiền <strong>TĂNG</strong>.</li>
+                    <li>NHTW <span class="badge badge-red">BÁN</span> trái phiếu = Thu tiền về = Cung tiền <strong>GIẢM</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>⚠️ Bẫy 4: Đơn vị tính</h4>
+                <p>Chú ý đơn vị là Tỷ đồng hay Triệu USD. Tuy nhiên, số nhân (k, m) không có đơn vị.</p>
+            </div>
+
+            <div class="card">
+                <h4>⚠️ Bẫy 5: Lãi suất</h4>
+                <ul>
+                    <li>Đầu tư (I) phụ thuộc <strong>nghịch biến</strong> với Lãi suất (i).</li>
+                    <li>Lãi suất tăng → Đầu tư giảm → Tổng cầu giảm.</li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="back-to-top" id="backToTop">↑</button>
+    </div>
+
+    <script>
+        // Tab navigation
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.section).classList.add('active');
+            });
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Add smooth scroll for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

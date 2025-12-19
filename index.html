@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO 152 - Kinh Tế Vĩ Mô</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --danger: #ef4444;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --bg-card-hover: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border: #334155;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            --gradient-5: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: var(--gradient-1);
+            border-radius: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 25px 50px rgba(102, 126, 234, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1.25rem;
+            border-radius: 2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            border-radius: 1.5rem 1.5rem 0 0;
+            transition: height 0.3s ease;
+        }
+
+        .feature-card.formula::before { background: var(--gradient-1); }
+        .feature-card.quiz::before { background: var(--gradient-2); }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            border-color: transparent;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .feature-card:hover::before {
+            height: 6px;
+        }
+
+        .feature-card.formula:hover {
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .feature-card.quiz:hover {
+            box-shadow: 0 20px 40px rgba(240, 147, 251, 0.3);
+        }
+
+        .card-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .formula .card-icon { background: var(--gradient-1); }
+        .quiz .card-icon { background: var(--gradient-2); }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-desc {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .card-features {
+            list-style: none;
+        }
+
+        .card-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .card-features li::before {
+            content: '✓';
+            width: 20px;
+            height: 20px;
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .card-arrow {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: gap 0.3s ease;
+        }
+
+        .feature-card:hover .card-arrow {
+            gap: 1rem;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: var(--bg-card);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .stats-title {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--bg-card-hover);
+            border-radius: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: scale(1.05);
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-value.purple { background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .stat-value.pink { background: var(--gradient-2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .stat-value.blue { background: var(--gradient-3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .stat-value.green { background: var(--gradient-4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container { padding: 1rem; }
+            .hero { padding: 2.5rem 1.5rem; }
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .cards-grid { grid-template-columns: 1fr; }
+            .feature-card { padding: 1.5rem; }
+            .stat-value { font-size: 2rem; }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero {
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .feature-card {
+            animation: fadeInUp 0.8s ease;
+            animation-fill-mode: both;
+        }
+
+        .feature-card:nth-child(1) { animation-delay: 0.2s; }
+        .feature-card:nth-child(2) { animation-delay: 0.4s; }
+
+        .stats-section {
+            animation: fadeInUp 0.8s ease 0.6s;
+            animation-fill-mode: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">📖 Học kỳ 2024-2025</div>
+                <h1>🎓 ECO 152</h1>
+                <p>Kinh Tế Vĩ Mô - Tài liệu ôn tập và luyện đề trắc nghiệm</p>
+            </div>
+        </div>
+
+        <div class="cards-grid">
+            <a href="congthuc.html" class="feature-card formula">
+                <div class="card-icon">📐</div>
+                <h2 class="card-title">Công Thức & Mẹo</h2>
+                <p class="card-desc">Tổng hợp công thức, mẹo giải trắc nghiệm và các dạng bài tập thường gặp.</p>
+                <ul class="card-features">
+                    <li>Công thức GDP, GNP, Lạm phát</li>
+                    <li>Mô hình IS-LM, Số nhân Keynes</li>
+                    <li>Chính sách Tiền tệ & Tài khóa</li>
+                    <li>Mẹo tránh bẫy trắc nghiệm</li>
+                </ul>
+                <div class="card-arrow">
+                    Xem tài liệu <span>→</span>
+                </div>
+            </a>
+
+            <a href="tracnghiem.html" class="feature-card quiz">
+                <div class="card-icon">📝</div>
+                <h2 class="card-title">Trắc Nghiệm</h2>
+                <p class="card-desc">Luyện tập với hơn 100 câu hỏi trắc nghiệm và câu hỏi ngắn.</p>
+                <ul class="card-features">
+                    <li>Chế độ luyện tập tự do</li>
+                    <li>Thi thử 20 câu có giới hạn thời gian</li>
+                    <li>Ôn tập câu hỏi trả lời ngắn</li>
+                    <li>Xáo trộn câu hỏi ngẫu nhiên</li>
+                </ul>
+                <div class="card-arrow">
+                    Bắt đầu luyện tập <span>→</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="stats-section">
+            <h2 class="stats-title">📊 Thống kê nội dung</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value purple">39+</div>
+                    <div class="stat-label">Câu Phần 1</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value pink">48+</div>
+                    <div class="stat-label">Câu Phần 2</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value blue">32+</div>
+                    <div class="stat-label">Câu Hỏi Ngắn</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value green">4</div>
+                    <div class="stat-label">Chủ đề Công thức</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made with ❤️ for ECO 152 Students</p>
+        </footer>
+    </div>
+</body>
+</html>
