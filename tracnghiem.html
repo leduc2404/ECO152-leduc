@@ -52,7 +52,13 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 1rem;
-            padding-bottom: 5.5rem;
+            padding-bottom: 6rem;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding-bottom: 7rem;
+            }
         }
 
         header {
@@ -145,37 +151,6 @@
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(8px); }
             to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Mode Selector */
-        .mode-selector {
-            display: flex;
-            gap: 0.5rem;
-            justify-content: center;
-            margin-bottom: 1.25rem;
-            flex-wrap: wrap;
-        }
-
-        .mode-btn {
-            padding: 0.6rem 1rem;
-            border: 2px solid var(--border);
-            background: var(--bg-card);
-            color: var(--text-primary);
-            font-size: 0.85rem;
-            font-weight: 600;
-            cursor: pointer;
-            border-radius: 0.75rem;
-            transition: all 0.2s ease;
-        }
-
-        .mode-btn:active {
-            transform: scale(0.95);
-        }
-
-        .mode-btn.active {
-            background: var(--gradient-3);
-            border-color: transparent;
-            box-shadow: 0 8px 20px rgba(79, 172, 254, 0.25);
         }
 
         /* Progress Bar */
@@ -636,13 +611,7 @@
 
         <!-- Practice Section -->
         <div id="practice" class="section active">
-            <div class="mode-selector">
-                <button class="mode-btn active" data-category="all">📋 Tất cả</button>
-                <button class="mode-btn" data-category="Trắc nghiệm - Phần 1">1️⃣ Phần 1</button>
-                <button class="mode-btn" data-category="Trắc nghiệm - Phần 2">2️⃣ Phần 2</button>
-            </div>
-
-            <button class="shuffle-btn" id="shuffleBtn">🔀 Xáo trộn</button>
+            <button class="shuffle-btn" id="shuffleBtn">🔀 Xáo trộn câu hỏi</button>
 
             <div class="progress-container">
                 <div class="progress-info">
@@ -857,12 +826,13 @@
 
             updateProgress();
 
-            // Auto advance after 1.5s
+            // Scroll to show feedback
             setTimeout(() => {
-                if (currentIndex < currentQuestions.length - 1) {
-                    nextQuestion();
+                const quizCard = document.querySelector('.quiz-card');
+                if (quizCard) {
+                    quizCard.scrollIntoView({ behavior: 'smooth', block: 'end' });
                 }
-            }, 1200);
+            }, 100);
         }
 
         function updateProgress() {
