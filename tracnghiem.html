@@ -2,7 +2,10 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Trắc Nghiệm - ECO 152</title>
     <style>
         :root {
@@ -28,41 +31,49 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
             background: var(--bg-dark);
             color: var(--text-primary);
-            line-height: 1.7;
+            line-height: 1.6;
             min-height: 100vh;
+            min-height: -webkit-fill-available;
+            overflow-x: hidden;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 1rem;
+            padding-bottom: env(safe-area-inset-bottom, 1rem);
         }
 
         header {
             text-align: center;
-            padding: 3rem 2rem;
+            padding: 2rem 1.5rem;
             background: var(--gradient-2);
-            border-radius: 1.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 20px 40px rgba(240, 147, 251, 0.3);
+            border-radius: 1.25rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 15px 35px rgba(240, 147, 251, 0.25);
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 1.75rem;
             font-weight: 700;
-            margin-bottom: 0.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 0.25rem;
+            text-shadow: 1px 2px 4px rgba(0,0,0,0.2);
         }
 
         header p {
             opacity: 0.9;
-            font-size: 1.1rem;
+            font-size: 0.95rem;
         }
 
         .home-link {
@@ -71,57 +82,60 @@
             gap: 0.5rem;
             color: var(--text-secondary);
             text-decoration: none;
-            padding: 0.75rem 1.5rem;
+            padding: 0.6rem 1rem;
             background: var(--bg-card);
-            border-radius: 0.75rem;
-            margin-bottom: 1.5rem;
-            transition: all 0.3s ease;
+            border-radius: 0.6rem;
+            margin-bottom: 1rem;
+            transition: all 0.2s ease;
             font-weight: 500;
+            font-size: 0.9rem;
         }
 
-        .home-link:hover {
+        .home-link:active {
             background: var(--bg-card-hover);
-            color: var(--text-primary);
-            transform: translateX(-5px);
+            transform: scale(0.98);
         }
 
         .nav-tabs {
             display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
+            gap: 0.35rem;
+            flex-wrap: nowrap;
             justify-content: center;
-            margin-bottom: 2rem;
-            padding: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 0.5rem;
             background: var(--bg-card);
-            border-radius: 1rem;
+            border-radius: 0.75rem;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
         }
 
         .nav-tab {
-            padding: 0.75rem 1.5rem;
+            padding: 0.6rem 0.9rem;
             border: none;
             background: transparent;
             color: var(--text-secondary);
-            font-size: 0.95rem;
-            font-weight: 500;
+            font-size: 0.8rem;
+            font-weight: 600;
             cursor: pointer;
             border-radius: 0.5rem;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
-        .nav-tab:hover {
-            background: var(--bg-card-hover);
-            color: var(--text-primary);
+        .nav-tab:active {
+            transform: scale(0.95);
         }
 
         .nav-tab.active {
             background: var(--primary);
             color: white;
-            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
         }
 
         .section {
             display: none;
-            animation: fadeIn 0.4s ease;
+            animation: fadeIn 0.3s ease;
         }
 
         .section.active {
@@ -129,105 +143,96 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
+            from { opacity: 0; transform: translateY(8px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Quiz Mode Selector */
+        /* Mode Selector */
         .mode-selector {
             display: flex;
-            gap: 1rem;
+            gap: 0.5rem;
             justify-content: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.25rem;
             flex-wrap: wrap;
         }
 
         .mode-btn {
-            padding: 1rem 2rem;
+            padding: 0.6rem 1rem;
             border: 2px solid var(--border);
             background: var(--bg-card);
             color: var(--text-primary);
-            font-size: 1rem;
+            font-size: 0.85rem;
             font-weight: 600;
             cursor: pointer;
-            border-radius: 1rem;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            border-radius: 0.75rem;
+            transition: all 0.2s ease;
         }
 
-        .mode-btn:hover {
-            border-color: var(--primary);
-            transform: translateY(-2px);
+        .mode-btn:active {
+            transform: scale(0.95);
         }
 
         .mode-btn.active {
             background: var(--gradient-3);
             border-color: transparent;
-            box-shadow: 0 10px 30px rgba(79, 172, 254, 0.3);
+            box-shadow: 0 8px 20px rgba(79, 172, 254, 0.25);
         }
 
         /* Progress Bar */
         .progress-container {
             background: var(--bg-card);
-            border-radius: 1rem;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            margin-bottom: 1.25rem;
         }
 
         .progress-info {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 0.75rem;
-            font-weight: 500;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 0.9rem;
         }
 
         .progress-bar {
-            height: 10px;
+            height: 8px;
             background: var(--border);
-            border-radius: 5px;
+            border-radius: 4px;
             overflow: hidden;
         }
 
         .progress-fill {
             height: 100%;
             background: var(--gradient-3);
-            border-radius: 5px;
-            transition: width 0.4s ease;
+            border-radius: 4px;
+            transition: width 0.3s ease;
         }
 
         /* Quiz Card */
         .quiz-card {
             background: var(--bg-card);
-            border-radius: 1.5rem;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
+            border-radius: 1.25rem;
+            padding: 1.25rem;
+            margin-bottom: 1.25rem;
             border: 1px solid var(--border);
-            transition: all 0.3s ease;
-        }
-
-        .quiz-card:hover {
-            border-color: var(--primary);
-            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
         }
 
         .question-number {
             display: inline-block;
             background: var(--gradient-1);
             color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 1rem;
-            font-size: 0.85rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 0.75rem;
+            font-size: 0.75rem;
             font-weight: 600;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
 
         .question-text {
-            font-size: 1.2rem;
+            font-size: 1.05rem;
             font-weight: 600;
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
+            margin-bottom: 1.25rem;
+            line-height: 1.5;
         }
 
         .options-list {
@@ -238,23 +243,24 @@
             background: var(--bg-card-hover);
             border: 2px solid transparent;
             border-radius: 0.75rem;
-            padding: 1rem 1.25rem;
-            margin-bottom: 0.75rem;
+            padding: 0.9rem 1rem;
+            margin-bottom: 0.6rem;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             display: flex;
             align-items: flex-start;
-            gap: 0.75rem;
+            gap: 0.6rem;
+            -webkit-user-select: none;
+            user-select: none;
         }
 
-        .option:hover {
-            border-color: var(--primary);
-            transform: translateX(5px);
+        .option:active:not(.answered) {
+            transform: scale(0.98);
         }
 
-        .option.selected {
-            border-color: var(--primary);
-            background: rgba(37, 99, 235, 0.2);
+        .option.answered {
+            cursor: default;
+            pointer-events: none;
         }
 
         .option.correct {
@@ -268,91 +274,108 @@
         }
 
         .option-indicator {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
+            width: 26px;
+            height: 26px;
+            min-width: 26px;
             border-radius: 50%;
             border: 2px solid var(--border);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 600;
-            font-size: 0.8rem;
-            transition: all 0.3s ease;
-        }
-
-        .option.selected .option-indicator {
-            border-color: var(--primary);
-            background: var(--primary);
-            color: white;
+            font-weight: 700;
+            font-size: 0.75rem;
+            transition: all 0.2s ease;
         }
 
         .option.correct .option-indicator {
             border-color: var(--secondary);
             background: var(--secondary);
+            color: white;
+        }
+
+        .option.correct .option-indicator::after {
+            content: '✓';
         }
 
         .option.incorrect .option-indicator {
             border-color: var(--danger);
             background: var(--danger);
+            color: white;
         }
 
-        /* Short Answer Input */
-        .short-answer-input {
-            width: 100%;
-            padding: 1rem 1.25rem;
-            background: var(--bg-card-hover);
-            border: 2px solid var(--border);
-            border-radius: 0.75rem;
-            color: var(--text-primary);
-            font-size: 1rem;
-            transition: all 0.3s ease;
+        .option.incorrect .option-indicator::after {
+            content: '✗';
         }
 
-        .short-answer-input:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
-        }
-
-        .answer-reveal {
-            margin-top: 1rem;
-            padding: 1rem 1.25rem;
-            background: rgba(16, 185, 129, 0.1);
-            border-left: 4px solid var(--secondary);
-            border-radius: 0 0.75rem 0.75rem 0;
+        .option.correct .indicator-text,
+        .option.incorrect .indicator-text {
             display: none;
         }
 
-        .answer-reveal.show {
-            display: block;
+        .option-text {
+            flex: 1;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        /* Feedback message */
+        .feedback {
+            margin-top: 1rem;
+            padding: 0.9rem 1rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: none;
             animation: fadeIn 0.3s ease;
+        }
+
+        .feedback.show {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .feedback.correct {
+            background: rgba(16, 185, 129, 0.15);
+            border-left: 4px solid var(--secondary);
+            color: #34d399;
+        }
+
+        .feedback.incorrect {
+            background: rgba(239, 68, 68, 0.15);
+            border-left: 4px solid var(--danger);
+            color: #f87171;
         }
 
         /* Navigation Buttons */
         .quiz-nav {
             display: flex;
             justify-content: space-between;
-            gap: 1rem;
-            margin-top: 2rem;
-            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.25rem;
         }
 
         .nav-btn {
-            padding: 1rem 2rem;
+            padding: 0.9rem 1.25rem;
             border: none;
             border-radius: 0.75rem;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            justify-content: center;
+            gap: 0.4rem;
+            flex: 1;
+        }
+
+        .nav-btn:active:not(:disabled) {
+            transform: scale(0.95);
         }
 
         .nav-btn:disabled {
-            opacity: 0.5;
+            opacity: 0.4;
             cursor: not-allowed;
         }
 
@@ -361,91 +384,70 @@
             color: var(--text-primary);
         }
 
-        .nav-btn.prev:hover:not(:disabled) {
-            background: var(--border);
-        }
-
         .nav-btn.next {
             background: var(--primary);
             color: white;
         }
 
-        .nav-btn.next:hover:not(:disabled) {
-            background: var(--primary-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(37, 99, 235, 0.4);
-        }
-
-        .nav-btn.check {
-            background: var(--secondary);
-            color: white;
-        }
-
-        .nav-btn.check:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(16, 185, 129, 0.4);
-        }
-
         /* Results */
         .results-container {
             text-align: center;
-            padding: 3rem 2rem;
+            padding: 2rem 1.5rem;
             background: var(--bg-card);
-            border-radius: 1.5rem;
+            border-radius: 1.25rem;
         }
 
         .results-score {
-            font-size: 4rem;
-            font-weight: 700;
+            font-size: 3.5rem;
+            font-weight: 800;
             background: var(--gradient-4);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
 
         .results-text {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             color: var(--text-secondary);
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .restart-btn {
-            padding: 1rem 3rem;
+            padding: 0.9rem 2rem;
             background: var(--gradient-1);
             border: none;
             border-radius: 0.75rem;
             color: white;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
 
-        .restart-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        .restart-btn:active {
+            transform: scale(0.95);
         }
 
         /* Stats Cards */
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin-bottom: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
         }
 
         .stat-card {
             background: var(--bg-card-hover);
-            padding: 1.25rem;
-            border-radius: 1rem;
+            padding: 1rem;
+            border-radius: 0.75rem;
             text-align: center;
         }
 
         .stat-value {
-            font-size: 2rem;
+            font-size: 1.75rem;
             font-weight: 700;
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.15rem;
         }
 
         .stat-value.correct { color: var(--secondary); }
@@ -453,27 +455,93 @@
         .stat-value.total { color: var(--primary); }
 
         .stat-label {
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             color: var(--text-secondary);
+        }
+
+        /* Shuffle button */
+        .shuffle-btn {
+            background: var(--gradient-5);
+            border: none;
+            padding: 0.65rem 1.25rem;
+            border-radius: 0.65rem;
+            color: white;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-bottom: 1.25rem;
+        }
+
+        .shuffle-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Short Answer Card */
+        .short-card {
+            background: var(--bg-card);
+            border-radius: 1rem;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border);
+        }
+
+        .short-question {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .show-answer-btn {
+            background: var(--secondary);
+            border: none;
+            padding: 0.6rem 1rem;
+            border-radius: 0.6rem;
+            color: white;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .show-answer-btn:active {
+            transform: scale(0.95);
+        }
+
+        .answer-reveal {
+            margin-top: 1rem;
+            padding: 0.9rem 1rem;
+            background: rgba(16, 185, 129, 0.12);
+            border-left: 4px solid var(--secondary);
+            border-radius: 0 0.6rem 0.6rem 0;
+            display: none;
+            font-size: 0.95rem;
+        }
+
+        .answer-reveal.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
         }
 
         /* Back to top */
         .back-to-top {
             position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 50px;
-            height: 50px;
+            bottom: max(1.5rem, env(safe-area-inset-bottom, 1.5rem));
+            right: 1rem;
+            width: 44px;
+            height: 44px;
             background: var(--primary);
             color: white;
             border: none;
             border-radius: 50%;
             cursor: pointer;
-            font-size: 1.5rem;
-            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
+            font-size: 1.25rem;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
             opacity: 0;
             visibility: hidden;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
+            z-index: 100;
         }
 
         .back-to-top.visible {
@@ -481,62 +549,80 @@
             visibility: visible;
         }
 
-        .back-to-top:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 25px rgba(37, 99, 235, 0.5);
-        }
-
-        /* Shuffle button */
-        .shuffle-btn {
-            background: var(--gradient-5);
-            border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.75rem;
-            color: white;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-bottom: 1.5rem;
-        }
-
-        .shuffle-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 20px rgba(250, 112, 154, 0.4);
+        .back-to-top:active {
+            transform: scale(0.9);
         }
 
         /* Loading */
         .loading {
             text-align: center;
-            padding: 3rem;
+            padding: 2.5rem;
             color: var(--text-secondary);
+            font-size: 0.95rem;
         }
 
-        @media (max-width: 768px) {
-            .container { padding: 1rem; }
-            header { padding: 2rem 1rem; }
-            header h1 { font-size: 1.8rem; }
-            .nav-tab { padding: 0.5rem 1rem; font-size: 0.85rem; }
-            .quiz-card { padding: 1.5rem; }
-            .question-text { font-size: 1.1rem; }
-            .mode-btn { padding: 0.75rem 1.25rem; font-size: 0.9rem; }
-            .nav-btn { padding: 0.75rem 1.25rem; font-size: 0.9rem; }
+        /* Exam specific */
+        .exam-intro {
+            text-align: center;
+        }
+
+        .exam-intro h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .exam-intro p {
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+            font-size: 0.95rem;
+        }
+
+        /* Swipe hint */
+        .swipe-hint {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            margin-top: 0.75rem;
+            opacity: 0.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 400px) {
+            .container { padding: 0.75rem; }
+            header { padding: 1.5rem 1rem; }
+            header h1 { font-size: 1.5rem; }
+            .question-text { font-size: 1rem; }
+            .option { padding: 0.75rem 0.9rem; }
+            .option-text { font-size: 0.9rem; }
+            .stats-grid { gap: 0.5rem; }
+            .stat-value { font-size: 1.5rem; }
             .results-score { font-size: 3rem; }
+        }
+
+        @media (min-width: 768px) {
+            .container { padding: 2rem; }
+            header { padding: 2.5rem 2rem; }
+            header h1 { font-size: 2.25rem; }
+            .quiz-card { padding: 1.75rem; }
+            .question-text { font-size: 1.15rem; }
+            .option { padding: 1rem 1.25rem; }
+            .nav-btn { flex: 0 0 auto; padding: 1rem 2rem; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="index.html" class="home-link">← Về Trang Chủ</a>
+        <a href="index.html" class="home-link">← Trang Chủ</a>
 
         <header>
             <h1>📝 Trắc Nghiệm ECO 152</h1>
-            <p>Luyện tập câu hỏi Kinh tế Vĩ mô</p>
+            <p>Chọn đáp án để xem kết quả ngay!</p>
         </header>
 
         <nav class="nav-tabs">
             <button class="nav-tab active" data-section="practice">📚 Luyện Tập</button>
             <button class="nav-tab" data-section="exam">⏱️ Thi Thử</button>
-            <button class="nav-tab" data-section="review">📖 Ôn Tập Câu Ngắn</button>
+            <button class="nav-tab" data-section="review">📖 Câu Ngắn</button>
         </nav>
 
         <!-- Practice Section -->
@@ -547,12 +633,12 @@
                 <button class="mode-btn" data-category="Trắc nghiệm - Phần 2">2️⃣ Phần 2</button>
             </div>
 
-            <button class="shuffle-btn" id="shuffleBtn">🔀 Xáo trộn câu hỏi</button>
+            <button class="shuffle-btn" id="shuffleBtn">🔀 Xáo trộn</button>
 
             <div class="progress-container">
                 <div class="progress-info">
                     <span id="progressText">Câu 1 / 10</span>
-                    <span id="scoreText">Điểm: 0</span>
+                    <span id="scoreText">✓ 0</span>
                 </div>
                 <div class="progress-bar">
                     <div class="progress-fill" id="progressFill" style="width: 10%"></div>
@@ -564,22 +650,17 @@
             </div>
 
             <div class="quiz-nav" id="quizNav" style="display: none;">
-                <button class="nav-btn prev" id="prevBtn">← Câu trước</button>
-                <button class="nav-btn check" id="checkBtn">✓ Kiểm tra</button>
-                <button class="nav-btn next" id="nextBtn">Câu sau →</button>
+                <button class="nav-btn prev" id="prevBtn">← Trước</button>
+                <button class="nav-btn next" id="nextBtn">Tiếp →</button>
             </div>
         </div>
 
         <!-- Exam Section -->
         <div id="exam" class="section">
-            <div class="quiz-card" id="examStart">
-                <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">⏱️ Chế độ Thi Thử</h3>
-                <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
-                    Làm bài thi với 20 câu hỏi ngẫu nhiên trong thời gian giới hạn.
-                </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <button class="nav-btn next" id="startExamBtn">🚀 Bắt đầu thi thử</button>
-                </div>
+            <div class="quiz-card exam-intro" id="examStart">
+                <h3>⏱️ Chế độ Thi Thử</h3>
+                <p>20 câu ngẫu nhiên • 15 phút</p>
+                <button class="nav-btn next" id="startExamBtn" style="margin: 0 auto;">🚀 Bắt đầu</button>
             </div>
 
             <div id="examContent" style="display: none;">
@@ -596,15 +677,15 @@
                 <div id="examQuizContainer"></div>
 
                 <div class="quiz-nav">
-                    <button class="nav-btn prev" id="examPrevBtn">← Câu trước</button>
+                    <button class="nav-btn prev" id="examPrevBtn">← Trước</button>
                     <button class="nav-btn next" id="examSubmitBtn">Nộp bài</button>
-                    <button class="nav-btn next" id="examNextBtn">Câu sau →</button>
+                    <button class="nav-btn next" id="examNextBtn">Tiếp →</button>
                 </div>
             </div>
 
             <div id="examResults" class="results-container" style="display: none;">
                 <div class="results-score" id="examScore">0%</div>
-                <div class="results-text" id="examResultText">Bạn đã hoàn thành bài thi!</div>
+                <div class="results-text" id="examResultText">Hoàn thành!</div>
                 <div class="stats-grid">
                     <div class="stat-card">
                         <div class="stat-value correct" id="examCorrect">0</div>
@@ -625,7 +706,7 @@
 
         <!-- Short Answer Review Section -->
         <div id="review" class="section">
-            <button class="shuffle-btn" id="shuffleShortBtn">🔀 Xáo trộn câu hỏi</button>
+            <button class="shuffle-btn" id="shuffleShortBtn">🔀 Xáo trộn</button>
             <div id="shortAnswerContainer">
                 <div class="loading">Đang tải câu hỏi...</div>
             </div>
@@ -648,9 +729,13 @@
         let examIndex = 0;
         let examAnswers = [];
         let examTimer = null;
-        let examTimeLeft = 15 * 60; // 15 minutes
+        let examTimeLeft = 15 * 60;
 
-        // Load questions from JSON
+        // Touch swipe support
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        // Load questions
         async function loadQuestions() {
             try {
                 const response = await fetch('tracnghiem.json');
@@ -671,7 +756,7 @@
             }
         }
 
-        // Display current question
+        // Display current question - INSTANT FEEDBACK
         function displayQuestion() {
             if (currentQuestions.length === 0) return;
 
@@ -681,97 +766,123 @@
             let optionsHtml = q.options.map((opt, i) => {
                 const letter = String.fromCharCode(65 + i);
                 let classes = 'option';
+                
                 if (userAnswer !== null) {
-                    if (opt === q.correct_answer) classes += ' correct';
-                    else if (opt === userAnswer) classes += ' incorrect';
-                    else if (i === userAnswer) classes += ' selected';
+                    classes += ' answered';
+                    if (opt === q.correct_answer) {
+                        classes += ' correct';
+                    } else if (opt === userAnswer && opt !== q.correct_answer) {
+                        classes += ' incorrect';
+                    }
                 }
+                
                 return `
-                    <li class="${classes}" data-index="${i}" data-value="${opt}">
-                        <span class="option-indicator">${letter}</span>
+                    <li class="${classes}" data-value="${opt}">
+                        <span class="option-indicator"><span class="indicator-text">${letter}</span></span>
                         <span class="option-text">${opt.substring(3)}</span>
                     </li>
                 `;
             }).join('');
+
+            let feedbackHtml = '';
+            if (userAnswer !== null) {
+                const isCorrect = userAnswer === q.correct_answer;
+                feedbackHtml = `
+                    <div class="feedback ${isCorrect ? 'correct' : 'incorrect'} show">
+                        ${isCorrect ? '✓ Chính xác!' : '✗ Sai! Đáp án đúng: ' + q.correct_answer.substring(0, 1)}
+                    </div>
+                `;
+            }
 
             document.getElementById('quizContainer').innerHTML = `
                 <div class="quiz-card">
                     <span class="question-number">Câu ${currentIndex + 1}</span>
                     <div class="question-text">${q.question}</div>
                     <ul class="options-list">${optionsHtml}</ul>
+                    ${feedbackHtml}
                 </div>
             `;
 
-            // Update progress
-            document.getElementById('progressText').textContent = `Câu ${currentIndex + 1} / ${currentQuestions.length}`;
-            document.getElementById('progressFill').style.width = `${((currentIndex + 1) / currentQuestions.length) * 100}%`;
-            document.getElementById('scoreText').textContent = `Điểm: ${score}`;
+            updateProgress();
+            updateNavButtons();
 
-            // Update navigation buttons
-            document.getElementById('prevBtn').disabled = currentIndex === 0;
-            document.getElementById('nextBtn').disabled = currentIndex === currentQuestions.length - 1;
-            document.getElementById('checkBtn').disabled = userAnswers[currentIndex] !== null;
-
-            // Add click handlers to options
-            document.querySelectorAll('.option').forEach(opt => {
-                opt.addEventListener('click', () => selectOption(opt));
-            });
+            // Add click handlers - INSTANT CHECK
+            if (userAnswer === null) {
+                document.querySelectorAll('.option').forEach(opt => {
+                    opt.addEventListener('click', () => selectAndCheck(opt));
+                });
+            }
         }
 
-        // Select an option
-        function selectOption(optElement) {
+        // Select option and check immediately
+        function selectAndCheck(optElement) {
             if (userAnswers[currentIndex] !== null) return;
 
-            document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
-            optElement.classList.add('selected');
-        }
-
-        // Check answer
-        function checkAnswer() {
-            const selected = document.querySelector('.option.selected');
-            if (!selected) {
-                alert('Vui lòng chọn một đáp án!');
-                return;
-            }
-
-            const selectedValue = selected.dataset.value;
+            const selectedValue = optElement.dataset.value;
             const correctAnswer = currentQuestions[currentIndex].correct_answer;
             
             userAnswers[currentIndex] = selectedValue;
 
             if (selectedValue === correctAnswer) {
                 score++;
-                selected.classList.add('correct');
+                optElement.classList.add('correct', 'answered');
             } else {
-                selected.classList.add('incorrect');
+                optElement.classList.add('incorrect', 'answered');
                 document.querySelectorAll('.option').forEach(opt => {
                     if (opt.dataset.value === correctAnswer) {
-                        opt.classList.add('correct');
+                        opt.classList.add('correct', 'answered');
+                    } else {
+                        opt.classList.add('answered');
                     }
                 });
             }
 
-            document.getElementById('scoreText').textContent = `Điểm: ${score}`;
-            document.getElementById('checkBtn').disabled = true;
+            // Show feedback
+            const isCorrect = selectedValue === correctAnswer;
+            const feedbackHtml = `
+                <div class="feedback ${isCorrect ? 'correct' : 'incorrect'} show">
+                    ${isCorrect ? '✓ Chính xác!' : '✗ Sai! Đáp án đúng: ' + correctAnswer.substring(0, 1)}
+                </div>
+            `;
+            document.querySelector('.quiz-card').insertAdjacentHTML('beforeend', feedbackHtml);
+
+            updateProgress();
+
+            // Auto advance after 1.5s
+            setTimeout(() => {
+                if (currentIndex < currentQuestions.length - 1) {
+                    nextQuestion();
+                }
+            }, 1200);
         }
 
-        // Navigate to previous question
+        function updateProgress() {
+            document.getElementById('progressText').textContent = `Câu ${currentIndex + 1} / ${currentQuestions.length}`;
+            document.getElementById('progressFill').style.width = `${((currentIndex + 1) / currentQuestions.length) * 100}%`;
+            document.getElementById('scoreText').textContent = `✓ ${score}`;
+        }
+
+        function updateNavButtons() {
+            document.getElementById('prevBtn').disabled = currentIndex === 0;
+            document.getElementById('nextBtn').disabled = currentIndex === currentQuestions.length - 1;
+        }
+
         function prevQuestion() {
             if (currentIndex > 0) {
                 currentIndex--;
                 displayQuestion();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         }
 
-        // Navigate to next question
         function nextQuestion() {
             if (currentIndex < currentQuestions.length - 1) {
                 currentIndex++;
                 displayQuestion();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         }
 
-        // Shuffle questions
         function shuffleArray(array) {
             const shuffled = [...array];
             for (let i = shuffled.length - 1; i > 0; i--) {
@@ -789,7 +900,6 @@
             displayQuestion();
         }
 
-        // Filter by category
         function filterByCategory(category) {
             if (category === 'all') {
                 currentQuestions = [...multipleChoiceQuestions];
@@ -802,17 +912,17 @@
             displayQuestion();
         }
 
-        // Short answer display
+        // Short answers
         function displayShortAnswers() {
             const container = document.getElementById('shortAnswerContainer');
             
             let html = shortAnswerQuestions.map((q, i) => `
-                <div class="quiz-card">
+                <div class="short-card">
                     <span class="question-number">Câu ${i + 1}</span>
-                    <div class="question-text">${q.question}</div>
-                    <button class="nav-btn check show-answer-btn" data-index="${i}">👁️ Xem đáp án</button>
+                    <div class="short-question">${q.question}</div>
+                    <button class="show-answer-btn" data-index="${i}">👁️ Xem đáp án</button>
                     <div class="answer-reveal" id="answer-${i}">
-                        <strong>📌 Đáp án:</strong> ${q.answer}
+                        📌 <strong>Đáp án:</strong> ${q.answer}
                     </div>
                 </div>
             `).join('');
@@ -824,7 +934,7 @@
                     const idx = btn.dataset.index;
                     const answerEl = document.getElementById(`answer-${idx}`);
                     answerEl.classList.toggle('show');
-                    btn.textContent = answerEl.classList.contains('show') ? '🙈 Ẩn đáp án' : '👁️ Xem đáp án';
+                    btn.textContent = answerEl.classList.contains('show') ? '🙈 Ẩn' : '👁️ Xem đáp án';
                 });
             });
         }
@@ -858,7 +968,7 @@
                 if (examAnswers[examIndex] === opt) classes += ' selected';
                 return `
                     <li class="${classes}" data-value="${opt}">
-                        <span class="option-indicator">${letter}</span>
+                        <span class="option-indicator"><span class="indicator-text">${letter}</span></span>
                         <span class="option-text">${opt.substring(3)}</span>
                     </li>
                 `;
@@ -881,8 +991,12 @@
 
             document.querySelectorAll('#examQuizContainer .option').forEach(opt => {
                 opt.addEventListener('click', () => {
-                    document.querySelectorAll('#examQuizContainer .option').forEach(o => o.classList.remove('selected'));
+                    document.querySelectorAll('#examQuizContainer .option').forEach(o => {
+                        o.classList.remove('selected');
+                        o.style.borderColor = 'transparent';
+                    });
                     opt.classList.add('selected');
+                    opt.style.borderColor = 'var(--primary)';
                     examAnswers[examIndex] = opt.dataset.value;
                 });
             });
@@ -895,9 +1009,7 @@
                 const secs = examTimeLeft % 60;
                 document.getElementById('examTimer').textContent = `⏱️ ${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
 
-                if (examTimeLeft <= 0) {
-                    submitExam();
-                }
+                if (examTimeLeft <= 0) submitExam();
             }, 1000);
         }
 
@@ -923,10 +1035,10 @@
             document.getElementById('examTime').textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
 
             let resultText = '';
-            if (percentage >= 90) resultText = '🎉 Xuất sắc! Bạn nắm vững kiến thức!';
-            else if (percentage >= 70) resultText = '👍 Tốt lắm! Tiếp tục ôn tập nhé!';
-            else if (percentage >= 50) resultText = '📚 Cần ôn tập thêm một chút!';
-            else resultText = '💪 Cố lên! Hãy ôn tập lại kiến thức!';
+            if (percentage >= 90) resultText = '🎉 Xuất sắc!';
+            else if (percentage >= 70) resultText = '👍 Tốt lắm!';
+            else if (percentage >= 50) resultText = '📚 Cần ôn thêm!';
+            else resultText = '💪 Cố lên!';
 
             document.getElementById('examResultText').textContent = resultText;
         }
@@ -957,7 +1069,6 @@
             // Navigation
             document.getElementById('prevBtn').addEventListener('click', prevQuestion);
             document.getElementById('nextBtn').addEventListener('click', nextQuestion);
-            document.getElementById('checkBtn').addEventListener('click', checkAnswer);
             document.getElementById('shuffleBtn').addEventListener('click', shuffleQuestions);
             document.getElementById('shuffleShortBtn').addEventListener('click', shuffleShortAnswers);
 
@@ -970,7 +1081,7 @@
                 if (examIndex < 19) { examIndex++; displayExamQuestion(); }
             });
             document.getElementById('examSubmitBtn').addEventListener('click', () => {
-                if (confirm('Bạn có chắc muốn nộp bài không?')) submitExam();
+                if (confirm('Nộp bài?')) submitExam();
             });
             document.getElementById('retryExamBtn').addEventListener('click', () => {
                 document.getElementById('examResults').style.display = 'none';
@@ -980,12 +1091,33 @@
             // Back to top
             const backToTop = document.getElementById('backToTop');
             window.addEventListener('scroll', () => {
-                backToTop.classList.toggle('visible', window.scrollY > 300);
+                backToTop.classList.toggle('visible', window.scrollY > 200);
             });
             backToTop.addEventListener('click', () => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
+
+            // Swipe support
+            document.addEventListener('touchstart', e => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            document.addEventListener('touchend', e => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            }, { passive: true });
         });
+
+        function handleSwipe() {
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) > 80) {
+                if (diff > 0 && currentIndex < currentQuestions.length - 1) {
+                    nextQuestion();
+                } else if (diff < 0 && currentIndex > 0) {
+                    prevQuestion();
+                }
+            }
+        }
     </script>
 </body>
 </html>
