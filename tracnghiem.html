@@ -52,13 +52,7 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 1rem;
-            padding-bottom: 6rem;
-        }
-
-        @media (min-width: 768px) {
-            .container {
-                padding-bottom: 7rem;
-            }
+            padding-bottom: 2rem;
         }
 
         header {
@@ -322,21 +316,14 @@
             color: #f87171;
         }
 
-        /* Navigation Buttons - Fixed at bottom */
+        /* Navigation Buttons - Inside quiz card */
         .quiz-nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
             display: flex;
             justify-content: space-between;
             gap: 0.75rem;
-            padding: 0.75rem 1rem;
-            padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
-            background: var(--bg-dark);
+            margin-top: 1.25rem;
+            padding-top: 1rem;
             border-top: 1px solid var(--border);
-            z-index: 100;
-            box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
         }
 
         .nav-btn {
@@ -626,11 +613,6 @@
             <div id="quizContainer">
                 <div class="loading">Đang tải câu hỏi...</div>
             </div>
-
-            <div class="quiz-nav" id="quizNav" style="display: none;">
-                <button class="nav-btn prev" id="prevBtn">← Trước</button>
-                <button class="nav-btn next" id="nextBtn">Tiếp →</button>
-            </div>
         </div>
 
         <!-- Exam Section -->
@@ -778,8 +760,16 @@
                     <div class="question-text">${q.question}</div>
                     <ul class="options-list">${optionsHtml}</ul>
                     ${feedbackHtml}
+                    <div class="quiz-nav">
+                        <button class="nav-btn prev" id="prevBtn" ${currentIndex === 0 ? 'disabled' : ''}>← Trước</button>
+                        <button class="nav-btn next" id="nextBtn" ${currentIndex === currentQuestions.length - 1 ? 'disabled' : ''}>Tiếp →</button>
+                    </div>
                 </div>
             `;
+
+            // Add nav button handlers
+            document.getElementById('prevBtn').addEventListener('click', prevQuestion);
+            document.getElementById('nextBtn').addEventListener('click', nextQuestion);
 
             updateProgress();
             updateNavButtons();
