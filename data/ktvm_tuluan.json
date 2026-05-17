@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "question": "Trình bày khái niệm Kinh tế học ?",
+    "answer": "**Kinh tế học** là môn khoa học nghiên cứu cách các cá nhân, tổ chức, và xã hội lựa chọn, phân bổ các nguồn lực khan hiếm để thỏa mãn nhu cầu vô hạn."
+  },
+  {
+    "id": 2,
+    "question": "Có bao nhiêu phương pháp nghiên cứu kinh tế học vi mô? Đó là những phương pháp nào?",
+    "answer": "2 phương pháp: phân tích định tính và phân tích định lượng"
+  },
+  {
+    "id": 3,
+    "question": "Nêu những vấn đề kinh tế cơ bản ?",
+    "answer": "Sản xuất cái gì?\n\nSản xuất cho ai?\n\nSản xuất như thế nào?"
+  },
+  {
+    "id": 4,
+    "question": "Có bao nhiêu cơ chế kinh tế, hãy kể tên?",
+    "answer": "3 cơ chế:\n\nkinh tế thị trường\n\nkinh tế tập trung\n\nkinh tế hỗn hợp"
+  },
+  {
+    "id": 5,
+    "question": "Trình bày khái niệm Chi phí cơ hội?",
+    "answer": "Là phần chi phí mất đi của cơ hội tốt nhất tiếp theo để lựa chọn 1 quyết định bất kỳ."
+  },
+  {
+    "id": 6,
+    "question": "Trình bày khái niệm Đường giới hạn khả năng sản xuất?",
+    "answer": "PPF là một đường cong thể hiện tất cả các kết hợp tối đa của hai loại hàng hóa hoặc dịch vụ mà một nền kinh tế có thể sản xuất được khi sử dụng toàn bộ nguồn lực một cách hiệu quả, với công nghệ và tài nguyên hiện có"
+  },
+  {
+    "id": 7,
+    "question": "Trình bày khái niệm Luật cầu ?",
+    "answer": "Các yếu tố khác không đổi, khi giá càng tăng thì lượng cầu càng giảm hoặc ngược lại."
+  },
+  {
+    "id": 8,
+    "question": "Trình bày khái niệm Luật cung?",
+    "answer": "Các yếu tố khác không đổi, khi giá càng tăng thì lượng cung càng tăng hoặc ngược lại."
+  },
+  {
+    "id": 9,
+    "question": "Cầu thị trường là gì?",
+    "answer": "Là tổng hợp cầu cá nhân của 1 sản phẩm hàng hoá, dịch vụ tại 1 mức giá nào đó trong một thời gian nhất định trong điều kiện các yếu tố khác không thay đổi."
+  },
+  {
+    "id": 10,
+    "question": "Hãy nêu các nhân tố quyết định cầu?",
+    "answer": "IYt, ( Pr,t) t, N, T, E"
+  },
+  {
+    "id": 11,
+    "question": "Hãy nêu các nhân tố quyết định cung?",
+    "answer": "Pi, Ta, Te, Ns, E"
+  },
+  {
+    "id": 12,
+    "question": "Hãy cho ví dụ về nhân tố kỳ vọng vào giá trong tương lai; ai tác động vào đường cung",
+    "answer": "Các nhà sản xuất gạo kỳ vọng giá gạo trong tương lai tăng, họ sẽ hạn chế bán ra thị trường làm cho đường cung dịch chuyển sang trái (giảm cung)"
+  },
+  {
+    "id": 13,
+    "question": "Giá sử giá cao hơn giá cân bằng thị trường thì sẽ gây ra hiện tượng gì?",
+    "answer": "Dư thừa"
+  },
+  {
+    "id": 14,
+    "question": "Giá sử giá thấp hơn giá cân bằng thị trường thì sẽ gây ra hiện tượng gì?",
+    "answer": "Thiếu hụt"
+  },
+  {
+    "id": 15,
+    "question": "Độ co giãn của cầu có mấy loại, hãy nêu các loại đó?",
+    "answer": "3 loại, co giãn cầu theo giá và theo thu nhập và co giãn chéo"
+  },
+  {
+    "id": 16,
+    "question": "Trình bày khái niệm độ co giãn của cầu theo giá",
+    "answer": "Khi giá thay đổi 1% thì lượng cầu thay đổi Edp%"
+  },
+  {
+    "id": 17,
+    "question": "Trình bày khái niệm độ co giãn của cầu theo thu nhập",
+    "answer": "Khi thu nhập thay đổi 1% thì lượng cầu thay đổi Edi%"
+  },
+  {
+    "id": 18,
+    "question": "Trình bày khái niệm độ co giãn chéo của cầu",
+    "answer": "Đo lường sự thay đổi về lượng cầu của 1 hàng hoá Qx khi giá của 1 hàng hoá khác thay đổi Py"
+  },
+  {
+    "id": 19,
+    "question": "Công thức tính độ co giãn của cầu theo giá (công thức tính khoẳng) ?",
+    "answer": "$Edp = Q'(p) * [P2-P1]/[Q2-Q1]$"
+  },
+  {
+    "id": 20,
+    "question": "$|E_{DP}| > 1$  (% $\\Delta Q > \\%$   $\\Delta P$ ) Cầu co giãn như thế nào?",
+    "answer": "Co giãn nhiều"
+  },
+  {
+    "id": 21,
+    "question": "$|E_{DP}| < 1$  (% $\\Delta Q < \\%$   $\\Delta P$ ) Cầu co giãn như thế nào?",
+    "answer": "Co giãn tương đối"
+  },
+  {
+    "id": 22,
+    "question": "$|E_{DP}| = 1$  (% $\\Delta Q = \\%$   $\\Delta P$ ) Cầu co giãn như thế nào?",
+    "answer": "Co giãn đơn vị"
+  },
+  {
+    "id": 23,
+    "question": "$|E_{DP}| = 0$  ( $\\% \\Delta Q > \\% \\Delta P$ ) Câu co giãn như thế nào?",
+    "answer": "Hoàn toàn không co giãn (thẳng đứng)"
+  },
+  {
+    "id": 24,
+    "question": "$|E_{DP}| = \\infty$  ( $\\% \\Delta Q > \\% \\Delta P$ ) Câu co giãn như thế nào?",
+    "answer": "Co giãn cực đại (nằm ngang)"
+  },
+  {
+    "id": 25,
+    "question": "Khi  $|E_{DP}| = 1$  Doanh nghiệp muốn tăng doanh thu thì làm gì?",
+    "answer": "TR max"
+  },
+  {
+    "id": 26,
+    "question": "Khi  $|E_{DP}| > 1$  Doanh nghiệp muốn tăng doanh thu thì làm gì?",
+    "answer": "giảm giá hàng bán"
+  },
+  {
+    "id": 27,
+    "question": "Khi  $|E_{DP}| < 1$  Doanh nghiệp muốn tăng doanh thu thì làm gì?",
+    "answer": "tăng giá hàng bán"
+  },
+  {
+    "id": 28,
+    "question": "Độ co giãn của cầu theo thu nhập lớn hơn 0 ( $E_{DI} > 0$ ) thì X là hàng hoá gì?",
+    "answer": "### 3.1.2. Co giãn của cầu theo thu nhập\n\na. Khái niệm\n\nĐộ co giãn của cầu theo thu nhập là đại lượng đo lường mức độ thay đổi khi thu nhập của người tiêu dùng thay đổi, các yếu tố khác không thay đổi.\n\nb. Công thức\n\nĐộ co giãn của cầu hàng hóa, dịch vụ theo thu nhập được xác định của lượng cầu chia cho % sự thay đổi của thu nhập.\n\nGọi  $E_{X,I}^D$  là độ co giãn của cầu sản phẩm X theo thu nhập, ta có công thức:\n\n$$E_{X,I}^D = \\frac{\\% \\Delta Q_x^D}{\\% \\Delta I} = \\frac{\\Delta Q_x^D}{\\Delta I} \\times \\frac{I}{Q_x^D}$$\n\nc. Phân loại\n\n- Nếu X là hàng hoá thông thường thì  $E_{X,I}^D > 0$ \n  - + Nếu X là hàng hóa thiết yếu thì  $0 < E_{X,I}^D < 1$\n  - + Nếu X là hàng hóa cao cấp thì  $E_{X,I}^D > 1$\n- Nếu X là hàng hoá thứ cấp thì  $E_{X,I}^D < 0$\n\nhàng hoá thông thường"
+  },
+  {
+    "id": 29,
+    "question": "Độ co giãn của cầu theo thu nhập nhỏ hơn 0 ( $E_{DI} < 0$ ) thì X là hàng hoá gì?",
+    "answer": "hàng thứ cấp"
+  },
+  {
+    "id": 30,
+    "question": "Độ co giãn của cầu theo thu nhập lớn hơn 0 và nhỏ hơn 1 ( $0 < E_{DI} < 1$ ) thì X là hàng hoá gì?",
+    "answer": "hàng thiết yếu"
+  },
+  {
+    "id": 31,
+    "question": "Độ co giãn của cầu theo thu nhập lớn hơn 1 ( $E_{DI} > 1$ ) thì X là hàng hoá gì?",
+    "answer": "hàng cao cấp"
+  },
+  {
+    "id": 32,
+    "question": "Độ co giãn chéo của cầu lớn hơn 0 ( $E_{Dxy} > 0$ ), vậy 2 hàng hoá này có mối quan hệ như thế nào?",
+    "answer": "hàng thay thế"
+  },
+  {
+    "id": 33,
+    "question": "Độ co giãn chéo của cầu nhỏ hơn 0 ( $E_{Dxy} < 0$ ), vậy 2 hàng hoá này có mối quan hệ như thế nào?",
+    "answer": "hàng bổ sung"
+  },
+  {
+    "id": 34,
+    "question": "Độ co giãn chéo của cầu bằng 0 ( $E_{Dxy} = 0$ ), vậy 2 hàng hoá này có mối quan hệ như thế nào?",
+    "answer": "không liên quan với nhau"
+  },
+  {
+    "id": 35,
+    "question": "Trình bày khái niệm lợi ích cận biên",
+    "answer": "mức tăng thêm trong tổng lợi ích khi sử dụng thêm 1 đơn vị hàng hoá, dịch vụ"
+  },
+  {
+    "id": 36,
+    "question": "Trình bày công thức tính lợi ích cận biên",
+    "answer": "$$MU = (TU2 - TU1) / (Q2 - Q1)$$"
+  },
+  {
+    "id": 37,
+    "question": "Trình bày quy luật lợi ích cận biên giảm dần?",
+    "answer": "mức tổng lợi ích tăng thêm sẽ giảm dần khi mức sử dụng 1 sản phẩm, dịch vụ, hàng hoá tăng lên nhiều trong 1 khoảng thời gian nhất định"
+  },
+  {
+    "id": 38,
+    "question": "Trình bày khái niệm thặng dư tiêu dùng",
+    "answer": "Thặng dư tiêu dùng là phần **lợi ích** mà người tiêu dùng nhận được khi họ sẵn sàng trả một mức giá **cao hơn** giá thực tế họ phải trả trên thị trường."
+  },
+  {
+    "id": 39,
+    "question": "Trình bày điều kiện cân bằng để tiêu dùng tối ưu",
+    "answer": "$$MU_x/P_x = MU_y/P_y$$"
+  },
+  {
+    "id": 40,
+    "question": "Trình bày khái niệm hàm sản xuất",
+    "answer": "Hàm sản xuất biểu thị mối quan hệ giữa đầu vào (lao động, vốn,...) và đầu ra (sản lượng) trong một quá trình sản xuất."
+  },
+  {
+    "id": 41,
+    "question": "#### Trình bày khái niệm năng suất bình quân và công thức tính",
+    "answer": "Là sản lượng trung bình mà mỗi đơn vị đầu vào đóng góp cho quá trình sản xuất.\n\n$AP = \\text{Tổng } Q / \\text{Tổng } X$\n\nQ: sản lượng\n\nX: các yếu tố đầu vào"
+  },
+  {
+    "id": 42,
+    "question": "#### Trình bày quy luật năng suất cận biên giảm dần",
+    "answer": "Sản lượng tăng thêm từ mỗi đơn vị đầu vào có xu hướng giảm dần sau một ngưỡng nhất định khi các yếu tố đầu vào tăng lên liên tục trong 1 thời gian nhất định."
+  },
+  {
+    "id": 43,
+    "question": "#### Trình bày khái niệm năng suất cận biên và công thức tính",
+    "answer": "Là mức tăng thêm của sản lượng đầu ra khi tăng lên 1 đơn vị yếu tố đầu vào trong khi các yếu tố khác được giữ nguyên.\n\n$MP = (Q2 - Q1) / (X2 - X1)$\n\nQ: sản lượng\n\nX: yếu tố đầu vào"
+  },
+  {
+    "id": 44,
+    "question": "#### Trình bày mối quan hệ giữa lượng (Q) và năng suất cận biên (MP)",
+    "answer": "Năng suất cận biên giảm dần"
+  },
+  {
+    "id": 45,
+    "question": "#### Trình bày mối quan hệ năng suất cận biên (MP) và năng suất bình quân (AP)",
+    "answer": "$MP > AP$ : AP tăng dần\n\n$MP = AP$ : AP max\n\n$MP < AP$ : AP giảm dần"
+  },
+  {
+    "id": 46,
+    "question": "#### Trình bày khái niệm chi phí kế toán",
+    "answer": "Là những chi phí mà doanh nghiệp phải bỏ ra để sản xuất sản phẩm bằng cách cộng tất cả các chi phí thực tế mà doanh nghiệp đã chi trả trong quá trình sản xuất."
+  },
+  {
+    "id": 47,
+    "question": "#### Trình bày khái niệm chi phí kinh tế",
+    "answer": "Là những chi phí kế toán cộng với chi phí cơ hội mà doanh nghiệp đã bỏ lỡ khi quyết định đầu tư sản thay vì 1 phương án khác."
+  },
+  {
+    "id": 48,
+    "question": "#### Nếu co giãn chéo giữa hai hàng hóa X và Y là dương, thì X và Y là 2 hàng hoá như thế nào?",
+    "answer": "Thay thế."
+  },
+  {
+    "id": 49,
+    "question": "Nếu cầu về một hàng hóa là co giãn đơn vị, giá tăng 5% sẽ dẫn để tổng doanh thu thay đổi như thế nào?",
+    "answer": "**Không đổi**"
+  },
+  {
+    "id": 50,
+    "question": "Giá tăng làm tổng doanh thu tăng thì co giãn của cầu theo giá như thế nào?",
+    "answer": "**Co giãn tương đối.**"
+  },
+  {
+    "id": 51,
+    "question": "Khi số lượng hàng hóa được tiêu dùng tăng lên lợi ích cận biên sẽ?",
+    "answer": "**Giảm dần**"
+  },
+  {
+    "id": 52,
+    "question": "Đường cầu thị trường là gì?",
+    "answer": "Là tổng cầu cá nhân của một sản phẩm, dịch vụ tại 1 mức giá nhất định trong 1 khoảng thời gian nhất định."
+  },
+  {
+    "id": 54,
+    "question": "Cho biết hàm số cầu và hàm số cung của thị trường là:  $P = 20 - Q$  và  $P = 2Q + 2$ .",
+    "answer": "**Mức giá và sản lượng cân bằng của thị trường là: P bằng \\_\\_\\_\\_\\_; Q bằng \\_\\_\\_\\_\\_**\n\n---\n\n$Q = 6; P = 14$"
+  },
+  {
+    "id": 53,
+    "question": "Tổng chi phí là:",
+    "answer": "- Là tổng các chi phí mà doanh nghiệp phải chi ra cho tất cả các yếu tố sx cố định và biến đổi trong mỗi đơn vị thời gian"
+  },
+  {
+    "id": 55,
+    "question": "Giải thích vì sao Có thất nghiệp tràn lan có nghĩa là xã hội đang hoạt động ở phía trong đường giới hạn khả năng sản xuất",
+    "answer": "Vì xã hội không sử dụng hết tất cả mọi nguồn lực để tối đa hoá sản lượng sản xuất được."
+  },
+  {
+    "id": 56,
+    "question": "Giải thích Nếu P thay đổi 2% làm Q thay đổi 3% thì cầu là co dãn",
+    "answer": "$Edp = -1.5$"
+  },
+  {
+    "id": 57,
+    "question": "Mối quan hệ giữa hệ số co dãn, giá và tổng doanh thu. Ý nghĩa của việc nghiên cứu mối quan hệ đó.",
+    "answer": "$Edp > 1$ : P tăng - TR giảm, P giảm TR tăng\n\n$Edp < 1$ : P tăng - TR tăng, P giảm TR giảm\n\n$Edp = 1$ : TR không đổi (đạt max)"
+  },
+  {
+    "id": 58,
+    "question": "Doanh thu cận biên được xác định như thế nào?",
+    "answer": "$MR = TR'(Q)$"
+  },
+  {
+    "id": 59,
+    "question": "Nếu doanh nghiệp đang bán sản phẩm của mình trong khu vực giá có cầu ở trạng thái co giãn, để tăng doanh thu, doanh nghiệp phải là gì?",
+    "answer": "Nếu co giãn nhiều: giảm giá.\n\nNếu co giãn tương đối: tăng giá."
+  },
+  {
+    "id": 60,
+    "question": "Kinh tế học là bộ môn khoa học nghiên cứu chủ yếu về vấn đề gì?",
+    "answer": "Sản xuất cái gì?\n\nSản xuất như thế nào?\n\nSản xuất cho ai?"
+  },
+  {
+    "id": 61,
+    "question": "Giải thích tại sao giá trần được đặt cao hơn giá cân bằng sẽ không ảnh hưởng đến thị trường",
+    "answer": "Vì thị trường sẽ sử dụng giá cân bằng để hoạt động."
+  },
+  {
+    "id": 62,
+    "question": "Vì sao giá của một hàng hóa giảm cầu về một hàng hóa khác cũng giảm thì các hàng hóa đó là hàng hóa thay thế",
+    "answer": "Vì giá giảm làm lượng cầu tăng, trong khi lượng cầu hàng hoá khác lại giảm."
+  },
+  {
+    "id": 63,
+    "question": "Luật cung là gì?",
+    "answer": "Giá tăng thì lượng cung tăng và ngược lại trong điều kiện các yếu tố khác không thay đổi."
+  },
+  {
+    "id": 64,
+    "question": "Đường cầu của doanh nghiệp cạnh tranh hoàn hảo là đường như thế nào?",
+    "answer": "Nằm ngang."
+  },
+  {
+    "id": 65,
+    "question": "Doanh thu cận biên được xác định như thế nào?",
+    "answer": "$MR = TR'(Q)$"
+  },
+  {
+    "id": 66,
+    "question": "Khi tiến hành lựa chọn, chúng ta gọi giá trị của cơ hội tốt nhất bị bỏ qua là",
+    "answer": "Chi phí cơ hội."
+  },
+  {
+    "id": 67,
+    "question": "Đường giới hạn khả năng sản xuất biểu thị điều gì",
+    "answer": "Biểu thị tổng hợp khả năng sản xuất tối đa của 2 sản phẩm khi xã hội sử dụng triệt để nguồn lực với các công nghệ và nguồn lực có sẵn."
+  },
+  {
+    "id": 68,
+    "question": "Trình bày và giải thích nội dung quy luật năng suất cận biên giảm dần",
+    "answer": "Sản lượng tăng thêm khi tăng thêm 1 yếu tố đầu vào sẽ giảm dần khi yếu tố đầu vào tăng liên tục trong 1 khoảng thời gian nhất định."
+  },
+  {
+    "id": 69,
+    "question": "#### Chi phí cận biên là gì?",
+    "answer": "Là chi phí cần tăng thêm để sản xuất thêm 1 đơn vị sản phẩm, dịch vụ đầu ra."
+  },
+  {
+    "id": 70,
+    "question": "### Hàm sản xuất đề cập đến vấn đề gì?",
+    "answer": "Mối quan hệ giữa các yếu tố đầu vào (vốn, lao động,...) với yếu tố đầu ra (sản lượng)"
+  },
+  {
+    "id": 71,
+    "question": "### Trong lý thuyết đẳng ích Hệ số góc của đường ngân sách sẽ thay đổi khi nào?",
+    "answer": "Khi giá của hàng hoá thay đổi."
+  },
+  {
+    "id": 73,
+    "question": "#### Đường bàng quan ( đường thoả dụng, hay đường đẳng ích) minh hoạ điều gì?",
+    "answer": "Là đường miêu tả sự kết hợp tiêu dùng của 2 loại hàng hoá với các số lượng khác nhau trong khi tổng lợi ích là như nhau."
+  },
+  {
+    "id": 74,
+    "question": "Mức sản lượng có hiệu quả là mức sản lượng mà tại đó lợi ích biên như thế nào với chi phí biên",
+    "answer": "$MR = MC$"
+  },
+  {
+    "id": 75,
+    "question": "Doanh nghiệp A sản xuất 97 sản phẩm có tổng phí TC bằng 100 đơn vị tiền. Chi phí biên của sản phẩm thứ 98, 99, 100 lần lượt là 5, 10, 15. Vậy chi phí trung bình của 100 sản phẩm là bao nhiêu?",
+    "answer": "1.3"
+  },
+  {
+    "id": 76,
+    "question": "Doanh nghiệp có các hàm số sau:  $P = 5.000 - 2Q$ ;  $TC = 3Q^2 + 500$  (P: dvt/dvq; Q: đvq). Để tối đa hóa doanh thu thì doanh nghiệp sẽ bán hàng hóa P, sản lượng Q, doanh thu TR là bao nhiêu?",
+    "answer": "$P = 2500$ ;  $Q = 1250$ ;  $TR = 2500 * 1250 = 3.125.000$"
+  },
+  {
+    "id": 77,
+    "question": "Khi mọi người trả nhiều đồng hơn cho đôla thì tỷ giá hối đoái cạnh tranh đồng/đôla sẽ như thế nào?",
+    "answer": "Tăng lên"
+  },
+  {
+    "id": 78,
+    "question": "Tăng giá dầu sẽ làm cho lượng cung dầu và lượng cầu dầu như thế nào?",
+    "answer": "Cầu giảm cung tăng."
+  },
+  {
+    "id": 79,
+    "question": "Giảm giá hàng hoá bổ sung của một hàng hóa xác định nào đó sẽ làm dịch chuyển đường cầu hàng hoá đó như thế nào",
+    "answer": "Dịch chuyển sang phải."
+  },
+  {
+    "id": 80,
+    "question": "Thay đổi giá của một hàng hoá có làm dịch chuyển đường cầu thị trường của hàng hoá đó không?",
+    "answer": "Không."
+  },
+  {
+    "id": 81,
+    "question": "Tăng giá hàng hoá thay thế của một hàng hóa xác định nào đó sẽ làm dịch chuyển đường cầu hàng hoá đó như thế nào",
+    "answer": "Không dịch chuyển"
+  },
+  {
+    "id": 82,
+    "question": "Thay đổi trong thu nhập của người tiêu dùng có làm dịch chuyển đường cầu không?",
+    "answer": "Thu nhập tăng dịch chuyển sang phải, thu nhập giảm dịch chuyển sang trái"
+  },
+  {
+    "id": 83,
+    "question": "Luật cung và luật cầu phát biểu rằng giá cân bằng sẽ là giá mà ở đó lượng cung và lượng cầu sẽ như thế nào?",
+    "answer": "Bằng nhau"
+  },
+  {
+    "id": 84,
+    "question": "Khi giá giảm làm lượng cầu như thế nào?",
+    "answer": "Tăng"
+  },
+  {
+    "id": 85,
+    "question": "Lượng cầu về hàng hoá cấp thấp như thế nào khi thu nhập tăng?",
+    "answer": "Giảm"
+  },
+  {
+    "id": 86,
+    "question": "Thu nhập của người tiêu dùng tăng làm dịch chuyển đường cầu về trưng lên trên vậy trưng là loại hàng hoá gì?",
+    "answer": "Hàng hoá thiết yếu"
+  },
+  {
+    "id": 87,
+    "question": "Khi giá yếu tố đầu vào cố định của một hãng tăng thì làm cho đường tổng chi phí bình quân dịch chuyển như thế nào?",
+    "answer": "Dịch chuyển lên trên"
+  },
+  {
+    "id": 88,
+    "question": "Chi phí cố định của một hãng là 110 triệu đồng. Nếu tổng chi phí để sản xuất 1 sản phẩm là 250 triệu đồng và 2 sản phẩm là 270 triệu đồng, chi phí cận biên của sản phẩm thứ hai bằng bao nhiêu",
+    "answer": "20 triệu"
+  },
+  {
+    "id": 89,
+    "question": "Sản phẩm bình quân của lao động là",
+    "answer": "$$MPL = Q'(L)$$"
+  },
+  {
+    "id": 90,
+    "question": "Nếu tổng chi phí của việc sản xuất 10 đơn vị sản phẩm là 100 đơn vị tiền tệ và chi phí cận biên của đơn vị sản phẩm thứ 11 là 21 đơn vị tiền tệ thì tổng chi phí bình quân của 11 đơn vị sản phẩm là bao nhiêu?",
+    "answer": "11 đơn vị tiền tệ"
+  },
+  {
+    "id": 91,
+    "question": "Một thợ điện quyết định bỏ công việc hiện tại ở một doanh nghiệp với mức lương 200 triệu một năm. Anh ta có thể nhận được một công việc ở doanh nghiệp khác với mức lương 300 triệu một năm hoặc tự làm cho mình. Chi phí cơ hội của việc anh ta tự làm cho mình là bao nhiêu?",
+    "answer": "300 triệu/năm"
+  },
+  {
+    "id": 92,
+    "question": "Trình bày quy luật năng suất cận biên giảm dần",
+    "answer": "Khi gia tăng một yếu tố đầu vào (K, L) kên một đơn vị mà giữ nguyên các yếu tố đầu vào khác thì năng suất của yếu tố tăng lên có xu hướng giảm dần."
+  },
+  {
+    "id": 93,
+    "question": "Nếu sản lượng tăng từ 5 đến 10 làm cho tổng chi phí tăng từ 100\\$ lên 200\\$, chi phí cận biên của mỗi sản phẩm trong 5 sản phẩm tăng lên này là bao nhiêu?",
+    "answer": "20\\$"
+  },
+  {
+    "id": 94,
+    "question": "Một nhà độc quyền có hàm cầu về sản phẩm của mình là  $P = 50 - Q$ . Hàm tổng chi phí  $TC = Q^2 + 2Q + 4$ . Lợi nhuận tối đa của nhà độc quyền là bao nhiêu?",
+    "answer": "252"
+  },
+  {
+    "id": 95,
+    "question": "Thuế đánh vào hàng hoá bán ra làm dịch chuyển đường cung như thế nào?",
+    "answer": "Sang trái (hoặc lên trên)"
+  },
+  {
+    "id": 96,
+    "question": "Khi đường cầu rất co giãn nếu nhà nước đánh thuế thì người sản xuất chịu phần thuế như thế nào?",
+    "answer": "NSX chịu thuế nhiều"
+  },
+  {
+    "id": 97,
+    "question": "Đường cầu cá nhân về hàng hoá dịch vụ cho biết điều gì?",
+    "answer": "Lượng hàng hoá, dịch vụ mà cá nhân sẵn sàng chi trả để sở hữu ở 1 mức giá nhất định trong 1 khoảng thời gian nhất định."
+  },
+  {
+    "id": 99,
+    "question": "Doanh nghiệp A sản xuất 97 sản phẩm có tổng phí TC bằng 100 đơn vị tiền. Chi phí biên của sản phẩm thứ 98, 99, 100 lần lượt là 5, 10, 15. Vậy chi phí trung bình của 100 sản phẩm là bao nhiêu?",
+    "answer": "1,3"
+  },
+  {
+    "id": 100,
+    "question": "Doanh nghiệp trong thị trường cạnh tranh hoàn toàn có hàm chi phí sau:",
+    "answer": "$TC = 10Q^3 - 4Q^2 + 20Q + 500$  (Q:đvq; TC:đvt; P:đvt/đvq)\n\nHàm chi phí trung bình AC bằng?\n\n$AC = 10Q^2 - 4Q + 20 + 500/Q$"
+  },
+  {
+    "id": 101,
+    "question": "Doanh nghiệp trong thị trường cạnh tranh hoàn toàn có hàm chi phí sau:",
+    "answer": "$TC = 10Q^3 - 4Q^2 + 20Q + 500$  (Q:đvq; TC:đvt; P:đvt/đvq)\n\nHàm chi phí biên MC bằng?\n\n$MC = 30Q^2 - 8Q + 20$"
+  },
+  {
+    "id": 102,
+    "question": "Doanh nghiệp trong thị trường cạnh tranh hoàn toàn có hàm chi phí sau:",
+    "answer": "$TC = 10Q^3 - 4Q^2 + 20Q + 500$  (Q:đvq; TC:đvt; P:đvt/đvq)\n\nGiá thị trường bằng bao nhiêu thì doanh nghiệp ngừng kinh doanh\n\n$P = 19.7$  đvt/đvq"
+  },
+  {
+    "id": 103,
+    "question": "Doanh nghiệp trong thị trường cạnh tranh hoàn toàn có hàm chi phí sau:",
+    "answer": "$TC = 10Q^3 - 4Q^2 + 20Q + 500$  (Q:đvq; TC:đvt; P:đvt/đvq)\n\nGiá thị trường bằng bao nhiêu thì doanh nghiệp hòa vốn:\n\n$P = 265$  đvt/đvq"
+  },
+  {
+    "id": 104,
+    "question": "Doanh nghiệp trong thị trường cạnh tranh hoàn toàn có hàm chi phí sau:",
+    "answer": "$TC = 10Q^3 - 4Q^2 + 20Q + 500$  (Q:đvq; TC:đvt; P:đvt/đvq)\n\nNếu giá thị trường Pe bằng 500 thì sản lượng tối ưu để lợi nhuận cực đại là:\n\n$Q = 4,14$  đvq"
+  },
+  {
+    "id": 105,
+    "question": "Doanh nghiệp trong thị trường cạnh tranh hoàn toàn có hàm chi phí sau:",
+    "answer": "$TC = 10Q^3 - 4Q^2 + 20Q + 500$  (Q:đvq; TC:đvt; P:đvt/đvq)\n\nNếu giá thị trường Pe bằng 500 thì lợi nhuận cực đại của doanh nghiệp bằng:\n\n846 đvt"
+  },
+  {
+    "id": 106,
+    "question": "Một doanh nghiệp độc quyền có hàm số cầu  $Q = 1000 - 2P$  và hàm tổng chi phí  $TC = 2Q^2 + 200$  (P:đvt/dvq; Q:đvq; TC:đvt)",
+    "answer": "Để tối đa hóa doanh thu thì mức giá bán P phải bằng?\n\nP = 250"
+  },
+  {
+    "id": 107,
+    "question": "Một doanh nghiệp độc quyền có hàm số cầu  $Q = 1000 - 2P$  và hàm tổng chi phí  $TC = 2Q^2 + 200$  (P:đvt/dvq; Q:đvq; TC:đvt)",
+    "answer": "Mức lợi nhuận cực đại bằng?\n\n24492"
+  },
+  {
+    "id": 108,
+    "question": "Một doanh nghiệp độc quyền có hàm số cầu  $Q = 1000 - 2P$  và hàm tổng chi phí  $TC = 2Q^2 + 200$  (P:đvt/dvq; Q:đvq; TC:đvt)",
+    "answer": "Để tối đa hóa lợi nhuận, doanh nghiệp sẽ sản xuất ở mức sản lượng:\n\n$Q = 444,45$"
+  },
+  {
+    "id": 109,
+    "question": "Một doanh nghiệp độc quyền có hàm số cầu  $Q = 1000 - 2P$  và hàm tổng chi phí  $TC = 2Q^2 + 200$  (P:đvt/dvq; Q:đvq; TC:đvt)",
+    "answer": "Doanh thu tối đa sẽ bằng\n\n$TR = 125000$"
+  },
+  {
+    "id": 110,
+    "question": "Một doanh nghiệp độc quyền có hàm số cầu  $Q = 1000 - 2P$  và hàm tổng chi phí  $TC = 2Q^2 + 200$  (P:đvt/dvq; Q:đvq; TC:đvt)",
+    "answer": "Để tối đa hóa doanh thu thì mức sản lượng Q phải bằng:\n\n$Q = 500$\n\n## **Phần 2. Trắc nghiệm**\n\nChính phủ các nước hiện nay có các giải pháp kinh tế khác nhau trước tình hình suy thoái kinh tế hiện nay, vấn đề này thuộc về\n\n- A. Kinh tế vi mô, chuẩn tắc\n- B. Kinh tế vĩ mô, chuẩn tắc**\n- C. Kinh tế vĩ mô, thực chứng\n- D. Kinh tế vi mô, thực chứng\n\nQuestion 2 of 50 0.2 Points\n\nTrong thị trường độc quyền hoàn toàn, mức sản lượng tối đa hoá lợi nhuận nằm ở phần đường cầu\n\n- A. Không co giãn\n- B. Co giãn ít**\n\n- C. Co giãn đơn vị\n- D. Co giãn nhiều\n\nQuestion 3 of 50 0.2 Points\n\nYếu tố nào sau đây gây ra sự vận động dọc theo đường cầu ?\n\n- A. Thu nhập.\n- B. Giá hàng hóa liên quan.\n- C. Giá của hàng hóa đang xem xét.\n- D. Thị hiếu.\n- E. Tất cả các yếu tố trên.\n\nQuestion 4 of 50 0.2 Points\n\nĐộ dốc của đường đẳng phí phản ánh :\n\n- A. Chi phí cơ hội của việc mua thêm một đơn vị đầu vào với mức tổng chi phí và giá cả của các đầu vào đã cho\n- B. Tập hợp tất cả các kết hợp giữa vốn và lao động mà doanh nghiệp có thể mua với mức tổng chi phí và giá cả của các đầu vào đã cho\n- C. Năng suất biên giảm dần\n- D. Tỷ lệ thay thế kỹ thuật biên của 2 đầu vào\n\nQuestion 5 of 50 0.2 Points\n\n(0.2 Points) Thu nhập của người tiêu dùng tăng sẽ gây ra:\n\n- A. Tăng cầu về ngô nếu ngô là hàng hoá cấp thấp\n- B. Tăng cầu về ngô nếu ngô là hàng hoá thông thường\n- C. Tăng cung về ngô\n- D. Giảm cầu về ngô khi giá ngô quá thấp\n\nQuestion 6 of 50 0.2 Points\n\nNếu Long sẵn sàng thanh toán 100\\$ cho một cái máy pha cà phê và 120\\$ cho hai cái máy đó thì lợi ích cận biên của cái máy thứ hai là:\n\n- A. 20\\$\n- B. 120\\$\n- C. 100\\$\n- D. 60\\$\n\nQuestion 7 of 50 0.2 Points\n\nMột doanh nghiệp độc quyền hoàn toàn có hàm chi phí:  $TC = Q^2 - 5Q + 100$ , hàm số cầu thị trường có dạng:  $P = -2Q + 55$ . Ở mức sản lượng 13,75 sp thì doanh nghiệp :\n\n- A. Tối đa hóa sản lượng mà không bị lỗ.\n- B. Tối đa hoá doanh thu\n\n- C. Tối đa hoá lợi nhuận\n- D. **Tất cả các câu trên đều sai**\n\nQuestion 8 of 50 0.2 Points  \n(0,2 Points) Nền kinh tế Việt Nam là\n\n- A. Nền kinh tế đóng cửa\n- B. Nền kinh tế mệnh lệnh\n- C. Nền kinh tế hỗn hợp\n- D. Nền kinh tế thị trường\n\nQuestion 9 of 50 0.2 Points\n\nHàm tổng chi phí sản xuất của một doanh nghiệp như sau:  $TC = Q^2 + 40Q + 10.000$ , chi phí trung bình ở mức sản lượng 1000 sp là:\n\n- A. **1050**\n- B. 2040\n- C. 1040\n- D. Các câu trên đều sai\n\nQuestion 10 of 50 0.2 Points  \n(0,2 Points) Trong dài hạn:\n\n- A. **Tất cả các đầu vào đều biến đổi**\n- B. Chi quy mô nhà xưởng là cố định\n- C. Tất cả các đầu vào đều cố định\n- D. Tất cả đều đúng\n\nQuestion 11 of 50 0.2 Points\n\nGiá sử sản phẩm X có hàm số cung và cầu như sau:  $Q_d = 180 - 3P$ ,  $Q_s = 30 + 2P$ , nếu chính phủ đánh thuế vào sản phẩm làm cho lượng cân bằng giảm xuống còn 78, thì số tiền thuế chính phủ đánh vào sản phẩm là\n\n- A. **10**\n- B. 3\n- C. 2\n- D. 5\n\nQuestion 12 of 50 0.2 Points\n\nHàm số cầu & hàm số cung sản phẩm X lần lượt là :  $P = 70 - 2Q$  ;  $P = 10 + 4Q$ . Thặng dư của người tiêu thụ (CS) & thặng dư của nhà sản xuất (PS) là :\n\n- A.  $CS = 150$  &  $PS = 200$\n- B.  **$CS = 100$  &  $PS = 200$**\n- C.  $CS = 200$  &  $PS = 100$\n\nD.  $CS = 150$  &  $PS = 150$\n\nQuestion 13 of 50 0.2 Points\n\nLượng máy điều hoà mà người tiêu dùng mua phụ thuộc vào: C Thu nhập của người tiêu dùng\n\n- A. Giá của máy điều hoà\n- B. Thị hiếu của người tiêu dùng đối với máy điều hoà\n- C. **Tất cả các điều trên**\n\nQuestion 14 of 50 0.2 Points\n\nĐối với sản phẩm cấp thấp, tác động thay thế và tác động thu nhập:\n\n- A. **Có thể cùng chiều hay ngược chiều**\n- B. Cùng chiều nhau\n- C. Ngược chiều với nhau\n- D. Tất cả các câu trên đều sai\n\nQuestion 15 of 50 0.2 Points\n\n(0.2 Points) Độ co giãn của cầu theo giá bằng không, khi giá giảm thì\n\n- A. Tổng doanh thu không thay đổi\n- B. Lượng cầu tăng\n- C. Tổng doanh thu giảm xuống\n- D. Tổng doanh thu tăng lên\n\nQuestion 16 of 50 0.2 Points\n\nNếu Lộc mua 10 sản phẩm X và 20 sản phẩm Y, với giá  $P_x = 100\\$/SP$ ;  $P_y = 200\\$/SP$ . Hữu dụng biên của chúng là  $MU_x = 20đvhd$ ;  $MU_y = 50đvhd$ . Để đạt tổng hữu dụng tối đa Lộc nên:\n\n- A. **Tăng lượng Y, giảm lượng X**\n- B. Giữ nguyên lượng X, giảm lượng Y\n- C. Giữ nguyên số lượng 2 sản phẩm\n- D. Tăng lượng X, giảm lượng Y\n\nQuestion 17 of 50 0.2 Points\n\nMặt hàng X có độ co giãn cầu theo giá là  $E_d = -2$ , khi giá của X tăng lên trong điều kiện các yếu tố khác không đổi, thì lượng cầu của mặt hàng Y sẽ\n\n- A. **Tăng lên**\n- B. Giảm xuống\n- C. Không đổi\n- D. Các câu trên đều sai\n\nQuestion 18 of 50 0.2 Points\n\nThị trường độc quyền hoàn toàn với đường cầu  $P = -Q/10 + 2000$ , để đạt lợi nhuận tối đa doanh nghiệp cung ứng tại mức sản lượng:\n\n- A.  $Q < 10.000$\n- B.  $Q$  với điều kiện  $MP = MC = P$\n- C.  $Q = 20.000$\n- D.  $Q = 10.000$\n\nQuestion 19 of 50 0.2 Points\n\nMột doanh nghiệp độc quyền hoàn toàn có hàm số cầu thị trường có dạng:  $P = -Q + 2400$ . Ở mức sản lượng tối đa hóa lợi nhuận có hệ số co giãn của cầu theo giá là  $-3$ , chi phí biên là  $10$ . Vậy giá bán ở mức sản lượng tối đa hóa lợi nhuận:\n\n- A. 10\n- B. 15\n- C. 20\n- D. **Tất cả các câu trên đều sai**\n\nQuestion 20 of 50 0.2 Points\n\nCâu nào sau đây là đúng\n\n- A. Chi phí kinh tế lớn hơn chi phí tính toán và lợi nhuận kinh tế lớn hơn lợi nhuận tính toán\n- B. **Chi phí kinh tế lớn hơn chi phí tính toán và lợi nhuận kinh tế nhỏ hơn lợi nhuận tính toán**\n- C. Chi phí kinh tế nhỏ hơn chi phí tính toán và lợi nhuận kinh tế lớn hơn lợi nhuận tính toán\n- D. Chi phí kinh tế nhỏ hơn chi phí tính toán\n\nQuestion 21 of 50 0.2 Points\n\nMột người dành một khoản thu nhập  $I = 600$  ngàn đồng, chi tiêu hết cho 2 loại sản phẩm X và Y với  $P_x = 10$  ngàn đồng/sp,  $P_y = 30$  ngàn đồng/sp, hàm tổng lợi ích (hữu dụng) của người này phụ thuộc vào số lượng X và Y tiêu dùng  $TU(x,y) = 2xy$ . Tại phương án tiêu dùng tối ưu, số lượng x và y người này mua là:\n\n- A.  $X = 20, Y = 60$\n- B.  $X = 10, Y = 30$\n- C.  **$X = 30, Y = 10$**\n- D.  $X = 60, Y = 20$\n\nQuestion 22 of 50 0.2 Points\n\n(0,2 Points) Một hãng cạnh tranh hoàn hảo sẽ đóng cửa sản xuất nếu tổng doanh thu không đủ bù đắp\n\n- A. Chi phí sản xuất\n- B. Chi phí biến đổi\n- C. **Chi phí cố định**\n- D. Chi phí cố định cộng chi phí biến đổi\n\nQuestion 23 of 50 0.2 Points\n\n(0,2 Points) Lượng hàng hoá mà người tiêu dùng mua phụ thuộc vào\n\n- A. Giá của hàng hoá đó\n- B. Thị hiếu của người tiêu dùng\n- C. Thu nhập của người tiêu dùng\n- D. **Tất cả các câu trên**\n\nQuestion 24 of 50 0.2 Points\n\n(0,2 Points) Dư thừa trên thị trường\n\n- A. Tồn tại nếu giá cao hơn giá cân bằng\n- B. Tồn tại nếu giá thấp hơn giá cân bằng\n- C. **Là phần chênh lệch giữa lượng cầu và lượng cân bằng**\n- D. Là phần chênh lệch giữa lượng cung và lượng cân bằng\n\nQuestion 25 of 50 0.2 Points\n\nQui luật năng suất biên giảm dần là cách giải thích tốt nhất cho hình dạng của đường:\n\n- A. Chi phí trung bình dài hạn\n- B. Chi phí biên ngắn hạn và dài hạn\n- C. **Chi phí trung bình ngắn hạn**\n- D. Tất cả các câu trên đều sai\n\nQuestion 26 of 50 0.2 Points\n\n(0,2 Points) Nhân tố nào sau sẽ làm dịch chuyển đường cầu rượu Vodka Hà Nội sang phải?\n\n- A. **Tăng số lượng người tiêu dùng**\n- B. Giảm giá rượu sâm banh (hàng hoá thay thế)\n- C. Giảm giá rượu vang (hàng hoá thay thế)\n- D. Tăng giá hàng hoá bổ sung\n\nQuestion 27 of 50 0.2 Points\n\nGiá sử người tiêu dùng dành hết thu nhập I để mua 2 loại hàng hoá X, Y với đơn giá là  $P_x$ ,  $P_y$ , và số lượng là X, Y và đạt được số lượng tối đa có\n\n- A.  $MU_x/P_x = MU_y/P_y$\n- B.  $MRS_{xy} = P_x/P_y$\n- C.  $MU_x/MU_y = P_x/P_y$\n- D. **Các câu trên đều đúng sản phẩm có mức giá rẻ hơn**\n\nQuestion 28 of 50 0.2 Points\n\n(0,2 Points) Trong một thế giới có sự khan hiếm?\n\n- A. **Con người phải đưa ra sự lựa chọn trong số nhiều phương án khác nhau**\n- B. Chi phí cơ hội bằng không\n- C. Con người luôn luôn đói và thiếu thốn\n- D. Các cá nhân không cần làm việc để tạo ra hàng hoá\n\nQuestion 29 of 50 0.2 Points\n\nKhái niệm nào sau đây không thể lí giải bằng đường giới hạn khả năng sản xuất (PPF)\n\n- A. **Cung cầu.**\n- B. Quy luật chi phí cơ hội tăng dần.\n- C. Sự khan hiếm.\n- D. Chi phí cơ hội\n\nQuestion 30 of 50 0.2 Points\n\n(0,2 Points) Nhân tố nào sau đây có thể loại trừ được vấn đề khan hiếm\n\n- A. Sự hợp tác\n- B. Cơ chế thị trường\n- C. Cơ chế mệnh lệnh\n- D. **Không có vấn đề nào trên đây**\n\nQuestion 31 of 50 0.2 Points\n\n(0,2 Points) Vấn đề nào sau đây không thuộc đối tượng nghiên cứu của kinh tế học vĩ mô?\n\n- A. Sự thay đổi công nghệ\n- B. Tiền công và thu nhập\n- C. **Sự khác biệt thu nhập của quốc gia**\n- D. Tiêu dùng\n\nQuestion 32 of 50 0.2 Points\n\nKhi giá thịt bò tăng sẽ gây ra :\n\n- A. Tăng cầu thịt gà (hàng hóa thay thế)\n- B. Tăng cầu về khoai tây rán (hàng hóa bổ sung)\n- C. Tăng lượng cầu về thịt bò\n- D. Giảm lượng cầu về thịt bò\n- E. **Câu a và d đúng**\n\nQuestion 33 of 50 0.2 Points\n\nTrong mô hình dòng luân chuyển thì:\n\n- A. Các doanh nghiệp luôn trao đổi hàng hóa lấy tiền.\n- B. Các hộ gia đình luôn trao đổi tiền lấy hàng hóa.\n- C. **Các hộ gia đình là người bán trên thị trường yếu tố và là người mua trên thị trường hàng hóa.**\n- D. Các doanh nghiệp là người mua trong thị trường hàng hóa và là người bán trong thị trường yếu tố.\n- E. Không có phương án nào đúng.\n\nQuestion 34 of 50 0.2 Points\n\n(0,2 Points) Lợi ích cận biên của một hàng hóa chi ra:\n\n- A. Rằng tính hữu ích của hàng hóa là có hạn\n- B. Sự sẵn sàng thanh toán cho một đơn vị bổ sung**\n- C. Rằng hàng hóa đó là khan hiếm\n- D. Rằng độ dốc của đường ngân sách là giá tương đối\n- .\n\nQuestion 35 of 50 0.2 Points\n\nVới giả định các yếu tố khác không thay đổi, luật cầu cho biết :\n\n- A. Giá hàng hóa tăng thì lượng cầu giảm**\n- B. Giá hàng hóa tăng thì lượng cung giảm.\n- C. Giá và lượng cầu có mối quan hệ thuận chiều.\n- D. Giá hàng hóa tăng thì lượng cầu tăng.\n- E. Giá hàng hóa tăng thì lượng cung giảm\n\nQuestion 36 of 50 0.2 Points\n\n(0,2 Points) Bộ phận của kinh tế học nghiên cứu các quyết định của hãng và hộ gia đình được gọi là\n\n- A. Kinh tế vĩ mô\n- B. Kinh tế vi mô**\n- C. Kinh tế thực chứng\n- D. Kinh tế gia đình\n- .\n\nQuestion 37 of 50 0.2 Points\n\nTrong thị trường độc quyền hoàn toàn, chính phủ đánh thuế không theo sản lượng sẽ ảnh hưởng:\n\n- A. Người tiêu dùng và người sản xuất cùng gánh\n- B. P tăng\n- C. Q giảm\n- D. Tất cả các câu trên đều sai**\n\nQuestion 38 of 50 0.2 Points\n\nTối đa hóa lợi ích với mức thu nhập cho trước thì :\n\n- A. Lợi ích cận biên của mỗi hàng hóa phải lớn nhất.\n- B. Tổng lợi ích từ việc tiêu dùng mỗi loại hàng hóa là lớn nhất\n- C. Lợi ích cận biên của tất cả các hàng hóa được chi mua là bằng nhau\n- D. Lợi ích cận biên trên một đơn vị tiền tệ chi mua các loại hàng hóa là bằng nhau**\n- E. Số lượng các hàng hóa được chi mua là bằng nhau\n\nQuestion 39 of 50 0.2 Points\n\n(0,2 Points) Nếu ATC giảm thì MC phải:\n\n- A. Tăng\n- B. Giảm\n- C. Nhỏ hơn ATC**\n- D. Lớn hơn ATC\n\nQuestion 40 of 50 0.2 Points\n\n(0.2 Points) Khoảng cách theo chiều dọc giữa đường TC và đường VC là\n\n- A. Bằng ATC\n- B. Bằng AFC\n- C. Bằng FC**\n- D. Bằng MC\n\nQuestion 41 of 50 0.2 Points\n\n(0.2 Points) Khi người lao động thứ 7 được thuê, sản lượng tăng từ 100 đơn vị một tuần lên 110 đơn vị một tuần. Khi người lao động thứ 8 được thuê, sản lượng tăng từ 110 lên 118 đơn vị. Đây là ví dụ về\n\n- A. Năng suất cận biên giảm dần**\n- B. Chi phí cận biên giảm dần\n- C. Hiệu suất giảm dần theo quy mô\n- D. Sản xuất sử dụng nhiều lao động\n\nQuestion 42 of 50 0.2 Points\n\nVới giả định các yếu tố khác không thay đổi, luật cung cho biết :\n\n- A. Giá dầu giảm làm lượng cung về dầu giảm.**\n- B. Giá dầu tăng làm lượng cung về dầu giảm.\n- C. Cung dầu tăng làm giá dầu giảm.\n- D. Chi phí sản xuất dầu giảm sẽ làm cung dầu tăng.\n- E. Chi phí sản xuất dầu tăng làm giá dầu tăng.\n\nQuestion 43 of 50 0.2 Points\n\n(0.2 Points) Chi phí cận biên là đại lượng cho biết\n\n- A. Tổng chi phí tăng khi tăng thêm 1 đơn vị đầu vào lao động\n- B. Chi phí cố định tăng khi thuê thêm 1 đơn vị đầu vào lao động\n- C. Chi phí biến đổi tăng khi thuê thêm 1 đơn vị đầu vào lao động\n- D. Tổng chi phí tăng khi sản xuất thêm một đơn vị sản phẩm**\n\nQuestion 44 of 50 0.2 Points\n\nSản lượng tối ưu của 1 quy mô sản xuất có hiệu quả là sản lượng có:\n\n- A. AFCmin\n- B. AVCmin\n- C. MCmin\n- D. Các câu trên đều sai\n\nQuestion 45 of 50 0.2 Points  \n(0,2 Points) Dư thừa trên thị trường\n\n- A. Cầu tăng khi giá tăng\n- B. Lượng cầu lớn hơn lượng cung\n- C. Lượng cung lớn hơn lượng cầu\n- D. Lượng cầu lớn hơn lượng cân bằng\n\nQuestion 46 of 50 0.2 Points\n\nĐộ dốc của đường đẳng lượng là:\n\n- A. Tỷ số năng suất biên của 2 yếu tố sản xuất\n- B. Tỷ lệ thay thế kỹ thuật biên của 2 yếu tố sản xuất\n- C. cả A và B đều sai\n- D. Cả A và B đều đúng\n\nQuestion 47 of 50 0.2 Points\n\nNếu một người ra quyết định bằng cách so sánh lợi ích cận biên và chi phí cận biên của sự lựa chọn thì hành vi hợp lý là :\n\n- A. Chọn quyết định khi mà lợi ích cận biên lớn hơn chi phí cận biên.\n- B. Chọn quyết định khi mà chi phí cận biên bằng lợi ích cận biên.\n- C. Chọn quyết định khi mà lợi ích cận biên nhỏ hơn chi phí cận biên.\n- D. Tất cả các phương án đều sai.\n\nQuestion 48 of 50 0.2 Points\n\n(0,2 Points) Một đường cầu thẳng đứng có độ co giãn của cầu theo giá là\n\n- A. Bằng không\n- B. Giữa không và một\n- C. Một\n- D. Lớn hơn 1\n\nQuestion 49 of 50 0.2 Points\n\nNếu giá hàng hóa A tăng làm cho cầu hàng hóa B dịch sang phải thì :\n\n- A. A và B là hai hàng hóa thay thế trong tiêu dùng.\n- B. A và B là hai hàng hóa bổ sung trong tiêu dùng.\n- C. B là hàng hóa cấp thấp.\n- D. B là hàng hóa thông thường.\n\nE. A và B là 2 hàng hóa bổ sung trong sản xuất.\n\nQuestion 50 of 50 0.2 Points\n\n(0,2 Points) Đường giới hạn khả năng sản xuất biểu thị\n\n- A. Những kết hợp hàng hoá mà nền kinh tế mong muốn\n- B. Những kết hợp hàng hoá có thể sản xuất của nền kinh tế\n- C. Những kết hợp hàng hoá khả thi và hiệu quả của nền kinh tế\n- D. Không câu nào đúng\n\nQuestion 1 of 1200.08 Points\n\nẢnh hưởng thu nhập được mô tả là:\n\n- A. Ảnh hưởng do thay đổi thu nhập danh nghĩa đến cầu về một hàng hóa không liên quan đến sự thay đổi của giá\n- B. Ảnh hưởng do thay đổi trong thu nhập thực tế gây ra đối với cầu về một hàng hóa\n- C. Thay đổi trong sở thích của người tiêu dùng do ảnh hưởng của phân phối thu nhập\n- D. Ảnh hưởng do thay đổi giá thị trường gây ra đối với cầu về một hàng hóa\n- E. Không câu nào đúng\n\nQuestion 2 of 1200.08 Points\n\nMột khi hãng đạt được những kết quả tích lũy của nghiên cứu và quảng cáo và có được một sức mạnh độc quyền nào đó đối với giá thì các hãng nhỏ khó mà đuổi kịp và cạnh tranh có hiệu quả\n\n- A. Đúng\n- B. Sai\n\nQuestion 3 of 1200.08 Points\n\nDoanh thu cận biên\n\n- A. Nhỏ hơn giá đối với hãng cạnh tranh vì khi bán nhiều sản phẩm nó phải hạ giá\n- B. Bằng giá đối với hãng cạnh tranh\n- C. Là doanh thu mà hãng nhận được từ một đơn vị bán thêm\n- D. Là lợi nhuận bổ sung mà hãng thu được khi bán thêm một đơn vị sản phẩm sau khi đã tính tất cả các chi phí cơ hội\n- E. b và c\n\nQuestion 4 of 1200.08 Points\n\nNghiên cứu kinh tế học trùng với một số chủ đề trong:\n\n- A. Nhân chủng học.\n- B. Tâm lý học\n- C. Xã hội học\n- D. Khoa học chính trị\n- E. Tất cả các khoa học trên.\n\n### Question 5 of 1200.08 Points\n\nThiếu hụt thị trường có nghĩa là\n\n- A. Cầu tăng khi giá tăng\n- **B. Lượng cầu lớn hơn lượng cung**\n- C. Lượng cung lớn hơn lượng cầu\n- D. Lượng cầu nhỏ hơn lượng cân bằng\n\n### Question 6 of 1200.08 Points\n\nGiả định rằng không có tiết kiệm hay đi vay, và thu nhập của người tiêu dùng là cố định, ràng buộc ngân sách của người đó:\n\n- A. Xác định tập hợp các cơ hội của người đó\n- B. Chỉ ra rằng tổng chi tiêu không thể vượt quá tổng thu nhập\n- C. Biểu thị lợi ích cận biên giảm dần\n- D. Tất cả\n- **E. a và b**\n\n### Question 7 of 1200.08 Points\n\nKhi giá thịt bò tăng sẽ gây ra:\n\n- A. Tăng cầu thịt gà ( hàng hóa thay thế )\n- B. Tăng cầu về khoai tây rán ( hàng hóa bổ sung )\n- C. Tăng lượng cầu về thịt bò\n- D. Giảm lượng cầu về thịt bò\n- **E. Câu a và d đúng**\n\n### Question 8 of 1200.08 Points\n\nĐể ở vị trí cân bằng (nghĩa là tối đa hóa sự thỏa mãn) người tiêu dùng phải:\n\n- A. Không mua hàng hóa thứ cấp\n- B. Làm cho ích lợi cận biên của đơn vị mua cuối cùng của các hàng hóa bằng nhau\n- C. Đảm bảo rằng giá của các hàng hóa tỷ lệ với tổng ích lợi của chúng\n- **D. Phân bổ thu nhập sao cho đồng chi tiêu cuối cùng vào hàng hóa này đem lại phần ích lợi tăng thêm bằng đồng chi tiêu cuối cùng vào hàng hóa kia**\n- E. Đảm bảo rằng giá của hàng hóa bằng ích lợi cận biên của tiền\n\n### Question 9 of 1200.08 Points\n\nCầu thị trường:\n\n- A. là tổng cầu của mỗi cá nhân.\n- B. là đường cầu của mỗi doanh nghiệp trên thị trường.\n- C. chỉ ra lượng cầu trung bình của mỗi cá nhân.\n- D. luôn phẳng hơn đường cầu của cá nhân.\n\n### Question 10 of 1200.08 Points\n\nTrong mô hình kinh tế hỗn hợp, các vấn đề kinh tế cơ bản được giải quyết\n\n- A. Thông qua các kế hoạch của nhà nước\n- B. Thông qua thị trường\n- C. Thông qua thị trường và các kế hoạch của nhà nước\n- D. Không có phương án nào đúng\n\n### Question 11 of 1200.08 Points\n\nVới giả định các yếu tố khác không thay đổi, luật cầu cho biết:\n\n- A. Giá hàng hóa tăng thì lượng cầu giảm\n- B. Giá hàng hóa tăng thì lượng cung giảm\n- C. Giá và lượng cầu có mối quan hệ thuận chiều\n- D. Giá hàng hóa tăng thì lượng cầu tăng\n- E. Giá hàng hóa tăng thì lượng cung giảm\n\n### Question 12 of 1200.08 Points\n\nGiả định rằng không có tiết kiệm hay đi vay, và thu nhập của người tiêu dùng là cố định, ràng buộc ngân sách của người đó:\n\n- A. Xác định tập hợp các cơ hội của người đó\n- B. Chỉ ra rằng tổng chi tiêu không thể vượt quá tổng thu nhập\n- C. Biểu thị lợi ích cận biên giảm dần\n- D. Tất cả\n- E. a và b\n\n### Question 13 of 1200.08 Points\n\nCầu hàng hóa hoặc dịch vụ được quyết định bởi:\n\n- A. những người mua hàng hóa hoặc dịch vụ.\n- B. chính phủ.\n- C. những người bán hàng hóa hoặc dịch vụ.\n- D. cả người mua và người bán hàng hóa hoặc dịch vụ.\n\n### Question 14 of 1200.08 Points\n\nChính phủ các nước hiện nay có các giải pháp kinh tế khác nhau trước tình hình suy thoái kinh tế\n\nhiện nay, vấn đề này thuộc về\n\n- A. Kinh tế vi mô, chuẩn tắc\n- **B. Kinh tế vĩ mô, chuẩn tắc**\n- C. Kinh tế vĩ mô, thực chứng\n- D. Kinh tế vi mô, thực chứng\n\nQuestion 15 of 1200.08 Points\n\nTô kinh tế đề cập đến\n\n- A. Lợi nhuận kinh tế trừ chi phí chìm\n- B. Một khoản thanh toán nào đó cho một đầu vào cao hơn mức tối thiểu cần thiết để giữ đầu vào đó trong việc sử dụng hiện thời của nó\n- C. Những khoản thanh toán của tá điền cho địa chủ\n- D. Lương cho những người có tay nghề đặc biệt\n- E. Doanh thu mà các hãng có hiệu quả nhận được\n\nQuestion 16 of 1200.08 Points\n\nVới giả định các yếu tố khác không thay đổi, luật cung cho biết:\n\n- **A. Giá dầu giảm làm lượng cung về dầu giảm**\n- B. Giá dầu tăng làm lượng cung về dầu giảm\n- C. Cung dầu tăng sẽ làm giá dầu giảm\n- D. Chi phí sản xuất dầu giảm sẽ làm cung dầu tăng.\n- E. Chi phí sản xuất dầu tăng sẽ làm giá dầu tăng\n\nQuestion 17 of 1200.08 Points\n\nThuế đánh vào đơn vị hàng hoá của nhà sản xuất sẽ làm cho:\n\n- A. Cả đường cung và cầu đều dịch chuyển lên trên\n- B. Đường cung của nhà sản xuất dịch chuyển xuống dưới\n- C. Đường cầu của người tiêu dùng dịch chuyển lên trên\n- **D. Đường cung của nhà sản xuất dịch chuyển lên trên**\n\nQuestion 18 of 1200.08 Points\n\nNếu co dãn chéo giữa hai hàng hóa A và B là dương, thì:\n\n- A. Cầu về A và B đều co dãn theo giá\n- B. Cầu về A và B đều không co dãn theo giá\n- C. A và B là 2 hàng hóa bổ sung\n- **D. A và B là hai hàng hóa thay thế**\n- E. Không có phương án nào đúng.\n\n### Question 19 of 1200.08 Points\n\nNếu Long sẵn sàng thanh toán 100\\$ cho một cái máy pha cà phê và 120\\$ cho hai cái máy đó thì lợi ích cận biên của cái máy thứ hai là:\n\n- A. 20\\$\n- B. 120\\$\n- C. 100\\$\n- D. 60\\$\n- E. 50\\$\n\n### Question 20 of 1200.08 Points\n\nNếu giá hàng hóa A tăng làm cho cầu hàng hóa B dịch chuyển sang phải thì:\n\n- A. A và B là hai hàng hóa thay thế trong tiêu dùng\n- B. A và B là hai hàng hóa bổ sung trong tiêu dùng\n- C. B là hàng hóa cấp thấp\n- D. B là hàng hóa thông thường\n- E. A và B là 2 hàng hóa bổ sung trong sản xuất\n\n### Question 21 of 1200.08 Points\n\nĐiểm khác biệt căn bản giữa mô hình kinh tế hỗn hợp và mô hình kinh tế thị trường là:\n\n- A. Nhà nước tham gia quản lí kinh tế.\n- B. Nhà nước quản lí ngân sách.\n- C. Nhà nước quản lí các quỹ phúc lợi\n- D. Các câu trên đều sai.\n\n### Question 22 of 1200.08 Points\n\nYếu tố nào sau đây sẽ làm dịch chuyển đường cầu rượu vang sang phải?\n\n- A. Thu nhập tăng\n- B. Giảm giá rượu sanh banh ( hàng hóa thay thế )\n- C. Giảm giá rượu vang\n- D. Tăng giá bắp rang bơ ( hàng hóa bổ sung )\n- E. Giảm số lượng người tiêu dùng\n\n### Question 23 of 1200.08 Points\n\nCo dân của cầu theo giá đo lường phản ứng của:\n\n- A. Lượng cầu hàng hóa này khi giá của hàng hóa thay thế hoặc bổ sung thay đổi.\n- B. Lượng cầu khi thu nhập thay đổi\n- C. Lượng cầu khi giá của hàng hóa này thay đổi\n- D. Giá khi lượng cầu thay đổi\n- E. Không có phương án nào đúng\n\n### Question 24 of 1200.08 Points\n\nLập luận nào sau đây ủng hộ cạnh tranh?\n\n- A. Cạnh tranh tạo ra số hàng sản xuất hiệu quả\n- B. Cạnh tranh luôn luôn làm cho giá sản phẩm thấp hơn\n- C. Cạnh tranh làm cho giá sản phẩm phản ánh sát hơn với chi phí cơ hội của việc sản xuất hàng hóa\n- D. Cạnh tranh hoàn hảo là cho P bằng MC\n- E. Tất cả các lập luận trên đều ủng hộ cạnh tranh\n\n### Question 25 of 1200.08 Points\n\nThặng dư của người tiêu dùng là:\n\n- A. Tổng mức MU của các hàng hóa mua\n- B. Chênh lệch giữa MU và tổng lợi ích\n- C. Phần chênh lệch giữa MU trên mức giá hàng hóa\n- D. Không có đáp án đúng\n\n### Question 26 of 1200.08 Points\n\nCác chi phí kinh tế của hãng bao gồm:\n\n- A. Chi phí cơ hội của thời gian\n- B. Doanh thu có thể thu được từ các tài sản mà hãng sở hữu khi sử dụng theo các phương án khác\n- C. Thu nhập từ vốn cổ phần mà các chủ sở hữu đầu tư vào hãng\n- D. Khấu hao nhà xưởng và máy móc mà hãng sở hữu\n- E. **Tất cả đều đúng**\n\n### Question 27 of 1200.08 Points\n\nMặt hàng X có độ co giãn cầu theo giá là  $E_d = -2$ , khi giá của X tăng lên trong điều kiện các yếu tố khác không đổi, thì lượng cầu của mặt hàng Y sẽ\n\n- A. **Tăng lên**\n- B. Giảm xuống\n- C. Không đổi\n- D. Các câu trên đều sai\n\n### Question 28 of 1200.08 Points\n\nNếu cả cung và cầu đều tăng thì :\n\n- A. Giá và lượng cân bằng đều tăng.\n\n- B. Giá cân bằng giảm nhưng lượng cân bằng tăng.\n- C. Giá cân bằng có thể tăng, giảm hoặc không đổi nhưng lượng cân bằng tăng.\n- D. Giá cân bằng tăng nhưng lượng cân bằng tăng hoặc giảm.\n- E. Giá cân bằng giảm nhưng lượng cân bằng tăng hoặc giảm.\n\n### Question 29 of 1200.08 Points\n\nTrong độc quyền tự nhiên một hãng có thể sản xuất với chi phí trung bình thấp hơn mức có thể nếu nó phải chia sẻ thị trường cho các hãng khác\n\n- A. Đúng\n- B. Sai\n\n### Question 30 of 1200.08 Points\n\nKhi giá một hàng hóa giảm, ảnh hưởng thu nhập\n\n- A. Khuyến khích cá nhân tiêu dùng hàng hóa đó nhiều hơn\n- B. Khuyến khích cá nhân tiêu dùng hàng hóa đó ít hơn\n- C. Dẫn đến tiêu dùng nhiều hơn nếu hàng hóa đó là hàng hóa thứ cấp, ít hơn nếu hàng hóa đó là hàng hóa bình thường\n- D. Dẫn đến tiêu dùng ít hơn nếu hàng hóa đó là hàng hóa thứ cấp, nhiều hơn nếu hàng hóa đó là hàng hóa bình thường\n- E. a và c\n\n### Question 31 of 1200.08 Points\n\nHàng hóa xa xỉ thì độ co giãn của cầu theo thu nhập là\n\n- A. Lớn hơn 1\n- B. Nằm giữa 0 và 1\n- C. Vô cùng\n- D. Âm\n\n### Question 32 of 1200.08 Points\n\nGiá trần có tính ràng buộc tạo ra\n\n- A. Sự thiếu hụt\n- B. Sự thặng dư\n- C. Sự cân bằng\n- D. Sự thiếu hụt hoặc thặng dư\n- E. Không đáp án nào đúng\n\n### Question 33 of 1200.08 Points\n\nChọn lựa tại một điểm không nằm trên đường giới hạn khả năng sản xuất là :\n\n- A. Không thể thực hiện được\n- **B. Không thể thực hiện được hoặc thực hiện được nhưng nền kinh tế hoạt động không hiệu quả**\n- C. Thực hiện được nhưng nền kinh tế hoạt động không hiệu quả\n- D. Thực hiện được và nền kinh tế hoạt động hiệu quả\n\nQuestion 34 of 1200.08 Points\n\nĐiều nào dưới đây làm dịch chuyển đường cung đối với Cà phê Trung Nguyên:\n\n- A. Thị hiếu đối với Cà phê Trung Nguyên thay đổi.\n- B. Giá hàng hoá thay thế cho Cà phê Trung Nguyên tăng lên.\n- **C. Công nghệ chế biến cà phê Trung Nguyên thay đổi**\n- D. Các nhà sản xuất Chè Lipton quảng cáo cho sản phẩm của họ.\n\nQuestion 35 of 1200.08 Points\n\nQuy tắc phân bổ ngân sách tối ưu của người tiêu dùng là:\n\n- **A. Ích lợi cận biên thu được từ đơn vị cuối cùng của mỗi hàng hóa cho cho giá của nó phải bằng nhau**\n- B. Ích lợi cận biên thu được từ mỗi hàng hóa nhân với giá của nó phải bằng nhau\n- C. Ích lợi cận biên thu được từ mỗi hàng hóa phải bằng không\n- D. Ích lợi cận biên thu được từ mỗi hàng hóa phải bằng vô cùng\n- E. Không câu nào đúng\n\nQuestion 36 of 1200.08 Points\n\nKinh tế học vi mô nghiên cứu vấn đề nào sau đây?\n\n- A. Lạm phát\n- B. Thất nghiệp\n- C. Chính sách tiền tệ\n- D. Chính sách tài khóa\n- **E. Không có vấn đề nào trên đây**\n\nQuestion 37 of 1200.08 Points\n\nCho hàm cung và cầu của hàng hoá A như sau:  $P = 30 - 0,2Q$  và  $P = 2 + 0,2Q$  Nếu nhà nước đánh thuế  $t = 4$ /sản phẩm bán ra thì giá và lượng cân bằng sẽ là:\n\n- A.  $P_e = 20$  và  $Q_e = 60$\n- B.  $P_e = 18$  và  $Q_e = 70$\n- C.  $P_e = 16$  và  $Q_e = 70$\n- **D.  $P_e = 18$  và  $Q_e = 80$**\n\n### Question 38 of 1200.08 Points\n\nNếu cả cung và cầu đều tăng thì:\n\n- A. Giá và lượng cân bằng đều tăng\n- B. Giá cân bằng giảm nhưng lượng cân bằng tăng\n- **C. Giá cân bằng có thể tăng, giảm hoặc không đổi nhưng lượng cân bằng tăng**\n- D. Giá cân bằng tăng nhưng lượng cân bằng tăng hoặc giảm\n- E. Giá cân bằng giảm nhưng lượng cân bằng tăng hoặc giảm.\n\n### Question 39 of 1200.08 Points\n\nHiệu suất tăng theo quy mô nghĩa là\n\n- **A. Khi tất cả các đầu vào tăng bao nhiêu lần thì sản lượng tăng bấy nhiêu lần**\n- B. Khi đầu vào vốn tăng tốc độ nhanh hơn đầu vào lao động\n- C. Khi đầu vào tăng với tốc độ nhanh hơn tốc độ tăng của sản lượng\n- D. Khi sản lượng tăng với tốc độ nhanh hơn tốc độ tăng đầu vào\n\n### Question 40 of 1200.08 Points\n\nThiệt hại của độc quyền mà xã hội phải chịu được minh họa bởi sự khác nhau giữa giá và chi phí cận biên\n\n- **A. Đúng**\n- B. Sai\n\n### Question 41 of 1200.08 Points\n\nTâm có 10\\$ để chi vào thể chơi bóng chuyền và ăn điểm tâm sáng. Giá của thẻ chơi bóng chuyền là 0,5\\$ một trận. Thức ăn điểm tâm có giá là 1\\$ một món. Các khả năng nào sau đây không nằm trong tập hợp các cơ hội của Tâm?\n\n- A. 10 món điểm tâm và 0 trận bóng chuyền\n- B. 5 món điểm tâm và 10 trận bóng chuyền\n- C. 2 món điểm tâm và 16 trận bóng chuyền\n- D. 1 món điểm tâm và 18 trận bóng chuyền\n- **E. Không câu nào đúng**\n\n### Question 42 of 1200.08 Points\n\nCác yếu tố sản xuất cố định là:\n\n- A. Các yếu tố không thể di chuyển được\n- B. Các yếu tố có thể mua chỉ ở một con số cố định\n- C. Các yếu tố có thể mua chỉ ở giá cố định\n\n- D. Các yếu tố không phụ thuộc vào mức sản lượng\n- E. Không câu nào đúng\n\n### Question 43 of 1200.08 Points\n\nMột trong những lợi ích của độc quyền so với cạnh tranh hoàn hảo là trong những trường hợp có tính kinh tế của mô thì chi phí sản xuất sẽ thấp hơn\n\n- A. Đúng\n- B. Sai\n\n### Question 44 of 1200.08 Points\n\nGiả sử giá của một hàng hóa tăng từ \\$5,5 lên \\$6,5 làm cho lượng cầu về hàng hóa đó giảm từ 12.000 xuống 11.500 đơn vị. co giãn khoảng của cầu theo giá là:\n\n- A. 0,5\n- B. 2\n- C. 1\n- D. 1000\n\n### Question 45 of 1200.08 Points\n\nỞ câu cân bằng, sự lựa chọn Q1 và Q2 là:\n\n- A. MU1 bằng MU2\n- B. MU1/Q1 bằng MU2/Q2\n- C. MU1/P1 bằng MU2/P2\n- D. P1 bằng P2\n- E. Không câu nào đúng\n\n### Question 46 of 1200.08 Points\n\nMỗi xã hội cần phải giải quyết vấn đề kinh tế nào sau đây?\n\n- A. Sản xuất cái gì?\n- B. Sản xuất như thế nào?\n- C. Sản xuất cho ai?\n- D. Tất cả các vấn đề trên\n- E. Chỉ giải quyết vấn đề sản xuất cái gì?\n\n### Question 47 of 1200.08 Points\n\nLập luận nào sau đây không ủng hộ cạnh tranh hoàn hảo?\n\n- A. Trong các ngành được đặc trưng bởi tính kinh tế của quy mô thì việc tập trung hóa sẽ làm cho giá thấp hơn\n\n- B. Độc quyền có thể thực hiện những nghiên cứu và phát triển đòi hỏi nhiều kinh phí hơn\n- C. Chi phí sản xuất tính trên đơn vị sản phẩm giảm dần trong một chuỗi sản phẩm tiềm tàng\n- D. Hăng cạnh tranh không hoàn hảo tối đa hóa lợi nhuận bằng việc sản xuất sản phẩm ở MC bằng MR\n- E. Tất cả các lập luận trên\n\nQuestion 48 of 1200.08 Points\n\nCo dân của cầu theo thu nhập là:\n\n- A. Phần trăm thay đổi trong giá chia cho phần trăm thay đổi trong thu nhập\n- B. Phần trăm thay đổi trong giá chia cho phần trăm thay đổi trong lượng cầu\n- C. Phần trăm thay đổi trong thu nhập chia cho phần trăm thay đổi trong lượng cầu\n- D. Phần trăm thay đổi trong lượng cầu chia cho phần trăm thay đổi trong giá\n- E. Phần trăm thay đổi trong lượng cầu chia cho phần trăm thay đổi trong thu nhập\n\nQuestion 49 of 1200.08 Points\n\nKhi giá thịt bò tăng sẽ gây ra:\n\n- A. Tăng cầu thịt gà ( hàng hóa thay thế )\n- B. Tăng cầu về khoai tây rán ( hàng hóa bổ sung )\n- C. Tăng lượng cầu về thịt bò\n- D. Giảm lượng cầu về thịt bò\n- E. Câu a và d đúng\n\nQuestion 50 of 1200.08 Points\n\nNếu cầu về một hàng hóa là co dân đơn vị, giá tăng 5% sẽ dẫn đến:\n\n- A. Tổng doanh thu tăng 5%\n- B. Tổng doanh thu giảm 5%\n- C. Tổng doanh thu không đổi\n- D. Tổng doanh thu tăng nhiều hơn 5%\n- E. Tổng doanh thu giảm nhiều hơn 5%\n\nQuestion 51 of 1200.08 Points\n\nĐối với hàng hóa thứ cấp khi giá tăng\n\n- A. Ảnh hưởng thay thế khuyến khích tiêu dùng ít hơn\n- B. Ảnh hưởng thu nhập khuyến khích tiêu dùng ít hơn\n- C. Ảnh hưởng thu nhập khuyến khích tiêu dùng nhiều hơn\n- D. Lượng cầu giảm\n- E. a và c\n\n### Question 52 of 1200.08 Points\n\nĐường ... không đổi khi sản lượng tăng\n\n- A. AFC\n- B. AVC\n- **C. FC**\n- D. TC\n\n### Question 53 of 1200.08 Points\n\nTrong mô hình cạnh tranh cơ bản lợi nhuận giảm xuống bằng 0. Điều này có nghĩa là:\n\n- **A. Doanh thu vừa đủ để bù đắp các chi phí biến đổi**\n- **B. Doanh thu vừa đủ để bù đắp tất cả các chi phí, bao gồm cả chi phí cơ hội của tư bản tài chính đã đầu tư**\n- **C. Giá bằng mức tối thiểu của đường chi phí biến đổi trung bình**\n- **D. Lợi nhuận kế toán bằng không**\n- **E. b và d**\n\n### Question 54 of 1200.08 Points\n\nCác kết hợp hàng hoá nằm phía trong đường giới hạn khả năng sản xuất là:\n\n- A. Phân bổ không hiệu quả\n- **B. Sản xuất không hiệu quả**\n- C. Tiêu dùng không hiệu quả\n- D. Phân bổ hiệu quả\n\n### Question 55 of 1200.08 Points\n\nĐộ co giãn của cầu theo giá được xác định bởi:\n\n- A. Sự thay đổi của giá chia cho sự thay đổi của cầu.\n- B. Độ dốc của đường cầu.\n- **C. Phần trăm thay đổi lượng cầu chia cho phần trăm thay đổi của giá.**\n- D. Sự thay đổi của lượng cầu chia cho sự thay đổi của giá.\n\n### Question 56 of 1200.08 Points\n\nThị trường sản phẩm A có hàm cung  $Q = P - 6$  và hàm cầu  $Q = 22 - P$ . Nếu chính phủ ấn định giá là 16 thì thị trường sẽ:\n\n- A. Thiếu hụt 4\n- B. Dư thừa 4\n- C. Thiếu hụt 10\n- D. Dư thừa 6\n\n### Question 57 of 1200.08 Points\n\nĐường cầu dốc xuống về phía phải , phản ánh:\n\n- A. Khi thu nhập tăng thì lượng cầu sẽ tăng\n- B. Luật cung\n- C. Luật cầu\n- D. Lợi thế so sánh\n\n### Question 58 of 1200.08 Points\n\nNếu hàm sản xuất biểu thị hiệu suất tăng theo quy mô thì\n\n- A. Sản phẩm cận biên của yếu tố sản xuất tăng cùng với số lượng sản phẩm sản xuất ra\n- B. Chi phí cận biên tăng cùng với sản lượng\n- C. Năng suất cao hơn\n- D. Hàm sản xuất dốc xuống\n- E. a và d\n\n### Question 59 of 1200.08 Points\n\nTrong mô hình cạnh tranh cơ bản, một hãng đặt giá cao hơn giá hiện hành\n\n- A. Sẽ mất dần một ít khách hàng của mình\n- B. Sẽ mất tất cả khách hàng của mình\n- C. Có thể giữ được khách hàng của mình nếu chất lượng hàng hóa của mình cao hơn của những đối thủ cạnh tranh khác\n- D. Sẽ không mất khách hàng nếu giá của nó bằng chi phí cận biên của nó\n- E. Không câu nào đúng\n\n### Question 60 of 1200.08 Points\n\nYếu tố nào sau đây sẽ làm dịch chuyển đường cầu rượu vang sang phải?\n\n- A. Thu nhập tăng\n- B. Giảm giá rượu sanh banh ( hàng hóa thay thế )\n- C. Giảm giá rượu vang\n- D. Tăng giá bắp rang bơ ( hàng hóa bổ sung )\n- E. Giảm số lượng người tiêu dùng\n\n### Question 61 of 1200.08 Points\n\nVấn đề khan hiếm\n\n- A. Chi tồn tại trong mô hình kinh tế kế hoạch hóa tập trung\n- B. Chi tồn tại trong mô hình kinh tế hỗn hợp\n- C. Tồn tại vì nhu cầu của con người không thể được thỏa mãn với các nguồn lực hiện có\n\n- D. Không có điều nào trên đây là đúng\n\n### Question 62 of 1200.08 Points\n\nThặng dư của người tiêu dùng là:\n\n- A. Tổng mức MU của các hàng hóa mua\n- B. Chênh lệch giữa MU và tổng lợi ích\n- C. Phần chênh lệch giữa MU trên mức giá hàng hóa\n- D. Không có đáp án đúng\n\n### Question 63 of 1200.08 Points\n\nĐường cung dài hạn đối với một ngành là\n\n- A. Co dãn hoàn toàn\n- B. Co dãn hơn đường cung ngắn hạn\n- C. Ít co dãn hơn đường cung ngắn hạn\n- D. Đường biên phía dưới của tất cả các đường cung ngắn hạn\n- E. Tổng của tất cả các đường cung ngắn hạn\n\n### Question 64 of 1200.08 Points\n\nCác hệ thống kinh tế giải quyết các vấn đề cơ bản :sản xuất cái gì? số lượng bao nhiêu? sản xuất như thế nào? sản xuất cho ai? xuất phát từ đặc điểm:\n\n- A. Nguồn cung của nền kinh tế.\n- B. Đặc điểm tự nhiên\n- C. Tài nguyên có giới hạn\n- D. Nhu cầu xã hội\n\n### Question 65 of 1200.08 Points\n\nHãng cung mức sản lượng tối đa hóa lợi nhuận khi:\n\n- A. Doanh thu cận biên bằng giá\n- B. Doanh thu cận biên bằng chi phí cận biên\n- C. Lợi nhuận kinh tế bằng không\n- D. Lợi nhuận kế toán bằng không\n- E. Chi phí chìm bằng chi phí cố định\n\n### Question 66 of 1200.08 Points\n\nVấn đề khan hiếm tồn tại:\n\n- A. Chỉ trong các nền kinh tế thị trường\n- B. Chỉ trong các nền kinh tế chỉ huy\n- C. Trong tất cả các nền kinh tế\n\n- D. Chỉ khi con người không tối ưu hoá hành vi\n\n### Question 67 of 1200.08 Points\n\nPhương trình đường ngân sách được xác định (X, Y là hai hàng hoá):\n\n- A.  $XP_x + YP_y = I$\n- B.  $LP_x + KP_y = I$\n- C.  $LP_x + KP_x = TC$\n- D.  $LP_y + KP_x = TC$\n\n### Question 68 of 1200.08 Points\n\nĐiều nào dưới đây không được coi là bộ phận của chi phí cơ hội của việc đi học đại học:\n\n- A. Thu nhập lề ra có thể kiếm được nếu không đi học\n- B. Chi phí mua sách\n- C. Chi phí ăn uống\n- D. Học phí\n\n### Question 69 of 1200.08 Points\n\nNếu giá hàng hóa A tăng làm cho cầu hàng hóa B dịch chuyển sang phải thì:\n\n- A. A và B là hai hàng hóa thay thế trong tiêu dùng\n- B. A và B là hai hàng hóa bổ sung trong tiêu dùng\n- C. B là hàng hóa cấp thấp\n- D. B là hàng hóa thông thường\n- E. A và B là 2 hàng hóa bổ sung trong sản xuất\n\n### Question 70 of 1200.08 Points\n\nTrong dài hạn\n\n- A. Co dãn của cầu theo giá lớn hơn trong ngắn hạn\n- B. Co dãn của cầu theo thu nhập lớn hơn trong ngắn hạn\n- C. Co dãn của cầu theo giá nhỏ hơn trong ngắn hạn\n- D. Co dãn của cầu theo thu nhập hơn trong ngắn hạn\n- E. Không câu nào đúng\n\n### Question 71 of 1200.08 Points\n\nChi phí nào trong các chi phí dưới đây nhìn chung là không có dạng chữ U\n\n- A. Tổng chi phí trung bình\n- B. Chi phí cận biên\n- C. Chi phí cố định trung bình\n- D. Chi phí cố định trung bình\n\n- E. Không câu nào đúng\n\n### Question 72 of 1200.08 Points\n\nVấn đề khan hiếm\n\n- A. Chỉ tồn tại trong mô hình kinh tế kế hoạch hóa tập trung\n- B. Chỉ tồn tại trong mô hình kinh tế hỗn hợp\n- C. Tồn tại vì nhu cầu của con người không thể được thỏa mãn với các nguồn lực hiện có\n- D. Không có điều nào trên đây là đúng\n\n### Question 73 of 1200.08 Points\n\nÍch lợi cận biên giảm dần có nghĩa là:\n\n- A. Tính hữu ích của hàng hóa là có hạn\n- B. Sự sẵn sàng thanh toán cho một đơn vị bổ sung giảm khi tiêu dùng nhiều hàng hóa đó hơn\n- C. Hàng hóa đó là khan hiếm\n- D. Độ dốc của đường ngân sách nhỏ hơn khi tiêu dùng nhiều hàng hóa đó hơn\n- E. Không câu nào đúng\n\n### Question 74 of 1200.08 Points\n\nThu nhập tăng sẽ gây ra\n\n- A. Tăng cầu về bánh rán nếu bánh rán là hàng hóa cấp thấp\n- B. Tăng cầu về bánh rán nếu bánh rán là hàng hóa thông thường\n- C. Tăng cung về bánh rán\n- D. Giảm cung về bánh rán\n\n### Question 75 of 1200.08 Points\n\nKinh tế học vĩ mô nghiên cứu vấn đề nào sau đây?\n\n- A. Lạm phát\n- B. Thất nghiệp\n- C. Chính sách tiền tệ\n- D. Chính sách tài khóa\n- E. Không có vấn đề nào trên đây\n\n### Question 76 of 1200.08 Points\n\nĐường cầu nằm ngang có độ co giãn của cầu theo giá như thế nào?\n\n- A. Bằng 0\n- B. Lớn hơn 0 và nhỏ hơn 1\n- C. Bằng 1\n\n- D. Lớn hơn 1\n- E. Vô cùng\n\n### Question 77 of 1200.08 Points\n\nChính phủ các nước hiện nay có các giải pháp kinh tế khác nhau trước tình hình suy thoái kinh tế hiện nay, vấn đề này thuộc về\n\n- A. Kinh tế vi mô, chuẩn tắc\n- B. Kinh tế vĩ mô, chuẩn tắc\n- C. Kinh tế vĩ mô, thực chứng\n- D. Kinh tế vi mô, thực chứng\n\n### Question 78 of 1200.08 Points\n\nKhái niệm nào sau đây không thể lí giải bằng đường giới hạn khả năng sản xuất (PPF)\n\n- A. Cung cầu.\n- B. Quy luật chi phí cơ hội tăng dần.\n- C. Sự khan hiếm.\n- D. Chi phí cơ hội\n\n### Question 79 of 1200.08 Points\n\nĐường giới hạn khả năng sản xuất biểu thị:\n\n- A. Những kết hợp hàng hoá có thể sản xuất của nền kinh tế\n- B. Những kết hợp hàng hoá mà nền kinh tế mong muốn\n- C. Những kết hợp hàng hoá của nền kinh tế\n- D. Những kết hợp hàng hoá khả thi và hiệu quả của nền kinh tế\n\n### Question 80 of 1200.08 Points\n\nTheo nguyên lý thay thế cận biên thì\n\n- A. Chi phí cận biên bằng chi phí trung bình ở mức tối thiểu của chi phí trung bình\n- B. Tăng giá một yếu tố sẽ dẫn đến hãng thay thế nó bằng các yếu tố khác\n- C. Giảm giá của một yếu tố sẽ dẫn đến hãng thay thế nó bằng một yếu tố khác\n- D. Nếu hãng không biết đường chi phí cận biên của mình thì nó có thể thay thế bằng đường chi phí trung bình của nó\n- E. Không câu nào đúng\n\n### Question 81 of 1200.08 Points\n\nChi phí cơ hội là:\n\n- A. Tất cả các cơ hội kiếm tiền\n- B. Giá trị của sự lựa chọn tốt nhất bị bỏ qua khi đưa ra sự lựa chọn\n\n- C. Các cơ hội phải bỏ qua khi đưa ra sự lựa chọn\n- D. Giá trị của các cơ hội phải từ bỏ khi đưa ra lựa chọn\n\n### Question 82 of 1200.08 Points\n\nÍch lợi cận biên giảm dần có nghĩa là:\n\n- A. Tính hữu ích của hàng hóa là có hạn\n- B. Sự sẵn sàng thanh toán cho một đơn vị bổ sung giảm khi tiêu dùng nhiều hàng hóa đó hơn\n- C. Hàng hóa đó là khan hiếm\n- D. Độ dốc của đường ngân sách nhỏ hơn khi tiêu dùng nhiều hàng hóa đó hơn\n- E. Không câu nào đúng\n\n### Question 83 of 1200.08 Points\n\nThặng dư của người tiêu dùng là:\n\n- A. Tổng mức MU của các hàng hóa mua\n- B. Chênh lệch giữa MU và tổng lợi ích\n- C. Phần chênh lệch giữa MU trên mức giá hàng hóa\n- D. Không có đáp án đúng\n\n### Question 84 of 1200.08 Points\n\nYếu tố nào sau đây gây ra sự vận động dọc theo đường cầu?\n\n- A. Thu nhập\n- B. Giá hàng hóa liên quan\n- C. Giá của hàng hóa đang xem xét\n- D. Thị hiếu\n- E. Tất cả các yếu tố trên\n\n### Question 85 of 1200.08 Points\n\nĐiều nào dưới đây là tuyên bố thực chứng:\n\n- A. Các chủ nhà nên được tự do đặt giá tiền thuê nhà\n- B. Tiền thuê nhà quá cao\n- C. Lãi suất cao là không tốt đối với nền kinh tế\n- D. Tiền thuê nhà thấp sẽ hạn chế cung nhà ở\n\n### Question 86 of 1200.08 Points\n\nKhi giá tăng lượng cung tăng dọc theo đường cung cá nhân vì:\n\n- A. Giá cao hơn tạo động cơ cho các hãng bán nhiều hơn\n- B. Nguyên lý thay thế dẫn đến các hãng thay thế các hàng hóa và dịch vụ khác\n\n- C. Đường cung thị trường là tổng của tất cả số lượng do cá nhân các hãng sản xuất ra ở mỗi mức giá\n- D. b và c\n- E. Không câu nào đúng\n\n### Question 87 of 1200.08 Points\n\nNếu co dãn chéo giữa hai hàng hóa A và B là dương, thì:\n\n- A. Cầu về A và B đều co dãn theo giá\n- B. Cầu về A và B đều không co dãn theo giá\n- C. A và B là 2 hàng hóa bổ sung\n- D. A và B là hai hàng hóa thay thế\n- E. Không có phương án nào đúng.\n\n### Question 88 of 1200.08 Points\n\nDư thừa thị trường\n\n- A. Tồn tại nếu giá cao hơn giá cân bằng\n- B. Là chênh lệch giữa lượng cầu và lượng cung\n- C. Là chênh lệch giữa lượng cầu và lượng cân bằng\n- D. Là chênh lệch giữa lượng cung và lượng cân bằng\n- E. Sẽ làm cho giá tăng\n\n### Question 89 of 1200.08 Points\n\n(0.15 Points) Đi dọc theo đường cầu về phía bên trái, cầu của 1 hàng hóa sẽ\n\n- A. Co giãn theo giá kém hơn .\n- B. Co giãn theo giá cao hơn .\n- C. Giá sẽ giảm.\n- D. Có nhiều người mua.\n\n### Question 90 of 1200.08 Points\n\nGiả định rằng không có tiết kiệm hay đi vay, và thu nhập của người tiêu dùng là cố định, ràng buộc ngân sách của người đó:\n\n- A. Xác định tập hợp các cơ hội của người đó\n- B. Chỉ ra rằng tổng chi tiêu không thể vượt quá tổng thu nhập\n- C. Biểu thị lợi ích cận biên giảm dần\n- D. Tất cả\n- E. a và b\n\n### Question 91 of 1200.08 Points\n\nĐộ co giãn của cầu theo giá được xác định bởi.\n\n- A. Sự thay đổi của giá chia cho sự thay đổi của cầu.\n- B. Độ dốc của đường cầu.\n- C. Phần trăm thay đổi lượng cầu chia cho phần trăm thay đổi của giá.\n- D. Sự thay đổi của lượng cầu chia cho sự thay đổi của giá.\n\nQuestion 92 of 1200.08 Points\n\nMỗi xã hội cần phải giải quyết vấn đề kinh tế nào sau đây?\n\n- A. Sản xuất cái gì?\n- B. Sản xuất như thế nào?\n- C. Sản xuất cho ai?\n- D. Tất cả các vấn đề trên\n- E. Chỉ giải quyết vấn đề sản xuất cái gì?\n\nQuestion 93 of 1200.08 Points\n\nĐiểm khác biệt căn bản giữa mô hình kinh tế hỗn hợp và mô hình kinh tế thị trường là:\n\n- A. Nhà nước tham gia quản lí kinh tế.\n- B. Nhà nước quản lí ngân sách.\n- C. Nhà nước quản lí các quỹ phúc lợi\n- D. Các câu trên đều sai.\n\nQuestion 94 of 1200.08 Points\n\nNếu người bán kỳ vọng rằng giá hàng hóa sẽ tăng trong tương lai thì hiện tại:\n\n- A. cung hàng hóa sẽ tăng\n- B. cung hàng hóa sẽ giảm\n- C. không ảnh hưởng đến lượng cung\n- D. cầu hàng hóa sẽ giảm\n\nQuestion 95 of 1200.08 Points\n\nChi phí cận biên là:\n\n- A. Tổng chi phí chia cho số đơn vị sản phẩm được sản xuất ra\n- B. Chi phí trung bình tăng thêm khi sản xuất thêm một đơn vị sản lượng\n- C. Tổng chi phí tăng thêm khi sản xuất thêm một đơn vị sản lượng\n- D. Chi phí cố định phụ thêm khi sản xuất thêm một đơn vị sản lượng\n\nQuestion 96 of 1200.08 Points\n\nNếu phần thu nhập mà một cá nhân chi vào một hàng hóa giảm khi thu nhập của người đó tăng thì co giãn của cầu theo thu nhập là:\n\n- A. Lớn hơn 1\n- B. Giữa 0 và 1\n- C. 0\n- D. Nhỏ hơn 0\n- E. Không thể nói gì từ thông tin trên\n\n### Question 97 of 1200.08 Points\n\nNếu 2 sản phẩm X và Y là 2 sản phẩm bổ sung thì:\n\n- A.  $E_{xy} > 0$\n- B.  $E_{xy} < 0$\n- C.  $E_{xy} = 0$\n- D. tất cả đều sai\n\n### Question 98 of 1200.08 Points\n\nNếu cả cung và cầu đều tăng thì :\n\n- A. Giá và lượng cân bằng đều tăng.\n- B. Giá cân bằng giảm nhưng lượng cân bằng tăng.\n- C. Giá cân bằng có thể tăng, giảm hoặc không đổi nhưng lượng cân bằng tăng.\n- D. Giá cân bằng tăng nhưng lượng cân bằng tăng hoặc giảm.\n- E. Giá cân bằng giảm nhưng lượng cân bằng tăng hoặc giảm.\n\n### Question 99 of 1200.08 Points\n\nKhi giá tăng lượng cầu giảm dọc theo đường cầu thị trường vì:\n\n- A. Các cá nhân thay thế các hàng hóa và dịch vụ khác\n- B. Một số cá nhân rời bỏ thị trường\n- C. Một số cá nhân gia nhập thị trường\n- D. Lượng cung tăng\n- E. a và b\n\n### Question 100 of 1200.08 Points\n\nThay đổi phần trăm trong lượng cầu do thay đổi 1% trong thu nhập gây ra là:\n\n- A. 1\n- B. Lớn hơn 0\n- C. Co dãn của cầu theo thu nhập\n- D. Co dãn của cầu theo giá\n- E. Không câu nào đúng\n\n### Question 101 of 1200.08 Points\n\nNếu sản lượng đạt ở mức ở đó chi phí biên bằng doanh thu biên khi đó\n\n- A. Đơn vị sản phẩm cuối cùng được sản xuất sẽ làm tăng cùng một lượng đối với chi phí cũng như doanh thu của nó\n- B. Công ty này đang tối đa hóa lợi nhuận\n- C. Không có lý do nào để thu hẹp hay mở rộng sản xuất\n- D. Tất cả những điều trên\n\nQuestion 102 of 1200.08 Points\n\nĐường cầu dốc xuống về phía phải , phản ánh:\n\n- A. Khi thu nhập tăng thì lượng cầu sẽ tăng\n- B. Luật cung\n- C. Luật cầu\n- D. Lợi thế so sánh\n\nQuestion 103 of 1200.08 Points\n\nGiả sử rằng vé xem phim là 2\\$ và giá một cái bánh là 4\\$. Sự đánh đổi giữa hai hàng hóa này là:\n\n- A. Một cái bánh lấy một vé xem phim\n- B. Hai vé xem phim lấy một cái bánh\n- C. Hai cái bánh lấy một vé xem phim\n- D. 2\\$ một vé xem phim\n- E. Không câu nào đúng\n\nQuestion 104 of 1200.08 Points\n\nLời phát biểu nào trong các lời phát biểu sau đây là đúng?\n\n- A. Đường cung độc quyền là phần của đường chi phí cận biên nằm trên mức chi phí biến đổi trung bình tối thiểu\n- B. Đường cung độc quyền là kết quả của mối quan hệ 1:1 giữa giá và lượng\n- C. Nhà độc quyền không có đường cung vì lượng cung ở một mức giá cụ thể phụ thuộc vào đường cầu của nhà độc quyền\n- D. Nhà độc quyền không có đường cung vì đường chi phí cận biên (của nhà độc quyền) thay đổi đáng kể theo thời gian\n- E. Tất cả đều sai\n\nQuestion 105 of 1200.08 Points\n\nYếu tố nào trên đây không bao hàm trong chi phí cơ hội để có thể được học ở trường trung cấp kinh tế của một học sinh?\n\n- A. Lương mà bạn có thể kiếm được nếu không đi học\n- B. Tiền chi phí cho sách giáo khoa\n- C. Tiền chi cho ăn uống\n- D. Tiền học phí\n\n- E. Tất cả các phương án trên\n\n### Question 106 of 1200.08 Points\n\nĐường cầu cá nhân về một hàng hóa hoặc dịch vụ\n\n- A. Cho biết số lượng hàng hóa hoặc dịch vụ mà một cá nhân sẽ mua ở mỗi mức giá\n- B. Cho biết giá cân bằng thị trường\n- C. Biểu thị hàng hóa hoặc dịch vụ nào sẽ được thay thế theo nguyên lý thay thế\n- D. Tất cả đều đúng\n- E. a và c\n\n### Question 107 of 1200.08 Points\n\nHàm sản xuất đề cập đến\n\n- A. Mối quan hệ của các đầu ra với các đầu vào\n- B. Mối quan hệ của các đầu ra với các đầu vào biến đổi\n- C. Mối quan hệ của các đầu ra với các chi phí\n- D. Những kết hợp về sản lượng của một nền kinh tế với sự phân bổ nguồn lực\n\n### Question 108 of 1200.08 Points\n\nỞ cầu cân bằng, sự lựa chọn Q1 và Q2 là:\n\n- A. MU1 bằng MU2\n- B. MU1/Q1 bằng MU2/Q2\n- C. MU1/P1 bằng MU2/P2\n- D. P1 bằng P2\n- E. Không câu nào đúng\n\n### Question 109 of 1200.08 Points\n\nChi phí cố định:\n\n- A. Là các chi phí gắn với các yếu tố cố định\n- B. Không thay đổi theo mức sản lượng\n- C. Bao gồm những thanh toán trả cho một số yếu tố khả biến\n- D. Tất cả đều đúng\n- E. a và b\n\n### Question 110 of 1200.08 Points\n\nVới giả định các yếu tố khác không thay đổi, luật cung cho biết:\n\n- A. Giá dầu giảm làm lượng cung về dầu giảm\n- B. Giá dầu tăng làm lượng cung về dầu giảm\n- C. Cung dầu tăng sẽ làm giá dầu giảm\n\n- D. Chi phí sản xuất dầu giảm sẽ làm cung dầu tăng.\n- E. Chi phí sản xuất dầu tăng sẽ làm giá dầu tăng\n\n### Question 111 of 1200.08 Points\n\nBộ phận của kinh tế học nghiên cứu các quyết định của hãng và hộ gia đình được gọi là:\n\n- A. Kinh tế chuẩn tắc\n- B. Kinh tế thực chứng\n- C. Kinh tế vĩ mô\n- D. Kinh tế vi mô\n\n### Question 112 of 1200.08 Points\n\nGiả sử các yếu tố sản xuất đồng loạt giảm xuống, điều này làm\n\n- A. Dịch chuyển đường TC xuống dưới\n- B. Dịch chuyển AVC sang phải\n- C. Đường TC không đổi\n- D. Dịch chuyển đường TC lên trên\n\n### Question 113 of 1200.08 Points\n\nKinh tế học có thể định nghĩa là:\n\n- A. Cách làm tăng tiền lương của gia đình\n- B. Cách kiếm tiền ở thị trường chứng khoán.\n- C. Giải thích các số liệu khan hiếm\n- D. Cách sử dụng các tài nguyên khan hiếm để sản xuất ra các hàng hóa dịch vụ và phân bổ các hàng hóa dịch vụ này cho các cá nhân trong xã hội.\n- E. Tại sao tài nguyên lại khan hiếm như thế.\n\n### Question 114 of 1200.08 Points\n\nLoại báo nào sau đây có độ dãn của cầu theo giá lớn nhất?\n\n- A. Báo hàng ngày\n- B. Báo An Ninh Thế giới\n- C. Báo phụ nữ Việt Nam\n- D. báo phụ nữ Việt Nam cuối tháng\n- E. Các loại báo trên có độ co dãn của cầu là như nhau\n\n### Question 115 of 1200.08 Points\n\nHàm sản xuất  $Q = 0,2K^{0,8}L^{0,3}$  là hàm sản xuất có\n\n- A. Hiệu suất giảm dần theo quy mô\n- B. Hiệu suất tăng dần theo quy mô\n\n- C. Hiệu suất không đổi theo quy mô\n- D. Không phải các điều kể trên\n\n### Question 116 of 1200.08 Points\n\nNếu một hàng hóa được coi là “cấp thấp” thì:\n\n- A. Giá của nó tăng người ta sẽ mua nó ít đi\n- B. Giá của nó giảm người ta sẽ mua nó nhiều hơn\n- C. Khi thu nhập của người tiêu dùng tăng người ta sẽ mua hàng hóa đó ít đi\n- D. Khi thu nhập của người tiêu dùng giảm người ta sẽ mua hàng hóa đó ít đi\n- E. Nếu giá hoặc thu nhập thay đổi sẽ không gây ra sự thay đổi trong tiêu dùng hàng hóa đó\n\n### Question 117 of 1200.08 Points\n\nGiả sử rằng vé xem phim là 2\\$ và giá một cái bánh là 4\\$. Sự đánh đổi giữa hai hàng hóa này là:\n\n- A. Một cái bánh lấy một vé xem phim\n- B. Hai vé xem phim lấy một cái bánh\n- C. Hai cái bánh lấy một vé xem phim\n- D. 2\\$ một vé xem phim\n- E. Không câu nào đúng\n\n### Question 118 of 1200.08 Points\n\nNếu đường chi phí biến nằm trên đường chi phí biến đổi trung bình, khi sản lượng tăng, câu nào dưới đây là đúng\n\n- A. Chi phí cố định trung bình tăng lên\n- B. Chi phí biến đổi trung bình tăng lên\n- C. Tổng chi phí trung bình giảm xuống\n- D. Chi phí biến đổi trung bình giảm xuống\n\n### Question 119 of 1200.08 Points\n\nYếu tố nào sau đây gây ra sự vận động dọc theo đường cầu?\n\n- A. Thu nhập\n- B. Giá hàng hóa liên quan\n- C. Giá của hàng hóa đang xem xét\n- D. Thị hiếu\n- E. Tất cả các yếu tố trên\n\n### Question 120 of 1200.08 Points\n\nNếu hàm sản xuất  $Q=AK^\\alpha L^\\beta$  biểu hiện hiệu suất giảm theo quy mô khi:\n\n- A.  $\\alpha + \\beta > 1$\n- B.  $\\alpha + \\beta = 1$\n- C.  $\\alpha + \\beta < 1$\n- D. Không phải những điều kể trên\n\n## Phần ôn tập của cô.\n\n### PHẦN: CÂU HỎI NGẮN\n\n1. Hãy nêu những nguyên nhân làm cung giảm? Giá các yếu tố SX tăng, công nghệ càng lạc hậu, kỳ vọng giá trong tương lai tăng, thuế tăng, số lượng nhà SX giảm\n\n2. Nếu chính phủ đánh thuế vào người bán, ai sẽ lại người chịu thuế? Cả người mua lẫn người bán\n\n3. Hãy nêu các nguyên tắc trong nhóm nguyên tắc: con người ra tương tác (tác động) qua lại với nhau như thế nào? 5. Thương mại có thể làm cho mọi người tốt hơn. 6. Thị trường thường là cách tốt để tổ chức hoạt động kinh tế. 7. Chính phủ có thể cải thiện kết quả thị trường\n\n4. Trong ngắn hạn, giả sử một nhà sản xuất ghế có máy móc thiết bị là cố định. Biết rằng khi số người lao động được sử dụng trong quá trình sản xuất tăng từ 1 đến 7. Số ghế sản xuất được thay đổi như sau: 10, 17, 22, 25, 26, 25, 23. Tính năng suất cận biên và năng suất trung bình của lao động thứ 5. AP=5,2, MP=1\n\n5. Đường cung kém co giãn có dạng gì? Vẽ hình minh họa. Dốc đứng\n\n6. Chi phí cơ hội là gì? Hãy nêu chi phí cơ hội của bạn khi đi học đại học? Bất cứ thứ gì phải được từ bỏ để có được một số vật phẩm thì nó sẽ có giá cơ hội. Chi phí cơ hội của một người theo học đại học là giá trị của việc sử dụng thay thế tốt nhất thời gian của người đó, cũng như chi phí bổ sung mà người đó phải gánh chịu khi lựa chọn học đại học.\n\n7. Một DN có số liệu sản xuất trong ngắn hạn sản phẩm A như sau: số lượng sản phẩm đầu ra lần lượt 0, 12, 15, 20, 30, 40, 50, 51 tương ứng với tổng chi phí đầu vào 120, 205, 245, 270, 360, 470, 670, 753. Hãy tính AC và MC tại mức sản lượng 40. AC=11,75. MC=11\n\n8. Cách định giá tối ưu trong độc quyền?  $P=MC(1+1/Ed)$\n\n9. Vì sao phải nghiên cứu kinh tế học? Bởi vì kinh tế học là nghiên cứu về cách xã hội phân bổ các nguồn lực khan hiếm của mình, nếu không có sự khan hiếm, thì sẽ không cần đến kinh tế học. Mọi người đều có thể có tất cả hàng hóa và dịch vụ mà họ muốn.\n\n10. Hàm tổng chi phí ngắn hạn của một công ty được cho:  $TC=190 + 53Q$  (đơn vị tính: 10000VND). Nếu sản xuất 100000 đơn vị sản phẩm, chi phí biến đổi trung bình (AFC) là bao nhiêu? 19\n\n11. Khi cung không đổi, cầu giảm thì giá và lượng cân bằng trên thị trường sẽ như thế nào? Giá giảm, lượng giảm\n\n12. Hãy nêu ý nghĩa của độ co giãn cầu theo thu nhập? Khi thu nhập thay đổi 1% thì\n\nlượng cầu thay đổi  $Ed_i\\%$\n\n13. Khi nào người tiêu dùng chịu thuế ít hơn nhà sản xuất? Khi cung kém co giãn hơn cầu\n\n14. Hãy nêu nguyên tắc tối đa hóa lợi nhuận trong thị trường cạnh tranh hoàn hảo?  \n $MC=P$\n\n15. Hãy nêu những nguyên nhân làm thay đổi cầu? Giá SP có liên quan, qui mô dân số, kỳ vọng, thu nhập, thị hiếu\n\n16. Hãy nêu ý nghĩa của độ co giãn chéo của cầu theo giá? Khi giá sản phẩm có liên quan thay đổi 1% thì lượng cầu thay đổi  $Ed_{xpy}\\%$\n\n17. Trong ngắn hạn, giả sử một nhà sản xuất ghế có máy móc thiết bị là cố định. Biết rằng khi số người lao động được sử dụng trong quá trình sản xuất tăng từ 1 đến 7. Số ghế sản xuất được thay đổi như sau: 10, 17, 22, 25, 26, 25, 23. Tính năng suất cận biên và năng suất trung bình của lao động thứ 3.  $AP=22/3$ ,  $MP=5$\n\n18. Hãy nêu đặc điểm của thị trường cạnh tranh hoàn hảo?. Thị trường có rất nhiều người mua và người bán độc lập với nhau. Sản phẩm trên thị trường là đồng nhất. Thông tin hoàn hảo, Các doanh nghiệp có thể tham gia hay rút lui khỏi thị trường một cách dễ dàng\n\n19. Hãy nêu các nguyên tắc trong nhóm nguyên tắc: xét tổng thể, nền kinh tế hoạt động như thế nào? 8. Tiêu chuẩn sống của một nước phụ thuộc vào khả năng sản xuất hàng hóa và dịch vụ của nó. 9. Giá cả tăng khi chính phủ in quá nhiều tiền. 10. Xã hội đối mặt với một sự đánh đổi ngắn hạn giữa lạm phát và thất nghiệp.\n\n20. Hãy nêu đặc điểm của thị trường độc quyền? Thị trường 1 người mua hoặc 1 người bán. Sản phẩm là duy nhất Các doanh nghiệp không thể tham gia do rào cản thị trường, cạnh tranh giá không quan trọng\n\n### **BÀI TẬP**\n\n**Bài 1:** Giả định một hàng hoá có hàm cung cầu như sau:\n\n$Q_s=2P+100$   $Q_d=-P+550$  Đơn vị Dnh giá bán là ngàn VND/Tấn, sản lượng là tấn\n\n1. Hãy xác định giá và lượng cân bằng thị trường.\n2. Giả định cung tăng 20 tấn, hãy xác định giá và lượng cân bằng mới trên thị trường.\n3. Giả định cầu giảm 10 tấn, hãy xác định giá và lượng cân bằng mới trên thị trường.\n\n4. Nếu chính phủ ấn định giá là 180 ngàn VND/Tấn thì thị trường sẽ xảy ra điều gì? Xác định lượng dư thừa hoặc thiếu hụt nếu có? Tính số tiền chính phủ phải chi ra để giải quyết mnh trạng dư thừa sản phẩm trên thị trường nếu có?\n5. Giá định chính phủ đánh thuế làm cho sản lượng cân bằng giảm đi 2 tấn, hãy xác định khoảng thuế mà nhà nước đã đánh vào sản phẩm.\n6. Giá định chính phủ đánh thuế  $t=10\\text{VND/Tấn}$ , hãy xác định giá và lượng cân bằng mới? Ai là người chịu thuế?\n\nGiá định thị trường sản phẩm X là một thị trường cạnh tranh hoàn hảo.\n\n7. Một nhà sản xuất có hàm chi phí như sau:  $TC=2Q^2 + 10Q+100$ . Hãy xác định mức sản lượng để doanh nghiệp tối đa hoá lợi nhuận. Tính lợi nhuận thu được.\n8. Với mức sản lượng nào Doanh nghiệp sẽ hoà vốn? Đóng cửa sản xuất trong ngắn hạn?\n\nBài 2.\n\nGiá định một doanh nghiệp trên thị trường cạnh tranh hoàn có hàm chi phí ngắn hạn  $TC=5Q^2+20Q+1000$\n\n1. hãy viết các hàm AFC, AVC, AC VÀ MC của doanh nghiệp.\n2. Doanh nghiệp cung ứng tại lượng nào để tối đa hoá lợi nhuận với giá thị trường  $P=50$ . Tính lợi nhuận thu được.\n3. Xác định mức giá và sản lượng hoà vốn của doanh nghiệp\n4. Nếu giá thị trường là  $P=20$ , doanh nghiệp đóng cửa hay tiếp tục sản xuất\n5. Xác định mức giá đóng cửa của doanh nghiệp\n6. Xác định đường cung của doanh nghiệp –Minh hoạ bằng đồ thị."
+  }
+]

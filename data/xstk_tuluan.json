@@ -1,0 +1,62 @@
+[
+  {
+    "id": 31,
+    "category": "Xác suất thống kê",
+    "question": "Phân phối chuẩn là phân phối của biến ngẫu nhiên rời rạc hay liên tục?",
+    "answer": "Liên tục"
+  },
+  {
+    "id": 32,
+    "category": "Xác suất thống kê",
+    "question": "Rút 2 lá trong bộ bài tây 52 lá. Xác suất để rút được 2 lá Q là bao nhiêu?",
+    "answer": "0,0045"
+  },
+  {
+    "id": 33,
+    "category": "Xác suất thống kê",
+    "question": "Tỷ lệ chữa khỏi bệnh X của một loại thuốc A là 40%. Tính xác suất một nhóm gồm 15 người mắc bệnh X dùng thuốc A thì có 10 người khỏi?",
+    "answer": "0,0245"
+  },
+  {
+    "id": 34,
+    "category": "Xác suất thống kê",
+    "question": "Giá trị  $z(\\alpha/2)$  của độ tin cậy 98% là bao nhiêu?",
+    "answer": "2,33"
+  },
+  {
+    "id": 35,
+    "category": "Xác suất thống kê",
+    "question": "Một thùng có 5 quả bóng đá và 14 quả bóng rổ. Xác suất để khi lấy ngẫu nhiên 3 quả thì cả 3 đều là bóng đá là bao nhiêu?",
+    "answer": "0,01"
+  },
+  {
+    "id": 36,
+    "category": "Xác suất thống kê",
+    "question": "Giá trị kỳ vọng trong phân phối nhị thức được tính bằng công thức nào?",
+    "answer": "n.p"
+  },
+  {
+    "id": 37,
+    "category": "Xác suất thống kê",
+    "question": "Phương sai của biến ngẫu nhiên có phân phối nhị thức được tính bằng công thức nào?",
+    "answer": "$N.p.(1-p)$"
+  },
+  {
+    "id": 38,
+    "category": "Xác suất thống kê",
+    "question": "Hai công ty lữ hành A, B hoạt động độc lập. Xác suất trong một ngày hai công ty có khách đặt tour tương ứng: 0.5 và 0.3. Tìm xác suất để trong một ngày cả 2 công ty có khách đặt tour ?",
+    "answer": "0,14"
+  },
+  {
+    "id": 39,
+    "category": "Xác suất thống kê",
+    "question": "Khoảng tin cậy 95% cho tỷ lệ người nghèo ở tỉnh X là: ( 0,22; 0,29). Độ dài khoảng tin cậy của ước lượng trên là?",
+    "answer": "0,07"
+  },
+  {
+    "id": 40,
+    "category": "Xác suất thống kê",
+    "question": "Khảo sát 200 sinh viên trường đại học A ta thấy có 134 sinh viên thấy thích thú với việc học online. Khoảng tin cậy 95% cho tỷ lệ sinh viên thấy thích thú với việc học online của trường A là?",
+    "answer": "(0,605; 0,735)"
+  }
+]

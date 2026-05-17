@@ -315,329 +315,542 @@
             <p>Công thức, Mẹo & Bài tập thường gặp</p>
         </header>
 
-        <nav class="nav-tabs">
-            <button class="nav-tab active" data-section="section1">📐 Công Thức</button>
-            <button class="nav-tab" data-section="section2">💡 Mẹo Trắc Nghiệm</button>
-            <button class="nav-tab" data-section="section3">📝 Dạng Câu Hỏi</button>
-            <button class="nav-tab" data-section="section4">⚠️ Bẫy Cần Tránh</button>
-        </nav>
+        <!-- KTVM CONTENT -->
+        <div id="content-ktvm" style="display: none;">
+            <nav class="nav-tabs">
+                <button class="nav-tab active" data-subject="ktvm" data-section="section1">📖 Lý Thuyết Ch. 1-3</button>
+                <button class="nav-tab" data-subject="ktvm" data-section="section2">📖 Lý Thuyết Ch. 4-6</button>
+                <button class="nav-tab" data-subject="ktvm" data-section="section3">📐 Bảng Công Thức</button>
+                <button class="nav-tab" data-subject="ktvm" data-section="section4">⚠️ Bổ Sung Vĩ Mô</button>
+            </nav>
 
-        <!-- PHẦN 1: CÔNG THỨC -->
-        <div id="section1" class="section active">
-            <h3>PHẦN 1: BẢNG CÔNG THỨC</h3>
-
-            <div class="card">
-                <h4>1. Nhóm Đo lường Sản lượng (GDP/GNP)</h4>
-                <ul>
-                    <li><strong>GDP (Tổng sản phẩm quốc nội):</strong> Tính theo lãnh thổ.</li>
-                    <li><strong>GNP (Tổng sản phẩm quốc dân):</strong> Tính theo quốc tịch (người dân).
-                        <div class="formula-box">
-                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>GNP</mtext><mo>=</mo><mtext>GDP</mtext><mo>+</mo><mtext>NIA</mtext></mrow><annotation encoding="application/x-tex">\text{GNP} = \text{GDP} + \text{NIA}</annotation></semantics></math>
-                        </div>
-                        <div class="note">(NIA: Thu nhập ròng từ nước ngoài = Thu từ yếu tố xuất khẩu - Trả cho yếu tố nhập khẩu)</div>
-                    </li>
-                    <li><strong>GDP danh nghĩa (<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>D</mi><msub><mi>P</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">GDP_n</annotation></semantics></math>):</strong> Tính theo giá hiện hành.</li>
-                    <li><strong>GDP thực tế (<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>D</mi><msub><mi>P</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">GDP_r</annotation></semantics></math>):</strong> Tính theo giá cố định (giá gốc).
-                        <div class="formula-box">
-                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Chỉ số giảm phát (D)</mtext><mo>=</mo><mfrac><msub><mtext>GDP</mtext><mi>n</mi></msub><msub><mtext>GDP</mtext><mi>r</mi></msub></mfrac><mo>×</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">\text{Chỉ số giảm phát (D)} = \frac{\text{GDP}_n}{\text{GDP}_r} \times 100</annotation></semantics></math>
-                        </div>
-                    </li>
-                    <li><strong>Tốc độ tăng trưởng (g):</strong>
-                        <div class="formula-box">
-                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false">(</mo><mi mathvariant="normal">%</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><msub><mtext>GDP</mtext><mtext>r(năm nay)</mtext></msub><mo>−</mo><msub><mtext>GDP</mtext><mtext>r(năm trước)</mtext></msub></mrow><msub><mtext>GDP</mtext><mtext>r(năm trước)</mtext></msub></mfrac><mo>×</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">g(\%) = \frac{\text{GDP}_{r(\text{năm nay})} - \text{GDP}_{r(\text{năm trước})}}{\text{GDP}_{r(\text{năm trước})}} \times 100</annotation></semantics></math>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h4>2. Nhóm Lạm phát & Thất nghiệp & Lãi suất</h4>
-                <ul>
-                    <li><strong>Tỷ lệ thất nghiệp (u):</strong>
-                        <div class="formula-box">
-                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false">(</mo><mi mathvariant="normal">%</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mtext>Số người thất nghiệp (U)</mtext></mrow><mtext>Lực lượng lao động (L)</mtext></mfrac><mo>×</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">u(\%) = \frac{\text{Số người thất nghiệp (U)}}{\text{Lực lượng lao động (L)}} \times 100</annotation></semantics></math>
-                        </div>
-                        <div class="note"><strong>Lưu ý:</strong> L = E (có việc) + U (thất nghiệp). Người không tìm việc/về hưu không tính vào L.</div>
-                    </li>
-                    <li><strong>Tỷ lệ lạm phát (gp):</strong> Dùng CPI hoặc D (Chỉ số giảm phát).
-                        <div class="formula-box">
-                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mi>p</mi><mo>=</mo><mfrac><mrow><msub><mtext>CPI</mtext><mi>t</mi></msub><mo>−</mo><msub><mtext>CPI</mtext><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><msub><mtext>CPI</mtext><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub></mfrac><mo>×</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">gp = \frac{\text{CPI}_t - \text{CPI}_{t-1}}{\text{CPI}_{t-1}} \times 100</annotation></semantics></math>
-                        </div>
-                    </li>
-                    <li><strong>Phương trình Fisher (Quan trọng):</strong>
-                        <div class="formula-box">
-                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Lãi suất thực tế </mtext><mo stretchy="false">(</mo><msub><mi>i</mi><mi>r</mi></msub><mo stretchy="false">)</mo><mo>≈</mo><mtext>Lãi suất danh nghĩa </mtext><mo stretchy="false">(</mo><msub><mi>i</mi><mi>n</mi></msub><mo stretchy="false">)</mo><mo>−</mo><mtext>Tỷ lệ lạm phát </mtext><mo stretchy="false">(</mo><mi>g</mi><mi>p</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{Lãi suất thực tế } (i_r) \approx \text{Lãi suất danh nghĩa } (i_n) - \text{Tỷ lệ lạm phát } (gp)</annotation></semantics></math>
-                        </div>
-                        <div class="tip"><em>Mẹo trắc nghiệm:</em> Lãi suất thực tế và lạm phát nghịch biến. Lãi suất danh nghĩa và lạm phát đồng biến.</div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h4>3. Nhóm Tổng cầu (AD) & Số nhân (Keynes) - <span class="badge badge-red">Hay thi bài tập lớn</span></h4>
-                <ul>
-                    <li><strong>Phương trình cân bằng:</strong> Sản lượng (Y) = Tổng cầu (AD)
-                        <div class="formula-box">
-                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mi>C</mi><mo>+</mo><mi>I</mi><mo>+</mo><mi>G</mi><mo>+</mo><mi>X</mi><mo>−</mo><mi>I</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">Y = C + I + G + X - IM</annotation></semantics></math>
-                        </div>
-                    </li>
-                    <li><strong>Các hàm thành phần (Cần nhớ để thay số):</strong>
-                        <div class="formula-box">
-                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Y</mi><mi>d</mi></msub><mtext> (Thu nhập khả dụng)</mtext><mo>=</mo><mi>Y</mi><mo>−</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">Y_d = Y - T</annotation></semantics></math></p>
-                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><mover accent="true"><mi>C</mi><mo>ˉ</mo></mover><mo>+</mo><mtext>MPC</mtext><mo>×</mo><msub><mi>Y</mi><mi>d</mi></msub></mrow><annotation encoding="application/x-tex">C = \bar{C} + \text{MPC} \times Y_d</annotation></semantics></math></p>
-                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mo>−</mo><mover accent="true"><mi>C</mi><mo>ˉ</mo></mover><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mtext>MPC</mtext><mo stretchy="false">)</mo><mo>×</mo><msub><mi>Y</mi><mi>d</mi></msub></mrow><annotation encoding="application/x-tex">S = -\bar{C} + (1 - \text{MPC}) \times Y_d</annotation></semantics></math> <em>(Nhớ: MPC + MPS = 1)</em></p>
-                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mover accent="true"><mi>T</mi><mo>ˉ</mo></mover><mo>+</mo><mi>t</mi><mo>×</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">T = \bar{T} + t \times Y</annotation></semantics></math></p>
-                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mover accent="true"><mi>I</mi><mo>ˉ</mo></mover><mo>+</mo><mtext>MPI</mtext><mo>×</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">I = \bar{I} + \text{MPI} \times Y</annotation></semantics></math></p>
-                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mi>M</mi><mo>=</mo><mover accent="true"><mrow><mi>I</mi><mi>M</mi></mrow><mo>ˉ</mo></mover><mo>+</mo><mtext>MPM</mtext><mo>×</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">IM = \bar{IM} + \text{MPM} \times Y</annotation></semantics></math></p>
-                        </div>
-                    </li>
-                    <li><strong>Công thức Số nhân tổng quát (k hoặc m):</strong>
-                        <div class="formula-box">
-                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mtext>MPC</mtext><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>t</mi><mo stretchy="false">)</mo><mo>−</mo><mtext>MPI</mtext><mo>+</mo><mtext>MPM</mtext></mrow></mfrac></mrow><annotation encoding="application/x-tex">m = \frac{1}{1 - \text{MPC} \times (1 - t) - \text{MPI} + \text{MPM}}</annotation></semantics></math>
-                        </div>
-                        <div class="tip"><em>Mẹo:</em> Y<sub>cân bằng</sub> = m × A<sub>0</sub> (với A<sub>0</sub> là tổng các hằng số tự định: C̄, Ī, Ḡ, X̄...)</div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h4>4. Nhóm Tiền tệ (Chương 7)</h4>
-                <ul>
-                    <li><strong>Tiền mạnh (H - Tiền cơ sở):</strong>
-                        <div class="formula-box">
-                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mi>U</mi><mtext> (Tiền mặt)</mtext><mo>+</mo><mi>R</mi><mtext> (Dự trữ ngân hàng)</mtext></mrow><annotation encoding="application/x-tex">H = U \text{ (Tiền mặt)} + R \text{ (Dự trữ ngân hàng)}</annotation></semantics></math>
-                        </div>
-                    </li>
-                    <li><strong>Mức cung tiền (M<sub>S</sub>):</strong>
-                        <div class="formula-box">
-                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>S</mi></msub><mo>=</mo><mtext>Tiền mặt ngoài lưu thông</mtext><mo>+</mo><mtext>Tiền gửi (D)</mtext></mrow><annotation encoding="application/x-tex">M_S = \text{Tiền mặt ngoài lưu thông} + \text{Tiền gửi (D)}</annotation></semantics></math></p>
-                            <p><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>S</mi></msub><mo>=</mo><msub><mi>m</mi><mi>M</mi></msub><mo>×</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">M_S = m_M \times H</annotation></semantics></math></p>
-                        </div>
-                    </li>
-                    <li><strong>Số nhân tiền tệ (m<sub>M</sub>):</strong>
-                        <div class="formula-box">
-                            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>M</mi></msub><mo>=</mo><mfrac><mrow><mi>s</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>s</mi><mo>+</mo><msub><mi>r</mi><mi>b</mi></msub><mo>+</mo><msub><mi>r</mi><mi>t</mi></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">m_M = \frac{s + 1}{s + r_b + r_t}</annotation></semantics></math>
-                        </div>
-                        <div class="note">(s: tỷ lệ tiền mặt/tiền gửi; r<sub>b</sub>: dự trữ bắt buộc; r<sub>t</sub>: dự trữ tùy ý)</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- PHẦN 2: MẸO TRẮC NGHIỆM -->
-        <div id="section2" class="section">
-            <h3>PHẦN 2: GIẢI TRẮC NGHIỆM (MẸO & BẪY)</h3>
-
-            <div class="card">
-                <h4>1. Quy tắc "Dịch chuyển" hay "Di chuyển"?</h4>
-                <ul>
-                    <li><strong>Di chuyển:</strong> Khi biến số nằm trên trục tung/trục hoành thay đổi.
-                        <div class="note">Ví dụ: Trên đồ thị AD-AS (trục tung là Giá P), nếu Giá thay đổi → Di chuyển dọc đường AD.</div>
-                    </li>
-                    <li><strong>Dịch chuyển:</strong> Khi các yếu tố "ngoại sinh" thay đổi.
-                        <div class="tip">Ví dụ: Chính phủ tăng chi tiêu G, Thuế giảm, Công nghệ tăng → Đường đồ thị dịch sang Phải/Trái.</div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h4>2. Phân loại Thất nghiệp <span class="badge badge-yellow">Hay hỏi</span></h4>
-                <ul>
-                    <li><span class="badge badge-green">Tạm thời (Frictional)</span> Sinh viên mới ra trường, người đang chuyển việc. <em>→ Bình thường, không tránh khỏi.</em></li>
-                    <li><span class="badge badge-blue">Cơ cấu (Structural)</span> Do kỹ năng không hợp, do công nghệ thay đổi, do vùng miền.</li>
-                    <li><span class="badge badge-red">Chu kỳ (Cyclical)</span> Do suy thoái kinh tế (Tổng cầu giảm). <em>→ Đây là loại xấu nhất.</em></li>
-                    <li><span class="badge badge-yellow">Cổ điển</span> Do tiền lương thực tế quá cao (luật lương tối thiểu).</li>
-                </ul>
-                <div class="note"><strong>Lưu ý:</strong> Thất nghiệp tự nhiên = Tạm thời + Cơ cấu + Cổ điển (xảy ra khi Y = Y*)</div>
-            </div>
-
-            <div class="card">
-                <h4>3. GDP tính cái gì và bỏ cái gì?</h4>
-                <ul>
-                    <li><span class="badge badge-green">TÍNH</span> Hàng hóa cuối cùng, phí môi giới, tiền thuê nhà (kể cả nhà tự ở - ước tính).</li>
-                    <li><span class="badge badge-red">KHÔNG TÍNH</span> Hàng trung gian (bột mì làm bánh), Hàng tự cung tự cấp, Hàng lậu, Hàng bán lại (xe cũ - vì đã tính năm sx), Chuyển khoản (trợ cấp thất nghiệp, hưu trí - vì không đẻ ra hàng hóa mới).</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h4>4. Chính sách Vĩ mô (Bảng tra nhanh)</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tình trạng KT</th>
-                            <th>Cần làm gì?</th>
-                            <th>Chính sách Tài khóa</th>
-                            <th>Chính sách Tiền tệ</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Suy thoái</strong><br>(Y < Y*, Thất nghiệp cao)</td>
-                            <td><span class="badge badge-green">MỞ RỘNG</span><br>(Kích cầu)</td>
-                            <td>- Tăng chi tiêu (G↑)<br>- Giảm thuế (T↓)</td>
-                            <td>- Mua trái phiếu<br>- Giảm dự trữ bắt buộc (r<sub>b</sub>↓)<br>- Giảm lãi suất chiết khấu (i<sub>c</sub>↓)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Lạm phát/Nóng</strong><br>(Y > Y*, Giá tăng)</td>
-                            <td><span class="badge badge-red">THẮT CHẶT</span><br>(Kiềm chế)</td>
-                            <td>- Giảm chi tiêu (G↓)<br>- Tăng thuế (T↑)</td>
-                            <td>- Bán trái phiếu<br>- Tăng dự trữ bắt buộc (r<sub>b</sub>↑)<br>- Tăng lãi suất chiết khấu (i<sub>c</sub>↑)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="card">
-                <h4>5. Mô hình IS - LM (Chương 8)</h4>
-                <ul>
-                    <li><strong>IS (Hàng hóa):</strong> Dốc xuống. Dịch chuyển phải khi C, I, G, X tăng hoặc T, IM giảm.</li>
-                    <li><strong>LM (Tiền tệ):</strong> Dốc lên. Dịch chuyển phải khi Cung tiền (M<sub>S</sub>) tăng.</li>
-                </ul>
-                <div class="tip">
-                    <strong>Mẹo nhớ:</strong>
+            <div id="ktvm-section1" class="section ktvm-section active">
+                <h3>CHƯƠNG 1: NHỮNG VẤN ĐỀ CƠ BẢN CỦA KINH TẾ HỌC</h3>
+                <div class="card">
+                    <h4>1. Các khái niệm nền tảng</h4>
                     <ul>
-                        <li>Tài khóa mở rộng → IS sang phải → Y tăng, Lãi suất tăng.</li>
-                        <li>Tiền tệ mở rộng → LM sang phải → Y tăng, Lãi suất giảm.</li>
+                        <li><strong>Kinh tế học:</strong> Môn khoa học nghiên cứu cách thức xã hội <strong>phân bổ nguồn lực khan hiếm</strong> cho các nhu cầu vô hạn. <em>(Sự khan hiếm là lý do môn Kinh tế học ra đời)</em>.</li>
+                        <li><strong>Vi mô vs Vĩ mô:</strong>
+                            <ul>
+                                <li><em>Vi mô:</em> Hành vi của "tế bào" kinh tế (cá nhân, hộ gia đình, doanh nghiệp), giá cả một mặt hàng.</li>
+                                <li><em>Vĩ mô:</em> Toàn bộ nền kinh tế (Lạm phát, thất nghiệp, GDP, chính sách tài khóa/tiền tệ).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Thực chứng vs Chuẩn tắc:</strong>
+                            <ul>
+                                <li><em>Thực chứng (Positive):</em> Mô tả sự kiện khách quan, "Là gì?", có cơ sở khoa học (VD: Lạm phát là 9%).</li>
+                                <li><em>Chuẩn tắc (Normative):</em> Mang tính chủ quan, lời khuyên, chỉ dẫn, "Nên như thế nào?" (VD: Chính phủ <em>nên</em> có thuốc miễn phí cho người già).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Chi phí cơ hội (Opportunity Cost):</strong> Là giá trị của <strong>cơ hội tốt nhất bị bỏ qua</strong> khi bạn đưa ra một quyết định.
+                            <div class="formula-box">Chi phí kinh tế = Chi phí kế toán + Chi phí cơ hội</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>2. Đường giới hạn khả năng sản xuất (PPF)</h4>
+                    <ul>
+                        <li>Thể hiện các kết hợp tối đa của 2 loại hàng hóa khi dùng hết nguồn lực và công nghệ.</li>
+                        <li><em>Điểm nằm trên PPF:</em> Sản xuất hiệu quả.</li>
+                        <li><em>Điểm nằm trong PPF:</em> Kém hiệu quả (có thất nghiệp, lãng phí nguồn lực).</li>
+                        <li><em>Điểm nằm ngoài PPF:</em> Không thể đạt được với nguồn lực hiện tại.</li>
+                    </ul>
+                    <div class="note"><strong>Lưu ý:</strong> PPF giải thích được sự khan hiếm, chi phí cơ hội, quy luật chi phí cơ hội tăng dần; <strong>KHÔNG</strong> giải thích được cung cầu.</div>
+                </div>
+
+                <div class="card">
+                    <h4>3. Ba vấn đề cơ bản của nền kinh tế</h4>
+                    <p>Sản xuất cái gì? Như thế nào? Cho ai? <br>→ Được giải quyết thông qua thị trường (KTTT), mệnh lệnh chính phủ (KT Kế hoạch) hoặc cả hai (KT hỗn hợp).</p>
+                </div>
+
+                <h3>CHƯƠNG 2: CUNG, CẦU VÀ CÂN BẰNG THỊ TRƯỜNG</h3>
+                <div class="card">
+                    <h4>1. Lý thuyết Cầu (Demand - D)</h4>
+                    <ul>
+                        <li><strong>Luật cầu:</strong> Giá (P) TĂNG → Lượng cầu (Q<sub>D</sub>) GIẢM (Tỷ lệ nghịch). Đường cầu dốc xuống.</li>
+                        <li><strong>Các loại hàng hóa:</strong>
+                            <ul>
+                                <li><em>Hàng thay thế:</em> Giá mặt hàng A TĂNG → Cầu mặt hàng B TĂNG (VD: Coca và Pepsi).</li>
+                                <li><em>Hàng bổ sung:</em> Giá mặt hàng A TĂNG → Cầu mặt hàng B GIẢM (VD: Xăng và Xe máy).</li>
+                                <li><em>Hàng thông thường:</em> Thu nhập TĂNG → Cầu TĂNG (Gồm hàng thiết yếu và hàng cao cấp).</li>
+                                <li><em>Hàng thứ cấp (cấp thấp):</em> Thu nhập TĂNG → Cầu GIẢM (VD: Mì tôm sinh viên, xe buýt).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="tip"><strong>💡 Chuyên gia Note (Bẫy đề thi):</strong><br>
+                    - <strong>Sự di chuyển (Movement):</strong> Chỉ do <strong>Giá của chính bản thân hàng hóa đó</strong> thay đổi (Trượt dọc trên đường cầu/cung).<br>
+                    - <strong>Sự dịch chuyển (Shift):</strong> Do các yếu tố khác thay đổi (Thu nhập, giá hàng liên quan, thị hiếu, kỳ vọng...).</div>
+                </div>
+
+                <div class="card">
+                    <h4>2. Lý thuyết Cung (Supply - S)</h4>
+                    <ul>
+                        <li><strong>Luật cung:</strong> Giá (P) TĂNG → Lượng cung (Q<sub>S</sub>) TĂNG (Tỷ lệ thuận). Đường cung dốc lên.</li>
+                        <li><em>Các yếu tố làm dịch chuyển cung:</em> Chi phí đầu vào (lương, nguyên liệu), công nghệ, thuế, kỳ vọng nhà sản xuất, số lượng nhà sản xuất.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>3. Cân bằng thị trường & Sự can thiệp của Chính phủ</h4>
+                    <ul>
+                        <li><strong>Cân bằng:</strong> Cung = Cầu (Q<sub>S</sub> = Q<sub>D</sub> và P<sub>S</sub> = P<sub>D</sub>).</li>
+                        <li><strong>Giá trần (Giá tối đa - P<sub>max</sub>):</strong> Luôn đặt <strong>thấp hơn</strong> giá cân bằng → Bảo vệ người tiêu dùng → Gây ra hiện tượng <strong>Thiếu hụt</strong> (Q<sub>D</sub> > Q<sub>S</sub>).</li>
+                        <li><strong>Giá sàn (Giá tối thiểu - P<sub>min</sub>):</strong> Luôn đặt <strong>cao hơn</strong> giá cân bằng → Bảo vệ nhà sản xuất → Gây ra hiện tượng <strong>Dư thừa</strong> (Q<sub>S</sub> > Q<sub>D</sub>).</li>
+                        <li><strong>Thuế:</strong>
+                            <ul>
+                                <li>Chính phủ đánh thuế vào mặt hàng bán ra sẽ làm <strong>đường cung dịch chuyển lên trên/sang trái</strong>.</li>
+                                <li><em>Nguyên tắc chịu thuế:</em> Ai <strong>ÍT co giãn hơn</strong> (cứng nhắc hơn), bên đó chịu phần thuế <strong>NHIỀU hơn</strong>. Thường người tiêu dùng phản ứng nhanh hơn NSX nên nhà sản xuất hay gánh thuế nhiều hơn.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3>CHƯƠNG 3: ĐỘ CO GIÃN (ELASTICITY)</h3>
+                <div class="card">
+                    <ul>
+                        <li><strong>Co giãn của cầu theo giá (|E|):</strong>
+                            <ul>
+                                <li>|E| > 1: Cầu co giãn nhiều (VD: hàng xa xỉ) → Muốn tăng Doanh thu (TR) thì <strong>Giảm giá</strong>.</li>
+                                <li>|E| < 1: Cầu co giãn ít (VD: hàng thiết yếu) → Muốn tăng Doanh thu (TR) thì <strong>Tăng giá</strong>.</li>
+                                <li>|E| = 1: Co giãn đơn vị → Doanh thu đạt <strong>Max</strong> (TR cực đại).</li>
+                                <li>|E| = 0: Không co giãn hoàn toàn → Đường cầu thẳng đứng (VD: Thuốc chữa bệnh hiểm nghèo).</li>
+                                <li>|E| = ∞: Co giãn hoàn toàn → Đường cầu nằm ngang.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Co giãn của cầu theo thu nhập (E<sub>I</sub>):</strong> E<sub>I</sub> > 0 (Hàng thông thường); E<sub>I</sub> < 0 (Hàng thứ cấp).</li>
+                        <li><strong>Co giãn chéo của cầu (E<sub>XY</sub>):</strong> E<sub>XY</sub> > 0 (Hai hàng hóa <strong>Thay thế</strong>); E<sub>XY</sub> < 0 (Hai hàng hóa <strong>Bổ sung</strong>); E<sub>XY</sub> = 0 (Không liên quan).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="ktvm-section2" class="section ktvm-section">
+                <h3>CHƯƠNG 4: LÝ THUYẾT HÀNH VI NGƯỜI TIÊU DÙNG</h3>
+                <div class="card">
+                    <ul>
+                        <li><strong>Tổng lợi ích (TU) và Lợi ích cận biên (MU):</strong>
+                            <div class="formula-box"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>U</mi><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>T</mi><mi>U</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>Q</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">MU = \frac{\Delta TU}{\Delta Q}</annotation></semantics></math></div>
+                            <div class="note"><em>Quy luật MU giảm dần:</em> Càng tiêu dùng nhiều 1 sản phẩm, sự thỏa mãn của đơn vị cuối cùng càng giảm.</div>
+                        </li>
+                        <li><strong>Thặng dư tiêu dùng (CS):</strong> Là chênh lệch giữa mức giá người mua <strong>sẵn sàng trả</strong> và mức giá <strong>thực tế phải trả</strong>.</li>
+                        <li><strong>Nguyên tắc tối đa hóa hữu dụng (Điểm cân bằng):</strong>
+                            <div class="formula-box">
+                                <p>Người tiêu dùng phân bổ ngân sách sao cho Hữu dụng biên trên mỗi đồng chi tiêu là bằng nhau: <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>M</mi><msub><mi>U</mi><mi>X</mi></msub></mrow><msub><mi>P</mi><mi>X</mi></msub></mfrac><mo>=</mo><mfrac><mrow><mi>M</mi><msub><mi>U</mi><mi>Y</mi></msub></mrow><msub><mi>P</mi><mi>Y</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">\frac{MU_X}{P_X} = \frac{MU_Y}{P_Y}</annotation></semantics></math></p>
+                                <p>Điều kiện ràng buộc (Đường ngân sách): <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>⋅</mo><msub><mi>P</mi><mi>X</mi></msub><mo>+</mo><mi>Y</mi><mo>⋅</mo><msub><mi>P</mi><mi>Y</mi></msub><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">X \cdot P_X + Y \cdot P_Y = I</annotation></semantics></math> (Thu nhập).</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3>CHƯƠNG 5: LÝ THUYẾT SẢN XUẤT VÀ CHI PHÍ</h3>
+                <div class="card">
+                    <h4>1. Sản xuất</h4>
+                    <ul>
+                        <li><strong>Năng suất bình quân (AP):</strong> AP = Q / L</li>
+                        <li><strong>Năng suất cận biên (MP):</strong> MP = ΔQ / ΔL (Hoặc là đạo hàm của hàm Q). <em>Quy luật MP giảm dần.</em></li>
+                        <li><em>Mối quan hệ MP và AP:</em>
+                            <ul>
+                                <li>MP > AP thì AP đang tăng.</li>
+                                <li>MP < AP thì AP đang giảm.</li>
+                                <li><strong>MP = AP tại điểm AP cực đại (Max).</strong></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>2. Các loại chi phí (Ngắn hạn)</h4>
+                    <ul>
+                        <li><strong>TC (Tổng chi phí)</strong> = FC (Chi phí cố định) + VC (Chi phí biến đổi).</li>
+                        <li><strong>AC (Chi phí bình quân)</strong> = TC / Q = AFC + AVC.</li>
+                        <li><strong>MC (Chi phí cận biên):</strong> MC = ΔTC / ΔQ = TC'(Q). Là chi phí để SX thêm 1 đơn vị SP.</li>
+                    </ul>
+                    <div class="note"><em>Quy luật đồ thị:</em> Đường MC luôn cắt đáy đường AC và AVC tại điểm cực tiểu của chúng.</div>
+                </div>
+
+                <h3>CHƯƠNG 6: CẤU TRÚC THỊ TRƯỜNG & TỐI ĐA HÓA LỢI NHUẬN</h3>
+                <div class="card">
+                    <div class="tip"><strong>💡 NGUYÊN TẮC VÀNG CHO MỌI DOANH NGHIỆP:</strong> Để Tối đa hóa lợi nhuận (Π<sub>max</sub>), sản xuất tại mức sản lượng có <strong>MR = MC</strong> (Doanh thu cận biên = Chi phí cận biên).</div>
+                    
+                    <h4>1. Thị trường Cạnh tranh hoàn hảo (CTHH)</h4>
+                    <ul>
+                        <li><em>Đặc điểm:</em> Vô số người mua/bán, Sản phẩm đồng nhất, tự do gia nhập/rút lui, thông tin hoàn hảo.</li>
+                        <li>Doanh nghiệp là <strong>người nhận giá</strong> (Price Taker) → Đường cầu nằm ngang (E = ∞).</li>
+                        <li>Vì giá cố định nên: <strong>P = MR = AR</strong>.</li>
+                        <li>Điểm tối đa hóa lợi nhuận: <strong>P = MC</strong>.</li>
+                        <li><em>Điểm đóng cửa (ngắn hạn):</em> Khi P ≤ AVC<sub>min</sub> (Tổng doanh thu không đủ bù đắp chi phí biến đổi).</li>
+                        <li><em>Đường cung của DN CTHH:</em> Chính là phần đường MC nằm phía trên điểm cực tiểu của AVC.</li>
+                    </ul>
+
+                    <h4>2. Thị trường Độc quyền hoàn toàn (Monopoly)</h4>
+                    <ul>
+                        <li><em>Đặc điểm:</em> Duy nhất 1 người bán, sản phẩm không có thay thế, rào cản gia nhập cực lớn.</li>
+                        <li>Đường cầu của DN chính là đường cầu thị trường (dốc xuống).</li>
+                        <li>Hàm Doanh thu cận biên (MR) có <strong>độ dốc gấp đôi</strong> đường cầu. (VD: Cầu P = a - bQ → MR = a - 2bQ).</li>
+                        <li><em>Các mốc cần nhớ:</em>
+                            <ul>
+                                <li>Tối đa hóa Lợi nhuận: Giải phương trình <strong>MR = MC</strong> để tìm Q, sau đó thế Q vào hàm cầu P để tìm Giá định bán.</li>
+                                <li>Tối đa hóa Doanh thu (TR max): Giải phương trình <strong>MR = 0</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><em>Định giá trong độc quyền:</em> <strong>P = MC(1 + 1/E<sub>d</sub>)</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="ktvm-section3" class="section ktvm-section">
+                <h3>BẢNG CÔNG THỨC & TÍNH TOÁN</h3>
+                
+                <div class="card">
+                    <h4>1. PHẦN CUNG - CẦU & CÂN BẰNG THỊ TRƯỜNG</h4>
+                    <ul>
+                        <li><strong>Hàm số Cầu (D):</strong> P<sub>D</sub> = a - b·Q<sub>D</sub> hoặc Q<sub>D</sub> = c - d·P (Hệ số góc luôn âm vì luật cầu).</li>
+                        <li><strong>Hàm số Cung (S):</strong> P<sub>S</sub> = c + d·Q<sub>S</sub> hoặc Q<sub>S</sub> = a + b·P (Hệ số góc luôn dương vì luật cung).</li>
+                        <li><strong>Cân bằng thị trường:</strong> Giải phương trình <strong>P<sub>S</sub> = P<sub>D</sub></strong> (hoặc Q<sub>S</sub> = Q<sub>D</sub>) để tìm Giá cân bằng (P<sub>e</sub>) và Sản lượng cân bằng (Q<sub>e</sub>).</li>
+                        <li><strong>Bài toán Thuế (t):</strong>
+                            <ul>
+                                <li>Nếu Chính phủ đánh thuế <strong>t vào người BÁN</strong>: Đường cung dịch chuyển lên trên. Hàm cung mới: <strong>P<sub>S1</sub> = P<sub>S0</sub> + t</strong></li>
+                                <li>Nếu Chính phủ đánh thuế <strong>t vào người MUA</strong>: Đường cầu dịch chuyển xuống dưới. Hàm cầu mới: <strong>P<sub>D1</sub> = P<sub>D0</sub> - t</strong></li>
+                                <li><em>Tiền thuế nhà nước thu được:</em> T = t × Q<sub>mới</sub>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>2. PHẦN TÍNH ĐỘ CO GIÃN</h4>
+                    <ul>
+                        <li><strong>Co giãn Điểm (Point Elasticity):</strong> Dùng khi có hàm số cầu.<br>
+                            👉 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>D</mi><mi>P</mi></mrow></msub><mo>=</mo><msup><mi>Q</mi><mo mathvariant="normal">′</mo></msup><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo><mo>×</mo><mfrac><mi>P</mi><mi>Q</mi></mfrac></mrow><annotation encoding="application/x-tex">E_{DP} = Q'(P) \times \frac{P}{Q}</annotation></semantics></math> <em>(Đạo hàm của Q theo P, nhân với P chia Q)</em>.
+                        </li>
+                        <li><strong>Co giãn Khoảng (Arc Elasticity):</strong> Dùng khi giá trị thay đổi từ P<sub>1</sub> đến P<sub>2</sub>.<br>
+                            👉 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>D</mi><mi>P</mi></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>Q</mi><mn>2</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub></mrow><mrow><msub><mi>P</mi><mn>2</mn></msub><mo>−</mo><msub><mi>P</mi><mn>1</mn></msub></mrow></mfrac><mo>×</mo><mfrac><mrow><msub><mi>P</mi><mn>1</mn></msub><mo>+</mo><msub><mi>P</mi><mn>2</mn></msub></mrow><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>+</mo><msub><mi>Q</mi><mn>2</mn></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">E_{DP} = \frac{Q_2 - Q_1}{P_2 - P_1} \times \frac{P_1 + P_2}{Q_1 + Q_2}</annotation></semantics></math>
+                        </li>
+                        <li><strong>Co giãn theo Thu nhập (E<sub>I</sub>):</strong><br>
+                            👉 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>D</mi><mi>I</mi></mrow></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>Q</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>I</mi></mrow></mfrac><mo>×</mo><mfrac><mi>I</mi><mi>Q</mi></mfrac></mrow><annotation encoding="application/x-tex">E_{DI} = \frac{\Delta Q}{\Delta I} \times \frac{I}{Q}</annotation></semantics></math>
+                        </li>
+                        <li><strong>Co giãn chéo (E<sub>XY</sub>):</strong><br>
+                            👉 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>X</mi><mi>Y</mi></mrow></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><msub><mi>Q</mi><mi>X</mi></msub></mrow><mrow><mi mathvariant="normal">Δ</mi><msub><mi>P</mi><mi>Y</mi></msub></mrow></mfrac><mo>×</mo><mfrac><msub><mi>P</mi><mi>Y</mi></msub><msub><mi>Q</mi><mi>X</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">E_{XY} = \frac{\Delta Q_X}{\Delta P_Y} \times \frac{P_Y}{Q_X}</annotation></semantics></math>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>3. PHẦN TÍNH TOÁN CHI PHÍ (COST)</h4>
+                    <p><em>Đây là dạng bài "nhắm mắt cũng ra thi", bạn cần biết bóc tách phương trình TC.</em><br>
+                    Ví dụ: Cho <strong>TC = 5Q² + 20Q + 1000</strong>. Ta bóc tách ra:</p>
+                    <ul>
+                        <li><strong>FC (Chi phí cố định):</strong> Phần <strong>không</strong> dính tới Q. ⇒ FC = 1000</li>
+                        <li><strong>VC (Chi phí biến đổi):</strong> Phần <strong>có</strong> chứa Q. ⇒ VC = 5Q² + 20Q</li>
+                        <li><strong>MC (Chi phí cận biên):</strong> Đạo hàm bậc 1 của TC. ⇒ MC = TC'(Q) = 10Q + 20</li>
+                        <li><strong>ATC (Chi phí bình quân):</strong> Chia TC cho Q. ⇒ AC = TC/Q = 5Q + 20 + 1000/Q</li>
+                        <li><strong>AVC (Chi phí biến đổi bình quân):</strong> Chia VC cho Q. ⇒ AVC = VC/Q = 5Q + 20</li>
+                        <li><strong>AFC (Chi phí cố định bình quân):</strong> Chia FC cho Q. ⇒ AFC = FC/Q = 1000/Q</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>4. CÁC MỐC QUYẾT ĐỊNH CỦA DOANH NGHIỆP (Cực kỳ quan trọng)</h4>
+                    <ul>
+                        <li><strong>Tổng doanh thu (TR):</strong> TR = P × Q</li>
+                        <li><strong>Doanh thu cận biên (MR):</strong> MR = TR'(Q) <em>(Đạo hàm của TR theo Q)</em>.</li>
+                        <li><strong>Lợi nhuận (Π):</strong> Π = TR - TC</li>
+                    </ul>
+                    <div class="tip"><strong>4 MỐC CẦN HỌC THUỘC LÒNG ĐỂ GIẢI BÀI:</strong>
+                        <ol>
+                            <li><strong>Tối đa hóa LỢI NHUẬN:</strong> Giải phương trình <strong>MR = MC</strong></li>
+                            <li><strong>Tối đa hóa DOANH THU:</strong> Giải phương trình <strong>MR = 0</strong> (Lúc này |E| = 1).</li>
+                            <li><strong>Điểm HÒA VỐN:</strong> Giải phương trình <strong>P = AC<sub>min</sub></strong> (Cho MC = AC) hoặc cho TR = TC.</li>
+                            <li><strong>Điểm ĐÓNG CỬA (Ngừng kinh doanh):</strong> Giải phương trình <strong>P = AVC<sub>min</sub></strong> (Cho MC = AVC).</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h4>5. MẸO XỬ LÝ NHANH THỊ TRƯỜNG ĐỘC QUYỀN VÀ CTHH</h4>
+                    <ul>
+                        <li><strong>Trong Cạnh tranh hoàn hảo:</strong> P là hằng số. Do đó <strong>MR = P</strong>.
+                            <ul><li><em>Tìm sản lượng tối ưu:</em> Giải <strong>MC = P<sub>thị_trường</sub></strong>.</li></ul>
+                        </li>
+                        <li><strong>Trong Độc quyền:</strong> Đường Cầu P = a - bQ ⇒ Đường MR luôn là <strong>MR = a - 2bQ</strong> <em>(Mẹo: MR có hệ số góc gấp đôi hệ số góc của hàm P)</em>.</li>
+                        <li><em>Cách định giá tối ưu trong Độc quyền:</em> 👉 <strong>P = MC(1 + 1/E<sub>d</sub>)</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="ktvm-section4" class="section ktvm-section">
+                <h3>🛑 BỔ SUNG: CÁC KHÁI NIỆM VĨ MÔ (Macro)</h3>
+                <div class="card">
+                    <p><em>Trong tài liệu của bạn có lẫn một số câu trắc nghiệm kinh tế vĩ mô, bạn cần lướt qua các keyword sau:</em></p>
+                    <ul>
+                        <li><strong>Lạm phát:</strong> Lạm phát chi phí đẩy (do giá đầu vào tăng đột biến); Phi mã (2-3 con số); Vừa phải (1 con số).</li>
+                        <li><strong>Thất nghiệp:</strong> Chu kỳ (do suy thoái kinh tế); Tạm thời (SV mới ra trường đang tìm việc); Cơ cấu (do công nghệ thay đổi/địa phương phát triển không đều).</li>
+                        <li><strong>GDP và GNP:</strong> GDP (trong lãnh thổ), GNP (công dân quốc gia).</li>
+                        <li><strong>Chính sách của Chính phủ:</strong>
+                            <ul>
+                                <li><em>Tài khóa mở rộng:</em> Tăng chi tiêu (G), giảm thuế (T) → Kích thích kinh tế.</li>
+                                <li><em>Tiền tệ nới lỏng:</em> Mua trái phiếu CP, Giảm tỷ lệ dự trữ bắt buộc, giảm lãi suất chiết khấu → Tăng cung tiền (MS).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>🎁 BONUS: BỘ CÔNG THỨC VĨ MÔ</h4>
+                    <p>Dù đây là đề Vi mô, nhưng tài liệu của bạn có khoảng 10-15 câu hỏi Vĩ mô, bạn chỉ cần nhớ nhanh các công thức sau là "diệt" gọn:</p>
+                    <ul>
+                        <li><strong>Hàm Tiêu dùng (C) & Tiết kiệm (S):</strong>
+                            <div class="formula-box">
+                                <p>Nếu C = C<sub>0</sub> + Cm·Y<sub>d</sub> (Ví dụ: C = 60 + 0.75Y<sub>d</sub>)</p>
+                                <p>Thì S = -C<sub>0</sub> + (1 - Cm)·Y<sub>d</sub> (Ví dụ: S = -60 + 0.25Y<sub>d</sub>) <em>(Vì C + S = Y<sub>d</sub>)</em></p>
+                            </div>
+                        </li>
+                        <li><strong>Cán cân Thương mại (NX):</strong> NX = X - IM (Xuất khẩu trừ Nhập khẩu).</li>
+                        <li><strong>Cán cân Ngân sách (B):</strong> B = T - G (Thuế trừ Chi tiêu chính phủ. B>0: thặng dư, B<0: thâm hụt).</li>
+                        <li><strong>Cân bằng thị trường Tiền tệ:</strong> Cung tiền thực tế (MS) = Cầu tiền (MD).</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- PHẦN 3: DẠNG CÂU HỎI -->
-        <div id="section3" class="section">
-            <h3>PHẦN 3: CÁC DẠNG CÂU HỎI THƯỜNG GẶP</h3>
+        <!-- XSTK CONTENT -->
+        <div id="content-xstk" style="display: none;">
+            <nav class="nav-tabs">
+                <button class="nav-tab active" data-subject="xstk" data-section="section1">🎲 Chương 1 & 2</button>
+                <button class="nav-tab" data-subject="xstk" data-section="section2">📊 Chương 3: Phân Phối</button>
+                <button class="nav-tab" data-subject="xstk" data-section="section3">📈 Chương 4: Ước Lượng</button>
+                <button class="nav-tab" data-subject="xstk" data-section="section4">💡 Tips Bấm Máy</button>
+            </nav>
 
-            <div class="card">
-                <h4>Dạng 1: Trắc nghiệm lý thuyết nhanh</h4>
-                <ul>
-                    <li><em>Câu hỏi:</em> Đường tổng cung ngắn hạn (SAS) có hình gì?
-                        <div class="tip"><em>Đáp án:</em> Nằm ngang (hoặc dốc lên nhẹ) - Do giá cả cứng nhắc.</div>
-                    </li>
-                    <li><em>Câu hỏi:</em> Đường tổng cung dài hạn (LAS) có hình gì?
-                        <div class="tip"><em>Đáp án:</em> Thẳng đứng tại mức sản lượng tiềm năng (Y*).</div>
-                    </li>
-                    <li><em>Câu hỏi:</em> Khoản nào sau đây là "rò rỉ" (Leakage) khỏi nền kinh tế?
-                        <div class="tip"><em>Đáp án:</em> S (Tiết kiệm), T (Thuế), IM (Nhập khẩu).</div>
-                    </li>
-                    <li><em>Câu hỏi:</em> Khoản nào là "bơm vào" (Injection)?
-                        <div class="tip"><em>Đáp án:</em> I (Đầu tư), G (Chi tiêu CP), X (Xuất khẩu).</div>
-                    </li>
-                    <li><em>Câu hỏi:</em> Định luật Okun nói gì?
-                        <div class="tip"><em>Đáp án:</em> Mối quan hệ nghịch đảo giữa Thất nghiệp và Sản lượng (Thất nghiệp tăng 1% thì GDP giảm 2-2.5%).</div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h4>Dạng 2: Bài tập tính toán Tự luận (Quy trình 4 bước)</h4>
-                <p><strong>Đề bài:</strong> Cho C = 100 + 0.75Y<sub>d</sub>; I = 50 + 0.05Y; G = 200; T = 0.2Y; X = 150; IM = 100 + 0.1Y. Tính Y cân bằng?</p>
+            <div id="xstk-section1" class="section xstk-section active">
+                <h3>CHƯƠNG 1: DỮ LIỆU & THỐNG KÊ MÔ TẢ (Ăn điểm trắc nghiệm dễ)</h3>
                 
-                <div class="formula-box">
-                    <p><strong>Bước 1: Xử lý hàm C:</strong></p>
-                    <p>C = 100 + 0.75(Y - 0.2Y) = 100 + 0.75(0.8Y) = 100 + 0.6Y</p>
+                <div class="card">
+                    <h4>1. Phân loại biến và Thang đo</h4>
+                    <ul>
+                        <li><strong>Biến liên tục:</strong> Có thể nhận giá trị lẻ, thập phân (VD: <em>Chiều cao, trọng lượng quả bí ngô...</em>).</li>
+                        <li><strong>Biến rời rạc:</strong> Chỉ nhận giá trị nguyên (VD: <em>Số khách chờ xe buýt, số học sinh...</em>).</li>
+                        <li><strong>Các loại thang đo (Có 4 loại):</strong>
+                            <ul>
+                                <li><em>Danh nghĩa (Nominal):</em> Chỉ để gọi tên, phân loại (VD: <em>Màu tóc, giới tính, dân tộc</em>).</li>
+                                <li><em>Thứ hạng (Ordinal):</em> Có sắp xếp cao thấp (VD: <em>Giỏi, Khá, Trung bình</em>).</li>
+                                <li><em>Khoảng (Interval):</em> Không có số 0 tuyệt đối (VD: <em>Nhiệt độ C</em>).</li>
+                                <li><em>Tỷ lệ (Ratio):</em> Có số 0 tuyệt đối, so sánh gấp mấy lần (VD: <em>Chiều cao, Cân nặng, Thu nhập</em>).</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="formula-box">
-                    <p><strong>Bước 2: Viết phương trình tổng cầu (AD):</strong></p>
-                    <p>AD = C + I + G + X - IM</p>
-                    <p>AD = (100 + 0.6Y) + (50 + 0.05Y) + 200 + 150 - (100 + 0.1Y)</p>
-                    <p>AD = 400 + 0.55Y</p>
+                <div class="card">
+                    <h4>2. Các đặc trưng của dãy số liệu</h4>
+                    <p><em>(VD dãy số: 3, 4, 2, 3, 4, 1, 5, 7)</em></p>
+                    <ul>
+                        <li><strong>Kích thước mẫu (<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math>):</strong> Tổng số phần tử trong dãy (Dãy trên <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">n = 8</annotation></semantics></math>).</li>
+                        <li><strong>Trung bình (<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>x</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{x}</annotation></semantics></math>):</strong> Tổng các số chia cho <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math>.</li>
+                        <li><strong>Mode (<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">M_o</annotation></semantics></math>):</strong> Giá trị xuất hiện <strong>NHIỀU NHẤT</strong>. <em>(Có thể có nhiều Mode, VD dãy trên Mode là 3 và 4)</em>.</li>
+                        <li><strong>Trung vị (Median - <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>e</mi></msub></mrow><annotation encoding="application/x-tex">M_e</annotation></semantics></math>):</strong> Giá trị đứng GIỮA dãy số <strong>SAU KHI ĐÃ SẮP XẾP TỪ BÉ ĐẾN LỚN</strong>.
+                            <div class="tip"><em>Mẹo:</em> Đề cho: 10, 3, 7, 8, 9, 6, 7, 2 → Xếp lại: 2, 3, 6, <strong>7, 7</strong>, 8, 9, 10. Trung vị là trung bình cộng của 2 số ở giữa: <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>7</mn><mo>+</mo><mn>7</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>2</mn><mo>=</mo><mn>7</mn></mrow><annotation encoding="application/x-tex">(7+7)/2 = 7</annotation></semantics></math>.</div>
+                        </li>
+                        <li><strong>Khoảng biến thiên:</strong> = Giá trị MAX - Giá trị MIN. <em>(VD: 10 - 1 = 9)</em>.</li>
+                        <li><strong>Phương sai (<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">s^2</annotation></semantics></math> / <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mi>a</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">Var</annotation></semantics></math>) & Độ lệch chuẩn (<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math> / <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>):</strong> 
+                            <div class="note">Nhớ quy tắc: <em>Độ lệch chuẩn bằng Căn bậc 2 của Phương sai</em>. (Ví dụ: Đề cho Phương sai = 64 → Độ lệch chuẩn = 8).</div>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="formula-box">
-                    <p><strong>Bước 3: Cho cân bằng (Y = AD):</strong></p>
-                    <p>Y = 400 + 0.55Y ⇒ 0.45Y = 400 ⇒ <strong>Y ≈ 888.8</strong></p>
-                </div>
-
-                <div class="formula-box">
-                    <p><strong>Bước 4: Tính Cán cân Ngân sách & Thương mại (Nếu hỏi):</strong></p>
-                    <p>Ngân sách (B): B = T - G = (0.2 × 888.8) - 200. Nếu âm là Thâm hụt.</p>
-                    <p>Thương mại (NX): NX = X - IM.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- PHẦN 4: BẪY CẦN TRÁNH -->
-        <div id="section4" class="section">
-            <h3>PHẦN 4: CÁC BẪY CẦN TRÁNH</h3>
-
-            <div class="card">
-                <h4>⚠️ Bẫy 1: Thuế tự định</h4>
-                <p>Đề bài cho T = 20 + 0.2Y (có cả phần tự định). Khi thay vào Y<sub>d</sub> = Y - T, nhớ phải đổi dấu:</p>
-                <div class="formula-box">
-                    Y<sub>d</sub> = Y - (20 + 0.2Y) = Y - 20 - 0.2Y
-                </div>
-                <div class="note"><strong>Rất nhiều bạn quên trừ số 20 này!</strong></div>
-            </div>
-
-            <div class="card">
-                <h4>⚠️ Bẫy 2: "Trợ cấp" (Transfer payments - Tr)</h4>
-                <ul>
-                    <li>Trợ cấp <strong>KHÔNG</strong> nằm trong G (Chi tiêu chính phủ).</li>
-                    <li>Trợ cấp được cộng vào thu nhập khả dụng:</li>
-                </ul>
-                <div class="formula-box">
-                    Y<sub>d</sub> = Y - T + Tr
+                <h3>CHƯƠNG 2: LÝ THUYẾT XÁC SUẤT CƠ BẢN</h3>
+                <div class="card">
+                    <p><em>Luôn nhớ: Xác suất của một biến cố A luôn nằm trong khoảng <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0 \le P(A) \le 1</annotation></semantics></math>.</em></p>
+                    <ul>
+                        <li><strong>Biến cố đối (<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>A</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{A}</annotation></semantics></math>):</strong> <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mover accent="true"><mi>A</mi><mo>ˉ</mo></mover><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(\bar{A}) = 1 - P(A)</annotation></semantics></math>. (VD: Đề cho <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0.75</mn><mo>→</mo><mi>P</mi><mo stretchy="false">(</mo><mover accent="true"><mi>B</mi><mo>ˉ</mo></mover><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mn>0.75</mn><mo>=</mo><mn>0.25</mn></mrow><annotation encoding="application/x-tex">P(B) = 0.75 \rightarrow P(\bar{B}) = 1 - 0.75 = 0.25</annotation></semantics></math>).</li>
+                        <li><strong>Công thức CỘNG:</strong> <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(A + B)</annotation></semantics></math> hoặc <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(A \cup B)</annotation></semantics></math>
+                            <ul>
+                                <li>Trường hợp chung: <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>+</mo><mi>P</mi><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi mathvariant="normal">.</mi><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(A+B) = P(A) + P(B) - P(A.B)</annotation></semantics></math></li>
+                                <li>Nếu A và B <strong>xung khắc</strong> (không thể cùng xảy ra): <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi mathvariant="normal">.</mi><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn><mo>→</mo><mi mathvariant="bold">P</mi><mo mathvariant="bold" stretchy="false">(</mo><mi mathvariant="bold">A</mi><mo mathvariant="bold">+</mo><mi mathvariant="bold">B</mi><mo mathvariant="bold" stretchy="false">)</mo><mo mathvariant="bold">=</mo><mi mathvariant="bold">P</mi><mo mathvariant="bold" stretchy="false">(</mo><mi mathvariant="bold">A</mi><mo mathvariant="bold" stretchy="false">)</mo><mo mathvariant="bold">+</mo><mi mathvariant="bold">P</mi><mo mathvariant="bold" stretchy="false">(</mo><mi mathvariant="bold">B</mi><mo mathvariant="bold" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(A.B) = 0 \rightarrow \mathbf{P(A+B) = P(A) + P(B)}</annotation></semantics></math>.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Công thức NHÂN:</strong> <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi mathvariant="normal">.</mi><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(A.B)</annotation></semantics></math> hoặc <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(A \cap B)</annotation></semantics></math>
+                            <ul>
+                                <li>Trường hợp chung: <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi mathvariant="normal">.</mi><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>×</mo><mi>P</mi><mo stretchy="false">(</mo><mi>B</mi><mi mathvariant="normal">∣</mi><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(A.B) = P(A) \times P(B|A)</annotation></semantics></math></li>
+                                <li>Nếu A và B <strong>độc lập</strong> (thằng này xảy ra không ảnh hưởng tới thằng kia): <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">P</mi><mo mathvariant="bold" stretchy="false">(</mo><mi mathvariant="bold">A</mi><mi mathvariant="bold">.</mi><mi mathvariant="bold">B</mi><mo mathvariant="bold" stretchy="false">)</mo><mo mathvariant="bold">=</mo><mi mathvariant="bold">P</mi><mo mathvariant="bold" stretchy="false">(</mo><mi mathvariant="bold">A</mi><mo mathvariant="bold" stretchy="false">)</mo><mo mathvariant="bold">×</mo><mi mathvariant="bold">P</mi><mo mathvariant="bold" stretchy="false">(</mo><mi mathvariant="bold">B</mi><mo mathvariant="bold" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathbf{P(A.B) = P(A) \times P(B)}</annotation></semantics></math>. <br><em>(Câu này xuất hiện 100% ở cả Trắc nghiệm lẫn Tự luận ngắn).</em></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="card">
-                <h4>⚠️ Bẫy 3: Mua/Bán trái phiếu</h4>
-                <ul>
-                    <li>NHTW <span class="badge badge-green">MUA</span> trái phiếu = Đưa tiền cho dân = Cung tiền <strong>TĂNG</strong>.</li>
-                    <li>NHTW <span class="badge badge-red">BÁN</span> trái phiếu = Thu tiền về = Cung tiền <strong>GIẢM</strong>.</li>
-                </ul>
+            <div id="xstk-section2" class="section xstk-section">
+                <h3>CHƯƠNG 3: CÁC QUY LUẬT PHÂN PHỐI XÁC SUẤT (Trọng tâm)</h3>
+                
+                <div class="card">
+                    <h4>1. Phân phối Nhị thức - Binomial <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false">(</mo><mi>n</mi><mo separator="true">,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">B(n, p)</annotation></semantics></math></h4>
+                    <p><em>Dùng khi phép thử chỉ có 2 kết quả (Thành công/Thất bại), lặp lại n lần.</em></p>
+                    <ul>
+                        <li><strong>Công thức tính XS:</strong> 
+                            <div class="formula-box"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><msubsup><mi>C</mi><mi>n</mi><mi>k</mi></msubsup><mo>⋅</mo><msup><mi>p</mi><mi>k</mi></msup><mo>⋅</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><msup><mo stretchy="false">)</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></msup></mrow><annotation encoding="application/x-tex">P(X = k) = C_n^k \cdot p^k \cdot (1-p)^{n-k}</annotation></semantics></math></div>
+                            <div class="tip"><em>(Đề hỏi: Cho <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>∼</mo><mi>B</mi><mo stretchy="false">(</mo><mn>4</mn><mo separator="true">,</mo><mn>0.2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">X \sim B(4, 0.2)</annotation></semantics></math>. Tìm <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>X</mi><mo>=</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(X=0)</annotation></semantics></math> → Bấm máy: <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi>C</mi><mn>0</mn><mo>⋅</mo><mo stretchy="false">(</mo><mn>0.2</mn><msup><mo stretchy="false">)</mo><mn>0</mn></msup><mo>⋅</mo><mo stretchy="false">(</mo><mn>0.8</mn><msup><mo stretchy="false">)</mo><mn>4</mn></msup><mo>=</mo><mn>0.4096</mn></mrow><annotation encoding="application/x-tex">4C0 \cdot (0.2)^0 \cdot (0.8)^4 = 0.4096</annotation></semantics></math>).</em></div>
+                        </li>
+                        <li><strong>Kỳ vọng (Trung bình):</strong> <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">E</mi><mo mathvariant="bold" stretchy="false">(</mo><mi mathvariant="bold">X</mi><mo mathvariant="bold" stretchy="false">)</mo><mo mathvariant="bold">=</mo><mi mathvariant="bold">n</mi><mo mathvariant="bold">⋅</mo><mi mathvariant="bold">p</mi></mrow><annotation encoding="application/x-tex">\mathbf{E(X) = n \cdot p}</annotation></semantics></math></li>
+                        <li><strong>Phương sai:</strong> <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">V</mi><mi mathvariant="bold">a</mi><mi mathvariant="bold">r</mi><mo mathvariant="bold" stretchy="false">(</mo><mi mathvariant="bold">X</mi><mo mathvariant="bold" stretchy="false">)</mo><mo mathvariant="bold">=</mo><mi mathvariant="bold">n</mi><mo mathvariant="bold">⋅</mo><mi mathvariant="bold">p</mi><mo mathvariant="bold">⋅</mo><mo mathvariant="bold" stretchy="false">(</mo><mn mathvariant="bold">1</mn><mo mathvariant="bold">−</mo><mi mathvariant="bold">p</mi><mo mathvariant="bold" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathbf{Var(X) = n \cdot p \cdot (1-p)}</annotation></semantics></math>
+                            <div class="note"><em>(Đề hỏi: <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>60</mn><mo separator="true">,</mo><mi>p</mi><mo>=</mo><mn>0.3</mn></mrow><annotation encoding="application/x-tex">n=60, p=0.3</annotation></semantics></math> → <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn><mo>⋅</mo><mn>0.3</mn><mo>=</mo><mn>18</mn></mrow><annotation encoding="application/x-tex">E(X) = 60 \cdot 0.3 = 18</annotation></semantics></math>; <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mi>a</mi><mi>r</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn><mo>⋅</mo><mn>0.3</mn><mo>⋅</mo><mn>0.7</mn><mo>=</mo><mn>12.6</mn></mrow><annotation encoding="application/x-tex">Var(X) = 60 \cdot 0.3 \cdot 0.7 = 12.6</annotation></semantics></math>).</em></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>2. Phân phối Poisson <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(\lambda)</annotation></semantics></math></h4>
+                    <p><em>Dùng đếm số biến cố xảy ra trong một khoảng thời gian/không gian. (VD: Số cuộc gọi tới tổng đài trong 1 giờ).</em></p>
+                    <ul>
+                        <li><strong>Công thức:</strong> 
+                            <div class="formula-box"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup><mo>⋅</mo><msup><mi>λ</mi><mi>k</mi></msup></mrow><mrow><mi>k</mi><mo stretchy="false">!</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">P(X = k) = \frac{e^{-\lambda} \cdot \lambda^k}{k!}</annotation></semantics></math></div>
+                        </li>
+                        <li><strong>Đặc điểm vàng:</strong> Kỳ vọng = Phương sai = <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>3. Phân phối Chuẩn - Normal <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>μ</mi><mo separator="true">,</mo><msup><mi>σ</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N(\mu, \sigma^2)</annotation></semantics></math></h4>
+                    <ul>
+                        <li>Phân phối chuẩn tắc <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mo>∼</mo><mi>N</mi><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Z \sim N(0,1)</annotation></semantics></math> có Trung bình = 0, Độ lệch chuẩn = 1.</li>
+                        <li><em>Câu học thuộc lòng:</em> Cho Z là chuẩn tắc, <strong><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>Z</mi><mo>&lt;</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.8413</mn></mrow><annotation encoding="application/x-tex">P(Z &lt; 1) = 0.8413</annotation></semantics></math></strong> (Trong đề hay làm tròn là 0.841).</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>4. Phân phối Siêu bội (Hypergeometric)</h4>
+                    <ul>
+                        <li><em>Mẹo nhận diện:</em> Các bài toán "Bốc ngẫu nhiên k vật từ 1 tập hợp N vật có sẵn (VD: chọn 10 xe trong 50 xe có 20 xe đỏ, chọn 4 người từ nhóm nam nữ...)". <strong>Đó chính là Siêu bội</strong>.</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="card">
-                <h4>⚠️ Bẫy 4: Đơn vị tính</h4>
-                <p>Chú ý đơn vị là Tỷ đồng hay Triệu USD. Tuy nhiên, số nhân (k, m) không có đơn vị.</p>
+            <div id="xstk-section3" class="section xstk-section">
+                <h3>CHƯƠNG 4: THỐNG KÊ SUY DIỄN & ƯỚC LƯỢNG (Bao trọn câu Tự luận 3 điểm)</h3>
+                
+                <div class="card">
+                    <h4>1. Phương pháp lấy mẫu</h4>
+                    <p>Có 4 phương pháp cơ bản (Ngẫu nhiên đơn giản, Hệ thống, Phân tầng, Theo chùm).</p>
+                    <div class="tip"><em>Mẹo:</em> Cứ "chọn sản phẩm thứ 50 trên dây chuyền" → <strong>Mẫu hệ thống</strong>.</div>
+                </div>
+
+                <div class="card">
+                    <h4>2. BÀI TOÁN TỰ LUẬN 3 ĐIỂM (Cứ áp khuôn này là 100% full điểm)</h4>
+                    <div class="note"><strong>Ví dụ từ đề thi:</strong> Khảo sát mẫu 200 linh kiện (<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>200</mn></mrow><annotation encoding="application/x-tex">n=200</annotation></semantics></math>), có 170 linh kiện đạt chất lượng (<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>170</mn></mrow><annotation encoding="application/x-tex">k=170</annotation></semantics></math>). Độ tin cậy 95% (<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mrow><mi>α</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msub><mo>=</mo><mn>1.96</mn></mrow><annotation encoding="application/x-tex">z_{\alpha/2} = 1.96</annotation></semantics></math>).</div>
+                    
+                    <ul style="margin-top: 15px;">
+                        <li><strong>Câu a (1 điểm): Tìm tỉ lệ mẫu.</strong>
+                            <div class="formula-box">Công thức: <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>p</mi><mo>^</mo></mover><mo>=</mo><mfrac><mi>k</mi><mi>n</mi></mfrac></mrow><annotation encoding="application/x-tex">\hat{p} = \frac{k}{n}</annotation></semantics></math></div>
+                            <em>Giải:</em> Tỉ lệ linh kiện đạt chất lượng là <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>p</mi><mo>^</mo></mover><mo>=</mo><mfrac><mn>170</mn><mn>200</mn></mfrac><mo>=</mo><mn>0.85</mn></mrow><annotation encoding="application/x-tex">\hat{p} = \frac{170}{200} = 0.85</annotation></semantics></math> (hoặc 85%).
+                        </li>
+                        <li style="margin-top: 15px;"><strong>Câu b (2 điểm): Ước lượng khoảng cho tỉ lệ tổng thể (Khoảng tin cậy).</strong>
+                            <ul>
+                                <li><em>Bước 1:</em> Tính Sai số biên (Độ chính xác của ước lượng):
+                                    <div class="formula-box"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><msub><mi>z</mi><mrow><mi>α</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msub><mo>×</mo><msqrt><mfrac><mrow><mover accent="true"><mi>p</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mover accent="true"><mi>p</mi><mo>^</mo></mover><mo stretchy="false">)</mo></mrow><mi>n</mi></mfrac></msqrt></mrow><annotation encoding="application/x-tex">\varepsilon = z_{\alpha/2} \times \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}</annotation></semantics></math></div>
+                                    <div class="formula-box">→ <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mn>1.96</mn><mo>×</mo><msqrt><mfrac><mrow><mn>0.85</mn><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mn>0.85</mn><mo stretchy="false">)</mo></mrow><mn>200</mn></mfrac></msqrt><mo>≈</mo><mn>0.049</mn></mrow><annotation encoding="application/x-tex">\varepsilon = 1.96 \times \sqrt{\frac{0.85 \times (1 - 0.85)}{200}} \approx 0.049</annotation></semantics></math></div>
+                                </li>
+                                <li><em>Bước 2:</em> Viết khoảng tin cậy:
+                                    <div class="formula-box"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>p</mi><mo>^</mo></mover><mo>−</mo><mi>ε</mi><mo separator="true">;</mo><mover accent="true"><mi>p</mi><mo>^</mo></mover><mo>+</mo><mi>ε</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>0.85</mn><mo>−</mo><mn>0.049</mn><mo separator="true">;</mo><mn>0.85</mn><mo>+</mo><mn>0.049</mn><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>0.801</mn><mo separator="true">;</mo><mn>0.899</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\hat{p} - \varepsilon ; \hat{p} + \varepsilon) = (0.85 - 0.049 ; 0.85 + 0.049) = (0.801 ; 0.899)</annotation></semantics></math></div>
+                                </li>
+                            </ul>
+                            <div class="tip"><em>(Lưu ý: Trong đáp án của GV là <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0.78</mn><mo separator="true">,</mo><mn>0.92</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0.78, 0.92)</annotation></semantics></math> có thể do sai số làm tròn hoặc trong bài giảng thầy cô cho dùng công thức làm tròn khác, nhưng cấu trúc chuẩn xác 100% trên thế giới là như trên).</em></div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="card">
-                <h4>⚠️ Bẫy 5: Lãi suất</h4>
-                <ul>
-                    <li>Đầu tư (I) phụ thuộc <strong>nghịch biến</strong> với Lãi suất (i).</li>
-                    <li>Lãi suất tăng → Đầu tư giảm → Tổng cầu giảm.</li>
-                </ul>
+            <div id="xstk-section4" class="section xstk-section">
+                <h3>🚀 TIPS "BẤM MÁY TÍNH" ĐỂ LÀM TRẮC NGHIỆM THẦN TỐC</h3>
+                
+                <div class="card">
+                    <p>Khi đi thi, đừng tính tay Độ lệch chuẩn hay Trung bình. Hãy dùng máy tính CASIO (Fx-580VN X hoặc Fx-570VN Plus):</p>
+                    <ul>
+                        <li><strong>Với máy 580VN X:</strong>
+                            <ol>
+                                <li>Ấn <code>MENU</code> → <code>6</code> (Thống kê) → <code>1</code> (1 biến).</li>
+                                <li>Nhập các số liệu vào cột <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math>.</li>
+                                <li>Ấn <code>OPTN</code> → <code>2</code> (Tính 1 biến).</li>
+                                <li>Màn hình sẽ hiện toàn bộ: 
+                                   <ul>
+                                       <li><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>x</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{x}</annotation></semantics></math>: Giá trị trung bình.</li>
+                                       <li><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">s_x</annotation></semantics></math>: Độ lệch chuẩn mẫu (dùng cái này).</li>
+                                       <li><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>σ</mi><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">\sigma_x</annotation></semantics></math>: Độ lệch chuẩn tổng thể.</li>
+                                       <li><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>e</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">med</annotation></semantics></math>: Trung vị.</li>
+                                   </ul>
+                                </li>
+                            </ol>
+                        </li>
+                        <li><strong>Với các bài Tổ hợp (chọn đồ vật):</strong>
+                            <ul>
+                                <li>Ví dụ: Rút ngẫu nhiên 4 xe từ 7 chiếc Porsche và 12 chiếc BMW. Xác suất bốc 4 BMW?</li>
+                                <li><em>Cách bấm:</em> <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac><mrow><mn>12</mn><mi>C</mi><mn>4</mn></mrow><mrow><mn>19</mn><mi>C</mi><mn>4</mn></mrow></mfrac><mo>≈</mo><mn>0.128</mn></mrow><annotation encoding="application/x-tex">P = \frac{12C4}{19C4} \approx 0.128</annotation></semantics></math> (Bấm phím <code>nCr</code> trên máy tính).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-
-        <button class="back-to-top" id="backToTop">↑</button>
+        </div>\n\n        <button class="back-to-top" id="backToTop">↑</button>
     </div>
 
     <script>
-        // Tab navigation
-        document.querySelectorAll('.nav-tab').forEach(tab => {
-            tab.addEventListener('click', () => {
-                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-                document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-                
-                tab.classList.add('active');
-                document.getElementById(tab.dataset.section).classList.add('active');
-            });
-        });
-
-        // Back to top button
-        const backToTop = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                backToTop.classList.add('visible');
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const subject = urlParams.get('subject') || 'ktvm';
+            
+            // Header
+            const headerTitle = document.querySelector('header h1');
+            const headerDesc = document.querySelector('header p');
+            
+            if (subject === 'xstk') {
+                headerTitle.textContent = '📚 Tóm Tắt Xác Suất Thống Kê';
+                headerDesc.textContent = 'Công thức, Định lý & Phân phối cơ bản';
+                document.title = 'Tóm Tắt Xác Suất Thống Kê';
+                document.getElementById('content-xstk').style.display = 'block';
+                document.getElementById('content-ktvm').style.display = 'none';
             } else {
-                backToTop.classList.remove('visible');
+                headerTitle.textContent = '📚 Tóm Tắt Kinh Tế Vi Mô';
+                headerDesc.textContent = 'Công thức, Mẹo & Bài tập thường gặp';
+                document.title = 'Tóm Tắt Kinh Tế Vi Mô';
+                document.getElementById('content-ktvm').style.display = 'block';
+                document.getElementById('content-xstk').style.display = 'none';
             }
-        });
 
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+            // Tab navigation
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                if(tab.dataset.subject !== subject) return; // Chỉ gắn event cho tab của môn học hiện tại
+                
+                tab.addEventListener('click', () => {
+                    // Remove active from tabs in the same subject
+                    document.querySelectorAll(`.nav-tab[data-subject="${subject}"]`).forEach(t => t.classList.remove('active'));
+                    // Hide all sections in the same subject
+                    document.querySelectorAll(`.${subject}-section`).forEach(s => s.classList.remove('active'));
+                    
+                    tab.classList.add('active');
+                    const targetId = `${subject}-${tab.dataset.section}`;
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
 
-        // Add smooth scroll for all links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+            // Back to top button
+            const backToTop = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Add smooth scroll for all links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 });
             });
         });

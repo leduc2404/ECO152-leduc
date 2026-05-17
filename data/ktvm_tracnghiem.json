@@ -1,0 +1,645 @@
+[
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Kinh tế học là môn khoa học xã hội nghiên cứu cách thức:",
+    "options": [
+      "A. Quản lý doanh nghiệp sao cho có lãi.",
+      "B. Tránh né vấn đề khan hiếm cho nhiều khả năng sử dụng khác nhau và cạnh tranh nhau.",
+      "C. Tạo ra vận may cho cá nhân trên thị trường chứng khoán",
+      "D. Phân bổ nguồn lực khan hiếm cho nhiều khả năng sử dụng khác nhau"
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Câu nào sau đây thuộc về kinh tế vĩ mô:",
+    "options": [
+      "A. Tỷ lệ thất nghiệp ở nhiều nước rất cao.",
+      "B. Tốc độ tăng trưởng GDP bình quân trong giai đoạn 2008-2015 ở Việt Nam khoảng 6%",
+      "C. Tỷ lệ lạm phát ở Việt Nam khoảng 9% mỗi năm trong giai đoạn 2008-2015.",
+      "D. Cả 3 câu trên đều đúng"
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Kinh tế học vi mô nghiên cứu:",
+    "options": [
+      "A. Hành vi ứng xử của các tế bào kinh tế trong các loại thị trường.",
+      "B. Các hoạt động diễn ra trong toàn bộ nền kinh tế.",
+      "C. Cách ứng xử của người tiêu dùng để tối đa hóa thỏa mãn.",
+      "D. Mức giá chung của một quốc gia."
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Kinh tế học thực chứng nhằm:",
+    "options": [
+      "A. Mô tả và giải thích các sự kiện, các vấn đề kinh tế một cách khách quan có cơ sở khoa học.",
+      "B. Đưa ra những lời chỉ dẫn hoặc những quan điểm chủ quan của các cá nhân.",
+      "C. Giải thích các hành vi ứng xử của các tế bào kinh tế trong các loại thị trường.",
+      "D. Không có câu nào đúng"
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Câu nào sau đây thuộc kinh tế vi mô:",
+    "options": [
+      "A. Tỷ lệ thất nghiệp ở Việt Nam hiện nay ở mức cao.",
+      "B. Lợi nhuận kinh tế là động lực thu hút các doanh nghiệp mới gia nhập vào ngành sản xuất.",
+      "C. Chính sách tài khóa, chính sách tiền tệ là công cụ điều tiết của chính phủ trong nền kinh tế.",
+      "D. Tỷ lệ lạm phát ở Việt Nam năm 2015 là 0,63%"
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Vấn đề nào sau đây thuộc kinh tế chuẩn tắc :",
+    "options": [
+      "A. Mức tăng trưởng GDP ở Việt Nam năm 2015 là 6,68%.",
+      "B. Tỷ lệ lạm phát ở Việt Nam năm 2008 là 22%",
+      "C. Giá dầu thế giới đạt kỷ lục vào ngày 11/7/2008 là 147 \\$/thùng, nhưng đến ngày 10/8/2016 chỉ còn khoảng 45,72 USD/thùng).",
+      "D. Phải có hiệu thuốc miễn phí phục vụ người già và trẻ em"
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Công cụ phân tích nào nêu lên các kết hợp khác nhau giữa 2 hàng hóa có thể sản xuất ra khi các nguồn lực được sử dụng có hiệu quả:",
+    "options": [
+      "A. Đường giới hạn năng lực sản xuất",
+      "B. Đường cầu.",
+      "C. Đường đẳng lượng.",
+      "D. Tổng sản phẩm quốc dân (GNP)."
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Khái niệm kinh tế nào sau đây không thể lý giải được bằng đường giới hạn khả năng sản xuất:",
+    "options": [
+      "A. Khái niệm chi phí cơ hội",
+      "B. Khái niệm cung cầu",
+      "C. Quy luật chi phí cơ hội tăng dần",
+      "D. Ý tưởng về sự khan hiếm."
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Một nền kinh tế tổ chức sản xuất có hiệu quả với nguồn tài nguyên khan hiếm khi",
+    "options": [
+      "A. Nhà nước quản lý ngân sách.",
+      "B. Nhà nước tham gia quản lý nền kinh tế.",
+      "C. Nhà nước quản lý các quỹ phúc lợi xã hội.",
+      "D. Các câu trên đều sai."
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Các vấn đề cơ bản của hệ thống kinh tế cần giải quyết là:",
+    "options": [
+      "A. Sản xuất sản phẩm gì? Số lượng bao nhiêu?",
+      "B. Sản xuất bằng phương pháp nào?",
+      "C. Sản xuất cho ai?",
+      "D. Các câu trên đều đúng."
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Trong mô hình nền kinh tế thị trường tự do, các vấn đề cơ bản của hệ thống kinh tế được giải quyết:",
+    "options": [
+      "A. Thông qua các kế hoạch của chính phủ.",
+      "B. Thông qua thị trường.",
+      "C. Thông qua thị trường và các kế hoạch của chính phủ.",
+      "D. Các câu trên đều đúng"
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Trong những vấn đề sau đây, vấn đề nào thuộc kinh tế học chuẩn tắc:",
+    "options": [
+      "A. Tại sao nền kinh tế Việt Nam bị lạm phát cao vào 2 năm 1987-1988?",
+      "B. Tác hại của việc sản xuất, vận chuyển và sử dụng ma túy.",
+      "C. Chính phủ nên can thiệp vào nền kinh tế thị trường tới mức độ nào?",
+      "D. Không có câu nào đúng."
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Giá cà phê trên thị trường tăng 10%, dẫn đến mức cầu về cà phê trên thị trường giảm 5% với những điều kiện khác không đổi. Vấn đề này thuộc về :",
+    "options": [
+      "A. Kinh tế học vi mô, chuẩn tắc.",
+      "B. Kinh tế học vĩ mô, chuẩn tắc.",
+      "C. Kinh tế học vi mô, thực chứng.",
+      "D. Kinh tế học vĩ mô, thực chứng."
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Những thị trường nào sau đây thuộc thị trường yếu tố sản xuất:",
+    "options": [
+      "A. Thị trường đất đai.",
+      "B. Thị trường sức lao động.",
+      "C. Thị trường vốn.",
+      "D. Cả 3 câu trên đều đúng"
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Khác nhau căn bản giữa mô hình kinh tế thị trường tự do và nền kinh tế hỗn hợp là",
+    "options": [
+      "A. Nhà nước quản lý ngân sách.",
+      "B. Nhà nước tham gia quản lý nền kinh tế.",
+      "C. Nhà nước quản lý các quỹ phúc lợi xã hội.",
+      "D. Các câu trên đều sai"
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Sự khác biệt giữa hai mục tiêu hiệu quả và công bằng là:",
+    "options": [
+      "A. Hiệu quả đề cập đến độ lớn của \"cái bánh kinh tế\", còn công bằng đề cập đến cách phân phối cái bánh kinh tế đó t ương đối đồng đều cho các thành viên trong xã hội.",
+      "B. Công bằng đề cập đến độ lớn của \"cái bánh kinh tế\", còn hiệu quả đề cập đến cách phân phối cái bánh kinh tế đó t ương đối đồng đều cho các thành viên trong xã hội.",
+      "C. Hiệu quả là tối đa hóa của cái làm ra, còn công bằng là tối đa hóa thỏa mãn.",
+      "D. Các câu trên đều sai"
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Chọn câu đúng sau đây:",
+    "options": [
+      "A. Chuyên môn hóa và thương mại làm cho lợi ích của mọi người đều tăng lên.",
+      "B. Thương mại giữa hai nước có thể làm cho cả hai nước cùng được lợi.",
+      "C. Thương mại cho phép con người tiêu dùng nhiều hàng hóa và dịch vụ đa dạng hơn với chi phí thấp hơn.",
+      "D. Các câu trên đều đúng"
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Đường cung của sản phẩm X dịch chuyển do:",
+    "options": [
+      "A. Giá sản phẩm X thay đổi.",
+      "B. Thu nhập tiêu dùng thay đổi.",
+      "C. Thuế thay đổi.",
+      "D. Giá sản phẩm thay thế giảm.",
+      "A. Giá sản phẩm X thay đổi.",
+      "B. Thu nhập tiêu dùng thay đổi.",
+      "C. Thuế thay đổi.",
+      "D. Giá sản phẩm thay thế giảm."
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Đường cầu sản phẩm X dịch chuyển khi:",
+    "options": [
+      "A. Giá sản phẩm X thay đổi.",
+      "B. Chi phí sản xuất sản phẩm X thay đổi.",
+      "C. Thu nhập của người tiêu thụ thay đổi.",
+      "D. Các câu trên đều đúng."
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Nếu giá sản phẩm X tăng lên, các điều kiện khác không thay đổi thì:",
+    "options": [
+      "A. Sản phẩm tăng lên.",
+      "B. Khối lượng tiêu thụ sản phẩm X tăng lên.",
+      "C. Khối lượng tiêu thụ sản phẩm X giảm xuống",
+      "D. Phân chi tiêu sản phẩm X tăng lên."
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Yếu tố nào sau đây không được coi là yếu tố quyết định cầu hàng hóa:",
+    "options": [
+      "A. Giá hàng hóa liên quan.",
+      "B. Thị hiếu, sở thích",
+      "C. Giá các yếu tố đầu vào để sản xuất hàng hóa.",
+      "D. Thu nhập."
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Biểu cầu cho thấy:",
+    "options": [
+      "A. Lượng cầu về một loại hàng hóa cụ thể tại các mức giá khác nhau.",
+      "B. Lượng cầu về một loại hàng hóa cụ thể sẽ thay đổi khi thu nhập thay đổi.",
+      "C. Lượng hàng cụ thể sẽ được cung ứng cho thị trường tại các mức giá khác nhau.",
+      "D. Lượng cầu về một hàng hóa cụ thể sẽ thay đổi khi giá các hàng hóa liên quan thay đổi."
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Khi thu nhập giảm, các yếu tố khác không đổi, giá cả và lượng cân bằng mới của hàng hóa thông thường sẽ:",
+    "options": [
+      "A. Giá thấp hơn và lượng cân bằng lớn hơn",
+      "B. Giá cao hơn và lượng cân bằng nhỏ hơn",
+      "C. Giá thấp hơn và lượng cân bằng nhỏ hơn",
+      "D. Không thay đổi"
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Đường cầu của bột giặt OMO chuyển dịch sang phải là do:",
+    "options": [
+      "A. Giá bột giặt OMO giảm.",
+      "B. Giá hóa chất nguyên liệu giảm.",
+      "C. Giá của các loại bột giặt khác giảm.",
+      "D. Giá các loại bột giặt khác tăng."
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Trong trường hợp nào sau đây làm dịch chuyển đường cầu TV SONY về bên phải:",
+    "options": [
+      "A. Trường hợp 1 và 3",
+      "C. Trường hợp 2 và 3",
+      "B. Trường hợp 1 và 2",
+      "D. Trường hợp 1 + 2 + 3"
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Trong trường hợp nào giá bia sẽ",
+    "options": [
+      "A. Đường cầu của bia dịch chuyển sang phải.",
+      "B. Đường cung của bia dịch chuyển sang trái.",
+      "C. Không có trường hợp nào.",
+      "D. Cả 2 trường hợp a và b đều đúng."
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Ý nghĩa kinh tế của đường cung thẳng đứng là:",
+    "options": [
+      "A. Nó cho thấy nhà sản xuất sẵn sàng cung ứng nhiều hơn tại mức giá thấp hơn.",
+      "B. Nó cho thấy dù giá cả là bao nhiêu thì nhà sản xuất cũng chỉ cung ứng 1 lượng nhất định cho thị trường.",
+      "C. Nó cho thấy nhà cung ứng sẵn sàng cung ứng nhiều hơn khi giá cả cao hơn.",
+      "D. Nó cho thấy chỉ có một mức giá làm cho nhà sản xuất cung ứng hàng hóa cho thị trường"
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "đường cầu về điện thoại dịch chuyển sang phải như hình dưới đây là do:",
+    "options": [
+      "A. Chi phí lắp đặt giảm",
+      "B. Thu nhập dân chúng tăng",
+      "C. Do đầu tư của các công ty đầu tư viễn thông nước ngoài",
+      "D. Giá lắp đặt điện thoại giảm"
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Trong trường hợp nào đường cung của Pepsi dời sang phải :",
+    "options": [
+      "A. Thu nhập của người tiêu dùng giảm",
+      "B. Giá nguyên liệu tăng.",
+      "C. Giá của Coke tăng.",
+      "D. Không có trường hợp nào."
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Chọn câu đúng trong những câu dưới đây:",
+    "options": [
+      "A. Thu nhập của người tiêu dùng tăng sẽ làm đường cung dịch chuyển sang phải.",
+      "B. Giá của các yếu tố đầu vào tăng sẽ làm đường cung dịch sang phải. c. Hệ số co giãn của cung luôn luôn nhỏ hơn 0.",
+      "D. Phản ứng của người tiêu dùng dễ dàng và nhanh chóng hơn nhà sản xuất trước sự biến động của giá cả trên thị trường"
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Yếu tố nào sau đây không phải là yếu tố quyết định của cung",
+    "options": [
+      "A. Những thay đổi về công nghệ.",
+      "B. Mức thu nhập",
+      "C. Thuế và trợ cấp.",
+      "D. Chi phí nguồn lực để sản xuất hàng hóa."
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Trong trường hợp nào đường cung của xăng sẽ dời sang trái .",
+    "options": [
+      "A. Giá xăng giảm.",
+      "B. Mức lương của công nhân lọc dầu tăng lên.",
+      "C. Có sự cải tiến trong lọc dầu.",
+      "D. Tất cả các trường hợp trên."
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Quy luật cung chỉ ra rằng:",
+    "options": [
+      "A. Sự gia tăng cầu trực tiếp dẫn đến sự gia tăng của cung.",
+      "B. Nhà sản xuất sẵn sàng cung ứng ít hơn với mức giá cao hơn.",
+      "C. Có mối quan hệ nghịch giữa cung và giá cả",
+      "D. Nhà sản xuất sẵn sàng cung ứng nhiều hơn với mức giá cao hơn"
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Quy luật cầu chỉ ra rằng: nếu các yếu tố khác không đổi thì:",
+    "options": [
+      "D. Giữa lượng cầu hàng hóa với giá của nó có mối quan hệ nghịch biến"
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Đường cung phản ánh:",
+    "options": [
+      "B. Số lượng hàng hóa mà nhà sản xuất sẽ bán ra ứng với mỗi mức giá trên thị trường."
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Đối với một đường cầu tuyến tính :",
+    "options": [
+      "A. Độ co giãn của cầu theo giá thay đổi, nhưng độ dốc của đường cầu không thay đổi."
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Sự di chuyển dọc đường cung cho thấy khi giá hàng hóa giảm :",
+    "options": [
+      "A. Lượng cung giảm."
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Giá của hàng hóa A tăng, làm đường cầu của hàng hóa B dời sang trái, suy ra:",
+    "options": [
+      "C. A và B là 2 hàng hóa bổ sung cho nhau.",
+      "D. A và B là 2 hàng hóa thay thế cho nhau."
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Hàm số cầu của một hàng hóa là tương quan giữa:",
+    "options": [
+      "A. Lượng cầu hàng hóa đó với giá cả của nó."
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Tìm câu sai trong những câu dưới đây:",
+    "options": [
+      "D. Giá thuốc lá tăng mạnh làm đường cầu thuốc lá dịch chuyển sang trái."
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Giá cân bằng và sản lượng cân bằng là:",
+    "options": [
+      "A. $Q = 5$  và  $P = 10$",
+      "B. $Q = 10$  và  $P = 15$",
+      "C. $Q = 8$  và  $P = 16$",
+      "D. $Q = 20$  và  $P = 10$"
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Nếu chính phủ ấn định mức giá  $P = 18$  và sẽ mua hết lượng sản phẩm thừa, thì chính phủ cần chi bao nhiêu tiền? :",
+    "options": [
+      "A. 108",
+      "C. 180",
+      "B. 162",
+      "D. Tất cả đều sai."
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "muốn giá cân bằng  $P=18$ , thì hàm cung mới có dạng:",
+    "options": [
+      "A. $P=Qs+14$",
+      "B. $P=Qs-14$",
+      "C. $P=Qs+13$",
+      "D. Tất cả đều sai"
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Nếu giá cân bằng sản phẩm là  $P=15$  đ/SP, chính phủ đánh thuế 3 đ/SP làm giá cân bằng tăng lên  $P= 17$  đ/SP, có thể kết luận:",
+    "options": [
+      "A. Cầu co giãn nhiều hơn so với cung.",
+      "B. Cầu co giãn ít hơn so với cung.",
+      "C. Cầu co giãn tương đương với cung.",
+      "D. Tất cả đều sai."
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Khi giá hàng Y:  $P_Y = 4$  thì lượng cầu hàng X:  $Q_X = 10$  và khi  $P_Y = 6$  thì  $Q_X = 12$  , với các yếu tố khác không đổi kết luận X và Y là 2 sản phẩm:",
+    "options": [
+      "A. Bổ sung nhau.",
+      "B. Thay thế cho nhau",
+      "C. Vừa thay thế, vừa bổ sung.",
+      "D. Không liên quan."
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Nếu mục tiêu của công ty là tối đa hóa doanh thu, và cầu về sản phẩm của công ty tại mức giá hiện hành là co giãn nhiều, công ty sẽ:",
+    "options": [
+      "A. Tăng giá.",
+      "C. Tăng lượng bán",
+      "B. Giảm giá.",
+      "D. Giữ giá như cũ."
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Giá trần (giá tối đa) luôn dẫn tới:",
+    "options": [
+      "A. Sự gia nhập ngành",
+      "C. Sự cân bằng thị trường.",
+      "B. Sự dư thừa hàng hóa.",
+      "D. Sự thiếu hụt hàng hóa."
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Giá vé du lịch giảm có thể dẫn đến phân chi tiêu cho du lịch tăng lên là do cầu về du lịch:",
+    "options": [
+      "A. Co giãn theo giá nhiều",
+      "C. Co giãn theo giá ít",
+      "B. Co giãn đơn vị",
+      "D. Hoàn toàn không co giãn"
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Hàm số cầu và số cung của một hàng hóa như sau: (D):  $P = -Q + 50$  ; (S) :  $P = Q + 10$  Nếu chính phủ định giá tối đa là  $P = 20$  , thì lượng hàng hóa:",
+    "options": [
+      "A. Thiếu hụt 30",
+      "C. Dư thừa 20",
+      "B. Dư thừa 30",
+      "D. Thiếu hụt 20."
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Giá sản phẩm X tăng lên dẫn đến phần chi tiêu cho sản phẩm X tăng lên, thì hệ số co giãn của cầu theo giá sản phẩm là:",
+    "options": [
+      "A. $|ED| > 1$",
+      "C. $ED = 0$",
+      "B. $|ED| < 1$",
+      "D. $|ED| = 1$"
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Khi thu nhập tăng lên 10% , khối lượng tiêu thụ sản phẩm X tăng lên 5% , với các điều kiện khác không đổi, thì ta có thể kết luận sản X là:",
+    "options": [
+      "A. Sản phẩm cấp thấp.",
+      "C. Sản phẩm thiết yếu",
+      "B. Sản phẩm cao cấp",
+      "D. Sản phẩm độc lập."
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Nếu 2 sản phẩm X và Y là 2 sản phẩm thay thế thì:",
+    "options": [
+      "A. $EXY > 0$",
+      "C. $EXY = 0$",
+      "B. $EXY < 0$",
+      "D. $EXY = 1$"
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Nếu 2 sản phẩm X và Y là 2 sản phẩm bổ sung thì:",
+    "options": [
+      "A. $EXY > 0$",
+      "C. $EXY = 0$",
+      "B. $EXY < 0$",
+      "D. Tất cả đều sai"
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Giá cân bằng và sản lượng cân bằng sản phẩm X là:",
+    "options": [
+      "A. $P = 30$  và  $Q = 90$",
+      "C. $P = 40$  và  $Q = 60$  b",
+      "B. $P = 20$  và  $Q = 70$",
+      "D. Các câu trên đều sai."
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "đồ thị sau phản ánh:",
+    "options": [
+      "A. Cầu hoàn toàn không co giãn",
+      "B. Giá càng thấp cầu càng không co giãn",
+      "C. Cầu co giãn hoàn toàn",
+      "D. Giá càng thấp cầu càng co giãn"
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "đồ thị sau phản ánh:",
+    "options": [
+      "A. Cầu càng ít co giãn khi giá càng thấp",
+      "B. Cầu hoàn toàn không co giãn",
+      "C. Cầu càng co giãn nhiều khi giá càng thấp",
+      "D. Cầu co giãn hoàn toàn"
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Độ co giãn của cầu theo giá được xác định theo công thức:",
+    "options": [
+      "A. $(Q/P) / (P/Q)$",
+      "C. $(Q/P) - (P/Q)$",
+      "B. $(Q/P) \\times (P/Q)$",
+      "D. $(Q/P) + (P/Q)$"
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Hệ số co giãn của cầu theo giá được xác định bằng cách:",
+    "options": [
+      "A. Lấy phần trăm thay đổi của lượng cầu chia cho phần trăm thay đổi của thu nhập.",
+      "B. Lấy phần trăm thay đổi của lượng cầu chia cho phần trăm thay đổi của giá.",
+      "C. Lấy phần trăm thay đổi của giá chia cho phần trăm thay đổi của số cầu.",
+      "D. Lấy số thay đổi của cầu chia cho số thay đổi của giá"
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Khi giá các sản phẩm thay thế và bổ sung cho sản phẩm A đều tăng lên. Nếu các yếu tố khác không thay đổi, thì giá cả và sản lượng cân bằng của sản phẩm A sẽ:",
+    "options": [
+      "A. Giá tăng, lượng giảm.",
+      "B. Giá tăng, lượng tăng.",
+      "C. Không xác định được.",
+      "D. Giá giảm, lượng tăng"
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "category": "Kinh tế vi mô",
+    "question": "Hệ số co giãn của cầu theo giá của mặt hàng máy lạnh là -2, có nghĩa là:",
+    "options": [
+      "A. Giá tăng 10%; lượng cầu tăng 20%.",
+      "B. Giá giảm 20%; lượng cầu tăng 10%",
+      "C. Giá giảm 10%; lượng cầu giảm 20%.",
+      "D. Giá tăng 10%; lượng cầu giảm 20%"
+    ],
+    "correct_answer": "D"
+  }
+]

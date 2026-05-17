@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Tự Luận - Ôn Tập</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --danger: #ef4444;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --bg-card-hover: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border: #334155;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            --gradient-5: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            padding-bottom: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background: var(--gradient-4);
+            border-radius: 1.25rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 15px 35px rgba(67, 233, 123, 0.25);
+        }
+
+        header h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            text-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        .home-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 0.6rem 1rem;
+            background: var(--bg-card);
+            border-radius: 0.6rem;
+            margin-bottom: 1rem;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .home-link:active {
+            background: var(--bg-card-hover);
+            transform: scale(0.98);
+        }
+
+        /* Shuffle button */
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .shuffle-btn {
+            background: var(--gradient-5);
+            border: none;
+            padding: 0.65rem 1.25rem;
+            border-radius: 0.65rem;
+            color: white;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .shuffle-btn:active {
+            transform: scale(0.95);
+        }
+        
+        .toggle-all-btn {
+            background: var(--bg-card-hover);
+            border: 1px solid var(--border);
+            padding: 0.65rem 1.25rem;
+            border-radius: 0.65rem;
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .toggle-all-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Short Answer Card */
+        .short-card {
+            background: var(--bg-card);
+            border-radius: 1rem;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        
+        .short-card:hover {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .question-number {
+            display: inline-block;
+            background: var(--gradient-1);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .short-question {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            line-height: 1.5;
+            color: var(--text-primary);
+        }
+
+        .show-answer-btn {
+            background: var(--secondary);
+            border: none;
+            padding: 0.6rem 1rem;
+            border-radius: 0.6rem;
+            color: white;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .show-answer-btn:active {
+            transform: scale(0.95);
+        }
+
+        .answer-reveal {
+            margin-top: 1rem;
+            padding: 1rem 1.25rem;
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--secondary);
+            border-radius: 0 0.6rem 0.6rem 0;
+            display: none;
+            font-size: 1rem;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .answer-reveal.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .answer-reveal p {
+            margin-bottom: 0.75rem;
+        }
+        .answer-reveal p:last-child {
+            margin-bottom: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Back to top */
+        .back-to-top {
+            position: fixed;
+            bottom: max(1.5rem, env(safe-area-inset-bottom, 1.5rem));
+            right: 1rem;
+            width: 44px;
+            height: 44px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.25rem;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s ease;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:active {
+            transform: scale(0.9);
+        }
+
+        /* Loading & Empty State */
+        .loading, .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            background: var(--bg-card);
+            border-radius: 1rem;
+            border: 1px dashed var(--border);
+        }
+
+        /* Responsive */
+        @media (max-width: 400px) {
+            .container { padding: 0.75rem; }
+            header { padding: 1.5rem 1rem; }
+            header h1 { font-size: 1.5rem; }
+            .short-question { font-size: 1rem; }
+            .answer-reveal { font-size: 0.95rem; }
+            .controls { flex-direction: column; gap: 0.75rem; align-items: stretch; }
+            .controls button { width: 100%; }
+        }
+
+        @media (min-width: 768px) {
+            .container { padding: 2rem; }
+            header { padding: 2.5rem 2rem; }
+            header h1 { font-size: 2.25rem; }
+            .short-card { padding: 2rem; }
+        }
+    </style>
+    <!-- Thêm thư viện đánh dấu markdown đơn giản nếu cần (tuỳ chọn) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="home-link">← Trang Chủ</a>
+
+        <header>
+            <h1>📝 Tự Luận & Câu Hỏi Ngắn</h1>
+            <p>Ôn tập lý thuyết và bài tập tự luận</p>
+        </header>
+
+        <div class="controls" id="controlsContainer" style="display: none;">
+            <button class="shuffle-btn" id="shuffleBtn">🔀 Xáo trộn câu hỏi</button>
+            <button class="toggle-all-btn" id="toggleAllBtn">👁️ Hiện tất cả đáp án</button>
+        </div>
+
+        <div id="questionsContainer">
+            <div class="loading">Đang tải câu hỏi...</div>
+        </div>
+
+        <button class="back-to-top" id="backToTop">↑</button>
+    </div>
+
+    <script>
+        let questions = [];
+        let isAllAnswersVisible = false;
+
+        async function loadQuestions() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const subject = urlParams.get('subject') || 'ktvm';
+            
+            // Cập nhật tiêu đề
+            const headerTitle = document.querySelector('header h1');
+            if (subject === 'ktvm') {
+                headerTitle.textContent = '📝 Tự Luận Kinh Tế Vi Mô';
+                document.title = 'Tự Luận - KTVM';
+            } else if (subject === 'xstk') {
+                headerTitle.textContent = '📝 Tự Luận Xác Suất Thống Kê';
+                document.title = 'Tự Luận - XSTK';
+            }
+
+            try {
+                const response = await fetch(`data/${subject}_tuluan.json`);
+                if (!response.ok) {
+                    throw new Error('File not found');
+                }
+                questions = await response.json();
+                
+                if (questions.length === 0) {
+                    showEmptyState();
+                } else {
+                    document.getElementById('controlsContainer').style.display = 'flex';
+                    renderQuestions();
+                }
+            } catch (error) {
+                console.error('Error loading questions:', error);
+                showEmptyState();
+            }
+        }
+
+        function showEmptyState() {
+            document.getElementById('controlsContainer').style.display = 'none';
+            document.getElementById('questionsContainer').innerHTML = `
+                <div class="empty-state">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📭</div>
+                    <div>Chưa có dữ liệu tự luận/câu hỏi ngắn cho môn học này.</div>
+                </div>
+            `;
+        }
+        
+        function formatMarkdown(text) {
+            // Hàm đơn giản để chuyển **bold** và \n thành HTML
+            if (!text) return "";
+            if (typeof marked !== 'undefined') {
+                return marked.parse(text);
+            }
+            // Fallback nếu marked không tải được
+            let formatted = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            formatted = formatted.replace(/\n/g, '<br>');
+            return formatted;
+        }
+
+        function renderQuestions() {
+            const container = document.getElementById('questionsContainer');
+            
+            let html = questions.map((q, i) => `
+                <div class="short-card">
+                    <span class="question-number">Câu ${i + 1}</span>
+                    <div class="short-question">${formatMarkdown(q.question)}</div>
+                    <button class="show-answer-btn" data-index="${i}">👁️ Xem đáp án</button>
+                    <div class="answer-reveal" id="answer-${i}">
+                        📌 <strong>Đáp án:</strong><br>
+                        ${formatMarkdown(q.answer)}
+                    </div>
+                </div>
+            `).join('');
+
+            container.innerHTML = html;
+
+            // Gắn event click
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const idx = btn.dataset.index;
+                    const answerEl = document.getElementById(`answer-${idx}`);
+                    const isShowing = answerEl.classList.contains('show');
+                    
+                    if (isShowing) {
+                        answerEl.classList.remove('show');
+                        btn.innerHTML = '👁️ Xem đáp án';
+                    } else {
+                        answerEl.classList.add('show');
+                        btn.innerHTML = '🙈 Ẩn đáp án';
+                    }
+                    
+                    checkAllAnswersState();
+                });
+            });
+            
+            // Khôi phục trạng thái "Hiện tất cả" nếu đang bật
+            if (isAllAnswersVisible) {
+                document.querySelectorAll('.answer-reveal').forEach(el => el.classList.add('show'));
+                document.querySelectorAll('.show-answer-btn').forEach(btn => btn.innerHTML = '🙈 Ẩn đáp án');
+            }
+        }
+
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        function checkAllAnswersState() {
+            const total = document.querySelectorAll('.answer-reveal').length;
+            const shown = document.querySelectorAll('.answer-reveal.show').length;
+            
+            const toggleBtn = document.getElementById('toggleAllBtn');
+            if (total > 0 && shown === total) {
+                isAllAnswersVisible = true;
+                toggleBtn.innerHTML = '🙈 Ẩn tất cả đáp án';
+            } else {
+                isAllAnswersVisible = false;
+                toggleBtn.innerHTML = '👁️ Hiện tất cả đáp án';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadQuestions();
+
+            document.getElementById('shuffleBtn').addEventListener('click', () => {
+                questions = shuffleArray(questions);
+                renderQuestions();
+            });
+            
+            document.getElementById('toggleAllBtn').addEventListener('click', () => {
+                isAllAnswersVisible = !isAllAnswersVisible;
+                const toggleBtn = document.getElementById('toggleAllBtn');
+                
+                if (isAllAnswersVisible) {
+                    toggleBtn.innerHTML = '🙈 Ẩn tất cả đáp án';
+                    document.querySelectorAll('.answer-reveal').forEach(el => el.classList.add('show'));
+                    document.querySelectorAll('.show-answer-btn').forEach(btn => btn.innerHTML = '🙈 Ẩn đáp án');
+                } else {
+                    toggleBtn.innerHTML = '👁️ Hiện tất cả đáp án';
+                    document.querySelectorAll('.answer-reveal').forEach(el => el.classList.remove('show'));
+                    document.querySelectorAll('.show-answer-btn').forEach(btn => btn.innerHTML = '👁️ Xem đáp án');
+                }
+            });
+
+            // Back to top
+            const backToTop = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                backToTop.classList.toggle('visible', window.scrollY > 200);
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

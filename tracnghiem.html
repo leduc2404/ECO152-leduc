@@ -593,7 +593,6 @@
         <nav class="nav-tabs">
             <button class="nav-tab active" data-section="practice">📚 Luyện Tập</button>
             <button class="nav-tab" data-section="exam">⏱️ Thi Thử</button>
-            <button class="nav-tab" data-section="review">📖 Câu Ngắn</button>
         </nav>
 
         <!-- Practice Section -->
@@ -664,21 +663,12 @@
             </div>
         </div>
 
-        <!-- Short Answer Review Section -->
-        <div id="review" class="section">
-            <button class="shuffle-btn" id="shuffleShortBtn">🔀 Xáo trộn</button>
-            <div id="shortAnswerContainer">
-                <div class="loading">Đang tải câu hỏi...</div>
-            </div>
-        </div>
-
         <button class="back-to-top" id="backToTop">↑</button>
     </div>
 
     <script>
         let allQuestions = [];
         let multipleChoiceQuestions = [];
-        let shortAnswerQuestions = [];
         let currentQuestions = [];
         let currentIndex = 0;
         let score = 0;
@@ -697,18 +687,29 @@
 
         // Load questions
         async function loadQuestions() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const subject = urlParams.get('subject') || 'ktvm';
+            
+            // Set header
+            const headerTitle = document.querySelector('header h1');
+            if (subject === 'ktvm') {
+                headerTitle.textContent = '📝 Trắc Nghiệm Kinh Tế Vi Mô';
+                document.title = 'Trắc Nghiệm - KTVM';
+            } else if (subject === 'xstk') {
+                headerTitle.textContent = '📝 Trắc Nghiệm Xác Suất Thống Kê';
+                document.title = 'Trắc Nghiệm - XSTK';
+            }
+
             try {
-                const response = await fetch('tracnghiem.json');
+                const response = await fetch(`data/${subject}_tracnghiem.json`);
                 allQuestions = await response.json();
                 
-                multipleChoiceQuestions = allQuestions.filter(q => q.options);
-                shortAnswerQuestions = allQuestions.filter(q => q.answer && !q.options);
+                multipleChoiceQuestions = allQuestions;
                 
                 currentQuestions = [...multipleChoiceQuestions];
                 userAnswers = new Array(currentQuestions.length).fill(null);
                 
                 displayQuestion();
-                displayShortAnswers();
             } catch (error) {
                 console.error('Error loading questions:', error);
                 document.getElementById('quizContainer').innerHTML = '<div class="loading">Lỗi tải câu hỏi. Vui lòng thử lại.</div>';
@@ -878,37 +879,7 @@
             displayQuestion();
         }
 
-        // Short answers
-        function displayShortAnswers() {
-            const container = document.getElementById('shortAnswerContainer');
-            
-            let html = shortAnswerQuestions.map((q, i) => `
-                <div class="short-card">
-                    <span class="question-number">Câu ${i + 1}</span>
-                    <div class="short-question">${q.question}</div>
-                    <button class="show-answer-btn" data-index="${i}">👁️ Xem đáp án</button>
-                    <div class="answer-reveal" id="answer-${i}">
-                        📌 <strong>Đáp án:</strong> ${q.answer}
-                    </div>
-                </div>
-            `).join('');
-
-            container.innerHTML = html;
-
-            document.querySelectorAll('.show-answer-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const idx = btn.dataset.index;
-                    const answerEl = document.getElementById(`answer-${idx}`);
-                    answerEl.classList.toggle('show');
-                    btn.textContent = answerEl.classList.contains('show') ? '🙈 Ẩn' : '👁️ Xem đáp án';
-                });
-            });
-        }
-
-        function shuffleShortAnswers() {
-            shortAnswerQuestions = shuffleArray(shortAnswerQuestions);
-            displayShortAnswers();
-        }
+        // Short answers removed
 
         // ===== EXAM MODE =====
         function startExam() {
@@ -1032,11 +1003,9 @@
                 });
             });
 
-            // Navigation
             document.getElementById('prevBtn').addEventListener('click', prevQuestion);
             document.getElementById('nextBtn').addEventListener('click', nextQuestion);
             document.getElementById('shuffleBtn').addEventListener('click', shuffleQuestions);
-            document.getElementById('shuffleShortBtn').addEventListener('click', shuffleShortAnswers);
 
             // Exam mode
             document.getElementById('startExamBtn').addEventListener('click', startExam);

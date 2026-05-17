@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECO 152 - Kinh Tế Vĩ Mô</title>
+    <title>Hệ Thống Ôn Tập KTHP 2026</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -97,27 +97,25 @@
             margin-bottom: 1.5rem;
         }
 
-        /* Cards Grid */
-        .cards-grid {
+        /* Subjects Grid */
+        .subjects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
             margin-bottom: 3rem;
         }
 
-        .feature-card {
+        .subject-card {
             background: var(--bg-card);
             border-radius: 1.5rem;
             padding: 2rem;
             border: 1px solid var(--border);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            text-decoration: none;
-            color: inherit;
             position: relative;
             overflow: hidden;
         }
 
-        .feature-card::before {
+        .subject-card::before {
             content: '';
             position: absolute;
             top: 0;
@@ -128,25 +126,25 @@
             transition: height 0.3s ease;
         }
 
-        .feature-card.formula::before { background: var(--gradient-1); }
-        .feature-card.quiz::before { background: var(--gradient-2); }
+        .subject-card.ktvm::before { background: var(--gradient-2); }
+        .subject-card.xstk::before { background: var(--gradient-3); }
 
-        .feature-card:hover {
+        .subject-card:hover {
             transform: translateY(-8px);
             border-color: transparent;
             box-shadow: 0 20px 40px rgba(0,0,0,0.3);
         }
 
-        .feature-card:hover::before {
+        .subject-card:hover::before {
             height: 6px;
         }
 
-        .feature-card.formula:hover {
-            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+        .subject-card.ktvm:hover {
+            box-shadow: 0 20px 40px rgba(240, 147, 251, 0.3);
         }
 
-        .feature-card.quiz:hover {
-            box-shadow: 0 20px 40px rgba(240, 147, 251, 0.3);
+        .subject-card.xstk:hover {
+            box-shadow: 0 20px 40px rgba(79, 172, 254, 0.3);
         }
 
         .card-icon {
@@ -156,65 +154,63 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 1.5rem;
         }
 
-        .formula .card-icon { background: var(--gradient-1); }
-        .quiz .card-icon { background: var(--gradient-2); }
+        .ktvm .card-icon { background: var(--gradient-2); }
+        .xstk .card-icon { background: var(--gradient-3); }
 
         .card-title {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: 700;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
         }
-
-        .card-desc {
+        
+        .card-subtitle {
+            font-size: 1rem;
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
-            line-height: 1.6;
         }
 
-        .card-features {
-            list-style: none;
-        }
-
-        .card-features li {
+        .action-links {
             display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.5rem 0;
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        .card-features li::before {
-            content: '✓';
-            width: 20px;
-            height: 20px;
-            background: rgba(16, 185, 129, 0.2);
-            color: var(--secondary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
-            font-weight: bold;
-        }
-
-        .card-arrow {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--primary);
-            font-weight: 600;
-            margin-top: 1.5rem;
-            transition: gap 0.3s ease;
-        }
-
-        .feature-card:hover .card-arrow {
+            flex-direction: column;
             gap: 1rem;
         }
+
+        .action-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            background: var(--bg-card-hover);
+            border-radius: 1rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .action-btn:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.2);
+            transform: translateX(5px);
+        }
+
+        .action-btn span.arrow {
+            color: var(--text-secondary);
+            transition: transform 0.3s ease;
+        }
+        
+        .action-btn:hover span.arrow {
+            transform: translateX(5px);
+            color: var(--text-primary);
+        }
+
+        .ktvm .action-btn:hover { box-shadow: 0 0 15px rgba(240, 147, 251, 0.2); }
+        .xstk .action-btn:hover { box-shadow: 0 0 15px rgba(79, 172, 254, 0.2); }
 
         /* Stats Section */
         .stats-section {
@@ -233,8 +229,8 @@
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
         }
 
         .stat-card {
@@ -273,23 +269,14 @@
             font-size: 0.9rem;
         }
 
-        footer a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
         /* Responsive */
         @media (max-width: 768px) {
             .container { padding: 1rem; }
             .hero { padding: 2.5rem 1.5rem; }
             .hero h1 { font-size: 2rem; }
             .hero p { font-size: 1rem; }
-            .cards-grid { grid-template-columns: 1fr; }
-            .feature-card { padding: 1.5rem; }
+            .subjects-grid { grid-template-columns: 1fr; }
+            .subject-card { padding: 1.5rem; }
             .stat-value { font-size: 2rem; }
         }
 
@@ -309,13 +296,13 @@
             animation: fadeInUp 0.8s ease;
         }
 
-        .feature-card {
+        .subject-card {
             animation: fadeInUp 0.8s ease;
             animation-fill-mode: both;
         }
 
-        .feature-card:nth-child(1) { animation-delay: 0.2s; }
-        .feature-card:nth-child(2) { animation-delay: 0.4s; }
+        .subject-card:nth-child(1) { animation-delay: 0.2s; }
+        .subject-card:nth-child(2) { animation-delay: 0.4s; }
 
         .stats-section {
             animation: fadeInUp 0.8s ease 0.6s;
@@ -327,69 +314,102 @@
     <div class="container">
         <div class="hero">
             <div class="hero-content">
-                <div class="hero-badge">📖 Học kỳ 2024-2025</div>
-                <h1>🎓 ECO 152</h1>
-                <p>Kinh Tế Vĩ Mô - Tài liệu ôn tập và luyện đề trắc nghiệm</p>
+                <div class="hero-badge">📖 Học kỳ 2025-2026</div>
+                <h1>🎓 KTHP 2026</h1>
+                <p>Hệ thống ôn tập và luyện đề thi cuối kỳ</p>
             </div>
         </div>
 
-        <div class="cards-grid">
-            <a href="congthuc.html" class="feature-card formula">
-                <div class="card-icon">📐</div>
-                <h2 class="card-title">Công Thức & Mẹo</h2>
-                <p class="card-desc">Tổng hợp công thức, mẹo giải trắc nghiệm và các dạng bài tập thường gặp.</p>
-                <ul class="card-features">
-                    <li>Công thức GDP, GNP, Lạm phát</li>
-                    <li>Mô hình IS-LM, Số nhân Keynes</li>
-                    <li>Chính sách Tiền tệ & Tài khóa</li>
-                    <li>Mẹo tránh bẫy trắc nghiệm</li>
-                </ul>
-                <div class="card-arrow">
-                    Xem tài liệu <span>→</span>
+        <div class="subjects-grid">
+            <div class="subject-card ktvm">
+                <div class="card-icon">📈</div>
+                <h2 class="card-title">Kinh Tế Vi Mô</h2>
+                <div class="card-subtitle">ECO 151 / ECO 152</div>
+                <div class="action-links">
+                    <a href="congthuc.html?subject=ktvm" class="action-btn">
+                        <span>📚 Công thức & Lý thuyết</span>
+                        <span class="arrow">→</span>
+                    </a>
+                    <a href="tracnghiem.html?subject=ktvm" class="action-btn">
+                        <span>✅ Thi Trắc Nghiệm</span>
+                        <span class="arrow">→</span>
+                    </a>
+                    <a href="tuluan.html?subject=ktvm" class="action-btn">
+                        <span>📝 Tự Luận & Câu Ngắn</span>
+                        <span class="arrow">→</span>
+                    </a>
                 </div>
-            </a>
+            </div>
 
-            <a href="tracnghiem.html" class="feature-card quiz">
-                <div class="card-icon">📝</div>
-                <h2 class="card-title">Trắc Nghiệm</h2>
-                <p class="card-desc">Luyện tập với hơn 100 câu hỏi trắc nghiệm và câu hỏi ngắn.</p>
-                <ul class="card-features">
-                    <li>Chế độ luyện tập tự do</li>
-                    <li>Thi thử 20 câu có giới hạn thời gian</li>
-                    <li>Ôn tập câu hỏi trả lời ngắn</li>
-                    <li>Xáo trộn câu hỏi ngẫu nhiên</li>
-                </ul>
-                <div class="card-arrow">
-                    Bắt đầu luyện tập <span>→</span>
+            <div class="subject-card xstk">
+                <div class="card-icon">🎲</div>
+                <h2 class="card-title">Xác Suất Thống Kê</h2>
+                <div class="card-subtitle">STA 151</div>
+                <div class="action-links">
+                    <a href="congthuc.html?subject=xstk" class="action-btn">
+                        <span>📚 Công thức & Lý thuyết</span>
+                        <span class="arrow">→</span>
+                    </a>
+                    <a href="tracnghiem.html?subject=xstk" class="action-btn">
+                        <span>✅ Thi Trắc Nghiệm</span>
+                        <span class="arrow">→</span>
+                    </a>
+                    <a href="tuluan.html?subject=xstk" class="action-btn">
+                        <span>📝 Tự Luận & Câu Ngắn</span>
+                        <span class="arrow">→</span>
+                    </a>
                 </div>
-            </a>
+            </div>
         </div>
 
         <div class="stats-section">
-            <h2 class="stats-title">📊 Thống kê nội dung</h2>
+            <h2 class="stats-title">📊 Thống kê câu hỏi</h2>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-value purple">39+</div>
-                    <div class="stat-label">Câu Phần 1</div>
+                    <div class="stat-value pink" id="stat-ktvm-tn">60+</div>
+                    <div class="stat-label">Trắc Nghiệm KTVM</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value pink">48+</div>
-                    <div class="stat-label">Câu Phần 2</div>
+                    <div class="stat-value purple" id="stat-ktvm-tl">100+</div>
+                    <div class="stat-label">Câu Ngắn KTVM</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value blue">32+</div>
-                    <div class="stat-label">Câu Hỏi Ngắn</div>
+                    <div class="stat-value blue" id="stat-xstk-tn">53+</div>
+                    <div class="stat-label">Trắc Nghiệm XSTK</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value green">4</div>
-                    <div class="stat-label">Chủ đề Công thức</div>
+                    <div class="stat-value green" id="stat-xstk-tl">5+</div>
+                    <div class="stat-label">Tự Luận XSTK</div>
                 </div>
             </div>
         </div>
 
         <footer>
-            <p>Made with ❤️ for ECO 152 Students</p>
+            <p>Made with ❤️ for KTHP 2026 Students</p>
         </footer>
     </div>
+    
+    <script>
+        async function fetchCount(url, elementId, defaultValue) {
+            try {
+                const response = await fetch(url);
+                if (response.ok) {
+                    const data = await response.json();
+                    document.getElementById(elementId).textContent = data.length + "+";
+                } else {
+                    document.getElementById(elementId).textContent = defaultValue;
+                }
+            } catch (error) {
+                document.getElementById(elementId).textContent = defaultValue;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchCount('data/ktvm_tracnghiem.json', 'stat-ktvm-tn', '60+');
+            fetchCount('data/ktvm_tuluan.json', 'stat-ktvm-tl', '100+');
+            fetchCount('data/xstk_tracnghiem.json', 'stat-xstk-tn', '53+');
+            fetchCount('data/xstk_tuluan.json', 'stat-xstk-tl', '0');
+        });
+    </script>
 </body>
 </html>
